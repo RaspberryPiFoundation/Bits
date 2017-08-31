@@ -1,0 +1,9 @@
+{
+  "name": "Bits",
+  "version": "1.0.0",
+  "description": "The Raspberry Pi Front End Pattern Library",
+  "author": "The Raspberry Pi Foundation",
+  "dependencies": {
+    "iotacss": "^1.2.0"
+  }
+}
