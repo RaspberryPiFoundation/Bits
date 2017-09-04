@@ -15,11 +15,10 @@ const sourcemaps = require('gulp-sourcemaps')
 const banner = [
   '/*',
   `  Theme Name: ${pkg.name}`,
-  `  Author: ${pkg.author}`,
-  `  Author URI: ${pkg.uri}`,
+  `  Author: ${pkg.author.name}`,
+  `  Author URI: ${pkg.author.url}`,
   `  Description: ${pkg.description}`,
   `  Version: ${pkg.version}`,
-  `  License: ${pkg.license}`,
   '*/',
   '',
   '',
