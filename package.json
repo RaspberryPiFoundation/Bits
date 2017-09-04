@@ -2,7 +2,10 @@
   "name": "Bits",
   "version": "1.0.0",
   "description": "The Raspberry Pi Front End Pattern Library",
-  "author": "The Raspberry Pi Foundation",
+  "author": {
+    "name": "The Raspberry Pi Foundation",
+    "url": "https://raspberrypi.org"
+  },
   "devDependencies": {
     "babel-core": "^6.25.0",
     "babel-eslint": "^7.2.3",
@@ -27,6 +30,9 @@
     "prettier": "^1.6.1",
     "react": "^15.6.1"
   },
-  "files": ["lib", "src/styles"],
+  "files": [
+    "lib",
+    "src/styles"
+  ],
   "dependencies": {}
 }
