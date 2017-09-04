@@ -9,7 +9,6 @@
 
 $iota-global-columns: 2, 3, 6, 12;
 
-
 /**
  * Global namespace for Objects, Components and 
  * Utilities
@@ -17,10 +16,9 @@ $iota-global-columns: 2, 3, 6, 12;
  * Type: String
  */
 
-$iota-global-objects-namespace    : 'o-';
-$iota-global-utilities-namespace  : 'u-';
-$iota-global-components-namespace : 'c-';
-
+$iota-global-objects-namespace: "o-";
+$iota-global-utilities-namespace: "u-";
+$iota-global-components-namespace: "c-";
 
 /**
  * Default gutters. This setting is shared between
@@ -31,8 +29,7 @@ $iota-global-components-namespace : 'c-';
  * Type: Number / List / Map
  */
 
-$iota-global-gutter-default: 10px;
-
+$iota-global-gutter-default: 5px;
 
 /**
  * Enables flexbox across the app. If you do not want
@@ -45,7 +42,6 @@ $iota-global-gutter-default: 10px;
 
 $iota-global-flex: true;
 
-
 /**
  * Enables rtl across the app. If you enable this setting
  * the final CSS will be converted to RTL.
@@ -54,7 +50,6 @@ $iota-global-flex: true;
  */
 
 $iota-global-rtl: false;
-
 
 /**
  * Default global breakpoints map. These are the
@@ -65,11 +60,7 @@ $iota-global-rtl: false;
  * Type: Map
  */
 
-$iota-global-breakpoints: (
-  sm  : "screen and ( min-width: 768px )",
-  md  : "screen and ( min-width: 1000px )"
-);
-
+$iota-global-breakpoints: (sm: "screen and (min-width: 768px)", md: "screen and (min-width: 1000px)");
 
 /**
  * Global breakpoint suffix naming setting. All breakpoint
@@ -80,7 +71,6 @@ $iota-global-breakpoints: (
  */
 
 $iota-global-breakpoint-separator: \@;
-
 
 /**
  * Global delimiter naming setting for Size, Push and Pull
@@ -93,5 +83,4 @@ $iota-global-breakpoint-separator: \@;
 
 $iota-global-delimiter: \/;
 
-
-@import 'node_modules/iotacss/settings/core';
+@import "node_modules/iotacss/settings/core";
