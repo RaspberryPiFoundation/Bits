@@ -42,7 +42,7 @@ gulp.task('stylesheets', () => {
   let config = assetsConfig.stylesheets
 
   return gulp
-    .src(config.main)
+    .src([config.main, config.components])
     .pipe(
       sass().on('error', err => {
         return notify().write(err)
