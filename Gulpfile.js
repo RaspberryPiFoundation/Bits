@@ -31,7 +31,6 @@ const banner = [
 const assetsConfig = {
   stylesheets: {
     main: './src/styles/main.scss',
-    components: './src/components/**/*.scss',
     destDir: './lib',
     buildFile: 'Bits.css',
     buildFileMin: 'Bits.min.css',
@@ -42,7 +41,7 @@ gulp.task('stylesheets', () => {
   let config = assetsConfig.stylesheets
 
   return gulp
-    .src([config.main, config.components])
+    .src([config.main])
     .pipe(
       sass().on('error', err => {
         return notify().write(err)
