@@ -1,5 +1,5 @@
 body {
-  @include iota-type($type-body);
+  @include iota-type($type-base);
 
   background-color: $color-ui-greyscale-lightest;
   color:            $color-ui-greyscale-dark;

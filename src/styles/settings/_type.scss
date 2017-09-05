@@ -10,7 +10,7 @@ $type-caption: (
   md:   (1.6rem, 1.5)
 );
 
-$type-body: (
+$type-base: (
   null: (1.6rem, 1.5),
   md:   (1.8rem, 1.5)
 );
@@ -37,7 +37,7 @@ $type-display-large: (
 
 $type-margins: (
   -caption:       1em,
-  -body:          1em,
+  -base:          1em,
   -sub-heading:   1em,
   -heading:       1em,
   -display:       1em,
@@ -46,7 +46,7 @@ $type-margins: (
 
 $type-font-weights: (
   caption:       $font-weight-light,
-  body:          $font-weight-light,
+  base:          $font-weight-light,
   sub-heading:   $font-weight-medium,
   heading:       $font-weight-medium,
   display:       $font-weight-bold,
