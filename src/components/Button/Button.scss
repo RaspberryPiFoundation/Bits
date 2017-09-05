@@ -1,1 +1,5 @@
-.c-Button {}
+$button-background-color: $color-primary-violet;
+
+.c-button {
+  background-color: $button-background-color;
+}
