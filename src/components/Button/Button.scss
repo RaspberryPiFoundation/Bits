@@ -5,6 +5,7 @@ $button-border-width:               $border-width;
 $button-font-weight:                map-get($type-font-weights, sub-heading);
 $button-line-height:                $baseline-x7;
 $button-line-height-md:             $baseline-x8;
+$button-ph:                         $baseline-x4;
 $button-type-map:                   (
   null: ($type-sub-heading-font-size,    $button-line-height),
   md:   ($type-sub-heading-font-size-md, $button-line-height-md),
@@ -13,7 +14,6 @@ $button-type-map:                   (
 $button-primary-background-color:   $color-ui-yellow;
 $button-primary-border-color:       $color-ui-yellow;
 $button-primary-color:              $color-ui-greyscale-darkest;
-$button-ph:                         $baseline-x4;
 
 $button-secondary-background-color: $color-white;
 $button-secondary-border-color:     $color-ui-greyscale-mid;
