@@ -4,36 +4,7 @@
  * Type: Map
  */
 
-$iota-utils-bgcolor-names: (
-  black: #000,
-  white: #fff,
-  brand-raspberry-pi-red: #c51d4a,
-  brand-raspberry-pi-green: #6ac146,
-  primary-yellow: #ffb12a,
-  primary-orange: #f68e3b,
-  primary-red: #f3524f,
-  primary-violet: #a76fba,
-  primary-navy: #004881,
-  primary-blue: #41a6c4,
-  primary-turquoise: #10aeb0,
-  primary-green: #53ce63,
-  secondary-yellow: #fddd42,
-  secondary-orange: #ffc869,
-  secondary-red: #f68583,
-  secondary-violet: #c29acf,
-  secondary-navy: #4c7fa7,
-  secondary-blue: #87dcf6,
-  secondary-turquoise: #58c7c8,
-  secondary-green: #87dd92,
-  secondary-pink: #f68583,
-  secondary-blue-dark: #374e60,
-  ui-greyscale-darkest: #222,
-  ui-greyscale-dark: #444,
-  ui-greyscale-mid: #999,
-  ui-greyscale-light: #ccc,
-  ui-greyscale-lightest: #f5f6f9,
-  ui-yellow: #fcf67f
-);
+$iota-utils-bgcolor-names: $colors;
 
 /**
  * Namespace classes

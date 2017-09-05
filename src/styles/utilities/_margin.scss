@@ -14,7 +14,7 @@ $iota-utils-margin-default: $iota-global-gutter-default;
  * Type: Map
  */
 
-$iota-utils-margin-extra: ();
+$iota-utils-margin-extra: map-merge($spacing-extra, $type-margins);
 
 
 /**

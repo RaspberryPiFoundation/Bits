@@ -4,7 +4,7 @@
  * Type: Map
  */
 
-$iota-utils-weight-sizes: ();
+$iota-utils-weight-sizes: map-merge($font-weights, $type-font-weights);
 
 
 /**
