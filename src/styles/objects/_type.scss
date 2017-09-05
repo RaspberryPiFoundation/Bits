@@ -13,7 +13,14 @@ $iota-objs-type-namespace: 'type-';
  * Type: Map
  */
 
-$iota-objs-type-sizes: ();
+$iota-objs-type-sizes: (
+  caption:       $type-caption,
+  body:          $type-body,
+  sub-heading:   $type-sub-heading,
+  heading:       $type-heading,
+  display:       $type-display,
+  display-large: $type-display-large
+);
 
 
 @import 'node_modules/iotacss/objects/type';

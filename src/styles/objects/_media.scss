@@ -16,7 +16,7 @@ $iota-objs-media-aligned: true;
  * Type: Boolean
  */
 
-$iota-objs-media-rev: true;
+$iota-objs-media-rev: false;
 
 
 /**
@@ -68,7 +68,7 @@ $iota-objs-media-res: true;
  * Type: Number
  */
 
-$iota-objs-media-collapse-at: 767px;
+$iota-objs-media-collapse-at: $breakpoint-sm - 1;
 
 
 /**
