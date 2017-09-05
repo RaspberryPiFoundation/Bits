@@ -10,15 +10,18 @@ const header = require('gulp-header')
 const rename = require('gulp-rename')
 const sass = require('gulp-sass')
 const sourcemaps = require('gulp-sourcemaps')
+const stripComments = require('gulp-strip-css-comments')
 
 // Set banner template
 const banner = [
   '/*',
-  `  Theme Name: ${pkg.name}`,
-  `  Author: ${pkg.author.name}`,
-  `  Author URI: ${pkg.author.url}`,
-  `  Description: ${pkg.description}`,
-  `  Version: ${pkg.version}`,
+  `  ${pkg.name}`,
+  '',
+  `  ${pkg.description}`,
+  '',
+  `  Author:      ${pkg.author.name}`,
+  `  Author URI:  ${pkg.author.url}`,
+  `  Version:     ${pkg.version}`,
   '*/',
   '',
   '',
@@ -27,10 +30,11 @@ const banner = [
 // Get configuration files
 const assetsConfig = {
   stylesheets: {
-    source: './src/styles',
-    main: 'main.scss',
+    main: './src/styles/main.scss',
+    components: './src/components/**/*.scss',
     destDir: './lib',
     buildFile: 'Bits.css',
+    buildFileMin: 'Bits.min.css',
   },
 }
 
@@ -38,15 +42,14 @@ gulp.task('stylesheets', () => {
   let config = assetsConfig.stylesheets
 
   return gulp
-    .src(config.source + '/' + config.main)
-    .pipe(sourcemaps.init())
+    .src(config.main)
     .pipe(
       sass().on('error', err => {
         return notify().write(err)
       }),
     )
+    .pipe(stripComments())
     .pipe(autoprefixer())
-    .pipe(cssnano())
     .pipe(
       header(banner, {
         buildFile: config.buildFile,
@@ -54,6 +57,10 @@ gulp.task('stylesheets', () => {
       }),
     )
     .pipe(rename(config.buildFile))
+    .pipe(gulp.dest(config.destDir))
+    .pipe(sourcemaps.init())
+    .pipe(cssnano())
+    .pipe(rename(config.buildFileMin))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(config.destDir))
     .pipe(notify(`${pkg.name} Gulp: stylesheets completed`))
@@ -62,7 +69,7 @@ gulp.task('stylesheets', () => {
 gulp.task('all', ['stylesheets'])
 
 gulp.task('watch', () => {
-  gulp.watch(assetsConfig.stylesheets.source + '/**/*', ['stylesheets'])
+  gulp.watch('./src/**/*.scss', ['stylesheets'])
 })
 
 gulp.task('default', ['all', 'watch'])
