@@ -16,8 +16,8 @@ $iota-global-columns: 2, 3, 6, 12;
  * Type: String
  */
 
-$iota-global-objects-namespace: "o-";
-$iota-global-utilities-namespace: "u-";
+$iota-global-objects-namespace:    "o-";
+$iota-global-utilities-namespace:  "u-";
 $iota-global-components-namespace: "c-";
 
 /**
@@ -29,7 +29,7 @@ $iota-global-components-namespace: "c-";
  * Type: Number / List / Map
  */
 
-$iota-global-gutter-default: 5px;
+$iota-global-gutter-default: $gutter-base;
 
 /**
  * Enables flexbox across the app. If you do not want
@@ -60,7 +60,7 @@ $iota-global-rtl: false;
  * Type: Map
  */
 
-$iota-global-breakpoints: (sm: "screen and (min-width: 768px)", md: "screen and (min-width: 1000px)");
+$iota-global-breakpoints: $breakpoints;
 
 /**
  * Global breakpoint suffix naming setting. All breakpoint

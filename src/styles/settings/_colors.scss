@@ -1,0 +1,59 @@
+$color-black: #000;
+$color-white: #fff;
+$color-brand-raspberry-pi-red: #c51d4a;
+$color-brand-raspberry-pi-green: #6ac146;
+$color-primary-yellow: #ffb12a;
+$color-primary-orange: #f68e3b;
+$color-primary-red: #f3524f;
+$color-primary-violet: #a76fba;
+$color-primary-navy: #004881;
+$color-primary-blue: #41a6c4;
+$color-primary-turquoise: #10aeb0;
+$color-primary-green: #53ce63;
+$color-secondary-yellow: #fddd42;
+$color-secondary-orange: #ffc869;
+$color-secondary-red: #f68583;
+$color-secondary-violet: #c29acf;
+$color-secondary-navy: #4c7fa7;
+$color-secondary-blue: #87dcf6;
+$color-secondary-turquoise: #58c7c8;
+$color-secondary-green: #87dd92;
+$color-secondary-pink: #f68583;
+$color-secondary-blue-dark: #374e60;
+$color-ui-greyscale-darkest: #222;
+$color-ui-greyscale-dark: #444;
+$color-ui-greyscale-mid: #999;
+$color-ui-greyscale-light: #ccc;
+$color-ui-greyscale-lightest: #f5f6f9;
+$color-ui-yellow: #fcf67f;
+
+$colors: (
+  black:                    $color-black,
+  white:                    $color-white,
+  brand-raspberry-pi-red:   $color-brand-raspberry-pi-red,
+  brand-raspberry-pi-green: $color-brand-raspberry-pi-green,
+  primary-yellow:           $color-primary-yellow,
+  primary-orange:           $color-primary-orange,
+  primary-red:              $color-primary-red,
+  primary-violet:           $color-primary-violet,
+  primary-navy:             $color-primary-navy,
+  primary-blue:             $color-primary-blue,
+  primary-turquoise:        $color-primary-turquoise,
+  primary-green:            $color-primary-green,
+  secondary-yellow:         $color-secondary-yellow,
+  secondary-orange:         $color-secondary-orange,
+  secondary-red:            $color-secondary-red,
+  secondary-violet:         $color-secondary-violet,
+  secondary-navy:           $color-secondary-navy,
+  secondary-blue:           $color-secondary-blue,
+  secondary-turquoise:      $color-secondary-turquoise,
+  secondary-green:          $color-secondary-green,
+  secondary-pink:           $color-secondary-pink,
+  secondary-blue-dark:      $color-secondary-blue-dark,
+  ui-greyscale-darkest:     $color-ui-greyscale-darkest,
+  ui-greyscale-dark:        $color-ui-greyscale-dark,
+  ui-greyscale-mid:         $color-ui-greyscale-mid,
+  ui-greyscale-light:       $color-ui-greyscale-light,
+  ui-greyscale-lightest:    $color-ui-greyscale-lightest,
+  ui-yellow:                $color-ui-yellow
+);
