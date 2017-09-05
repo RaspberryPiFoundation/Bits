@@ -1,7 +1,51 @@
 @import '../../styles/component-helper';
 
-$button-background-color: $color-primary-violet;
+$button-border-radius:              $border-radius;
+$button-border-width:               $border-width;
+$button-font-weight:                map-get($type-font-weights, sub-heading);
+$button-line-height:                $baseline-x7;
+$button-line-height-md:             $baseline-x8;
+$button-type-map:                   (
+  null: ($type-sub-heading-font-size,    $button-line-height),
+  md:   ($type-sub-heading-font-size-md, $button-line-height-md),
+);
+
+$button-primary-background-color:   $color-ui-yellow;
+$button-primary-border-color:       $color-ui-yellow;
+$button-primary-color:              $color-ui-greyscale-darkest;
+$button-ph:                         $baseline-x4;
+
+$button-secondary-background-color: $color-white;
+$button-secondary-border-color:     $color-ui-greyscale-mid;
+$button-secondary-color:            $color-ui-greyscale-mid;
 
 .c-button {
-  background-color: $button-background-color;
+  @include iota-type($button-type-map);
+
+  border-radius:   $button-border-radius;
+  border-style:    solid;
+  border-width:    $button-border-width;
+  cursor:          pointer;
+  display:         inline-block;
+  font-weight:     $button-font-weight;
+  padding:         0 $button-ph;
+  vertical-align:  middle;
+  text-decoration: none;
+}
+
+.c-button--primary {
+  background-color: $button-primary-background-color;
+  border-color:     $button-primary-border-color;
+  color:            $button-primary-color;
+}
+
+.c-button--secondary {
+  background-color: $button-secondary-background-color;
+  border-color:     $button-secondary-border-color;
+  color:            $button-secondary-color;
+}
+
+.c-button--block {
+  display: block;
+  width:   100%;
 }
