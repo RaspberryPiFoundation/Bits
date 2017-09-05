@@ -1,0 +1,14 @@
+body {
+  @include iota-type($type-body);
+
+  background-color: $color-ui-greyscale-lightest;
+  color:            $color-ui-greyscale-dark;
+  font-display:     swap;
+  font-family:      $font-family-serif;
+  font-weight:      $font-weight-light;
+  min-height:       100%;
+  position:         relative;
+  text-rendering:   optimizeLegibility;
+  text-size-adjust: 100%;
+  width:            100%;
+}
