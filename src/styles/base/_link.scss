@@ -1,0 +1,22 @@
+$link-color:               $color-primary-red;
+$link-hover-color:         $color-secondary-red;
+$link-visited-color:       $color-primary-violet;
+$link-transition-duration: $transition-duration-short;
+$link-transition-timing:   $transition-timing-eased;
+
+@mixin link {
+  color:                $link-color;
+  cursor:               pointer;
+  text-decoration:      underline;
+  text-decoration-skip: ink;
+  transition:           color $link-transition-duration $link-transition-timing;
+
+  &:hover {
+    color:           $link-hover-color;
+    text-decoration: none;
+  }
+
+  &:visited {
+    color: $link-visited-color;
+  }
+}
