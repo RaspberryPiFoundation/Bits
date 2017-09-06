@@ -1,17 +1,10 @@
 .o-wysiwyg {
+  a  { @include link; }
   h1 { @include type-display-large; }
   h2 { @include type-display; }
   h3 { @include type-heading; }
   h4 { @include type-sub-heading; }
-  p { @include type-base; }
-  ul {
-    @include type-base;
-    li {}
-  }
-  ol {
-    @include type-base;
-    li {}
-  }
-  b {}
-  em {}
+  p  { @include type-base; }
+  ul { @include type-base; }
+  ol { @include type-base; }
 }
