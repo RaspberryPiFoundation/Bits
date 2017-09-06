@@ -25,10 +25,10 @@ $iota-objs-grid-rev: true;
  * Default gutter size. Use a number for a single size or
  * a map for a responsive size.
  *
- * Type: Number / Map 
+ * Type: Number / Map
  */
 
-$iota-objs-grid-gutter-default: $gutters;
+$iota-objs-grid-gutter-default: $grid-gutters;
 
 
 /**
@@ -47,7 +47,7 @@ $iota-objs-grid-gutter-extra: ();
 
 /**
  * Enable / Disable flexbox on grid.
- * 
+ *
  * Type: Boolean
  */
 

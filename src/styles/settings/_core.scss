@@ -10,7 +10,7 @@
 $iota-global-columns: 2, 3, 6, 12;
 
 /**
- * Global namespace for Objects, Components and 
+ * Global namespace for Objects, Components and
  * Utilities
  *
  * Type: String
@@ -29,7 +29,7 @@ $iota-global-components-namespace: "c-";
  * Type: Number / List / Map
  */
 
-$iota-global-gutter-default: $gutter-base;
+$iota-global-gutter-default: $grid-gutter-base;
 
 /**
  * Enables flexbox across the app. If you do not want
