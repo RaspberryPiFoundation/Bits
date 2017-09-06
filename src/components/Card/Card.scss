@@ -1,16 +1,27 @@
 @import '../../styles/component-helper';
 
-$card-background-color: $color-white;
-$card-border-radius:    $border-radius;
-$card-box-shadow:       $box-shadow;
-$card-content-p:        $baseline-x4;
-$card-background-color: $color-white;
+$card-background-color:      $color-white;
+$card-border-radius:         $border-radius;
+$card-box-shadow:            $box-shadow-25;
+$card-content-p:             $baseline-x4;
+$card-link-color:            $color-ui-greyscale-darkest;
+$card-link-hover-box-shadow: $box-shadow-25;
+$card-mb:                    $baseline-x6;
+$card-transition-duration:   $transition-duration-short;
+$card-transition-timing:     $transition-timing-eased;
 
 .c-card {
   background-color: $card-background-color;
   border-radius:    $card-border-radius;
   box-shadow:       $card-box-shadow;
+  display:          block;
+  margin-bottom:    $card-mb;
   overflow:         hidden;
+  transition:       box-shadow $card-transition-duration $card-transition-timing;
+}
+
+.c-card__image {
+  width: 100%;
 }
 
 .c-card__content {
@@ -19,4 +30,18 @@ $card-background-color: $color-white;
 
 .c-card__title {
   @include type-sub-heading;
+}
+
+.c-card--link,
+.c-card--link:active,
+.c-card--link:hover,
+.c-card--link:link,
+.c-card--link:visited {
+  color:           $card-link-color;
+  cursor:          pointer;
+  text-decoration: none;
+}
+
+.c-card--link:hover {
+  box-shadow: $card-link-hover-box-shadow;
 }
