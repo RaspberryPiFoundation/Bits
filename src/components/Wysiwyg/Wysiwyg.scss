@@ -1,4 +1,6 @@
-.o-wysiwyg {
+@import '../../styles/component-helper';
+
+.c-wysiwyg {
   a  { @include link; }
   h1 { @include type-display-large; }
   h2 { @include type-display; }
