@@ -1,0 +1,5 @@
+@import '../../../styles/component-helper';
+
+.c-type-heading {
+  @include type-heading;
+}

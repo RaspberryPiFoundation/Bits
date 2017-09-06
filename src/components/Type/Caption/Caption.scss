@@ -1,0 +1,5 @@
+@import '../../../styles/component-helper';
+
+.c-type-caption {
+  @include type-caption;
+}
