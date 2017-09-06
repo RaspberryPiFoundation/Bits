@@ -1,0 +1,26 @@
+@import '../../styles/component-helper';
+
+$slice-pv: $baseline-10;
+
+.c-slice {
+  background-attachment: scroll;
+  background-position:   center center;
+  background-repeat:     no-repeat;
+  padding:               $slice-pv 0;
+}
+
+.c-slice--bg-attachment-fixed { background-attachment: fixed;        }
+.c-slice--bg-attachment-local { background-attachment: local;        }
+.c-slice--bg-repeat           { background-repeat:     repeat;       }
+.c-slice--bg-repeat-x         { background-repeat:     repeat-x;     }
+.c-slice--bg-repeat-y         { background-repeat:     repeat-y;     }
+.c-slice--bg-contain          { background-size:       contain;      }
+.c-slice--bg-cover            { background-size:       cover;        }
+.c-slice--bg-pos-l            { background-position:   left;         }
+.c-slice--bg-pos-b            { background-position:   bottom;       }
+.c-slice--bg-pos-bl           { background-position:   bottom left;  }
+.c-slice--bg-pos-br           { background-position:   bottom right; }
+.c-slice--bg-pos-r            { background-position:   right;        }
+.c-slice--bg-pos-t            { background-position:   top;          }
+.c-slice--bg-pos-tl           { background-position:   top left;     }
+.c-slice--bg-pos-tr           { background-position:   top right;    }
