@@ -1,11 +1,15 @@
 @import './baseline';
-@import './borders';
-@import './breakpoints';
-@import './colors';
+@import './color';
+
+@import './border';
+@import './box-shadow';
+@import './breakpoint';
 @import './container';
-@import './font-families';
-@import './font-weights';
-@import './gutters';
+@import './font-family';
+@import './font-weight';
+@import './grid-gutter';
 @import './spacing';
+@import './transition';
 @import './type';
+
 @import './core';
