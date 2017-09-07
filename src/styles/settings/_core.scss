@@ -16,9 +16,9 @@ $iota-global-columns: 2, 3, 6, 12;
  * Type: String
  */
 
-$iota-global-objects-namespace:    "o-";
-$iota-global-utilities-namespace:  "u-";
-$iota-global-components-namespace: "c-";
+$iota-global-objects-namespace:    'o-';
+$iota-global-utilities-namespace:  'u-';
+$iota-global-components-namespace: 'c-';
 
 /**
  * Default gutters. This setting is shared between
@@ -83,4 +83,4 @@ $iota-global-breakpoint-separator: \@;
 
 $iota-global-delimiter: \/;
 
-@import "node_modules/iotacss/settings/core";
+@import 'node_modules/iotacss/settings/core';

@@ -5,11 +5,14 @@ $button-border-width:               $border-width;
 $button-font-weight:                map-get($type-font-weights, sub-heading);
 $button-line-height:                $baseline-x7;
 $button-line-height-md:             $baseline-x8;
-$button-ph:                         $baseline-x4;
+$button-ph:                         0 $baseline-x4;
+// SpaceAfterComma doesn't seem to work in Sass lists
+// scss-lint:disable SpaceAfterComma
 $button-type-map:                   (
   null: ($type-sub-heading-font-size,    $button-line-height),
   md:   ($type-sub-heading-font-size-md, $button-line-height-md),
 );
+// scss-lint:enable SpaceAfterComma
 
 $button-primary-background-color:   $color-ui-yellow;
 $button-primary-border-color:       $color-ui-yellow;
@@ -28,10 +31,10 @@ $button-secondary-color:            $color-ui-greyscale-mid;
   cursor:          pointer;
   display:         inline-block;
   font-weight:     $button-font-weight;
-  padding:         0 $button-ph;
+  padding:         $button-ph;
   text-align:      center;
-  vertical-align:  middle;
   text-decoration: none;
+  vertical-align:  middle;
 }
 
 .c-button--primary {

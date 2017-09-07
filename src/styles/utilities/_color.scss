@@ -12,6 +12,6 @@ $iota-utils-color-names: $colors;
  * Type: String
  */
 
-$iota-utils-color-namespace: "color-";
+$iota-utils-color-namespace: 'color-';
 
-@import "node_modules/iotacss/utilities/color";
+@import 'node_modules/iotacss/utilities/color';

@@ -10,11 +10,11 @@ $type-sub-heading-font-size:      1.6rem;
 $type-sub-heading-font-size-md:   1.8rem;
 $type-sub-heading-line-height:    1.3;
 
-$type-heading-font-size:          2.0rem;
+$type-heading-font-size:          2rem;
 $type-heading-font-size-md:       2.2rem;
 $type-heading-line-height:        1.3;
 
-$type-display-font-size:          2.0rem;
+$type-display-font-size:          2rem;
 $type-display-font-size-md:       2.8rem;
 $type-display-line-height:        1.3;
 
@@ -23,6 +23,7 @@ $type-display-large-font-size-md: 3.6rem;
 $type-display-large-line-height:  1.2;
 
 /*
+scss-lint:disable SpaceAfterComma
 Type name
 | Breakpoints
 | |      Font size - relative to 10px on <html> element
@@ -47,6 +48,7 @@ $type-display: (
 $type-display-large: (
   null: ($type-display-large-font-size,    $type-base-line-height),
   md:   ($type-display-large-font-size-md, $type-base-line-height));
+// scss-lint:enable SpaceAfterComma
 
 $type-margins: (
   -base:          1em,

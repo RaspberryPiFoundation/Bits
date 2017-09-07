@@ -1,12 +1,12 @@
 @import '../../styles/component-helper';
 
-$slice-pv: $baseline-10;
+$slice-pv: $baseline-10 0;
 
 .c-slice {
   background-attachment: scroll;
   background-position:   center center;
   background-repeat:     no-repeat;
-  padding:               $slice-pv 0;
+  padding:               $slice-pv;
 }
 
 .c-slice--bg-attachment-fixed { background-attachment: fixed;        }
