@@ -9,7 +9,9 @@ $link-transition-timing:      $transition-timing-eased;
   color:                $link-color;
   cursor:               pointer;
   text-decoration:      underline;
-  text-decoration-skip: ink;
+  // Disable text-decoration-skip check as it's still in draft
+  // https://drafts.csswg.org/css-text-decor-3/#text-decoration-skip-property
+  text-decoration-skip: ink; // scss-lint:disable PropertySpelling
   transition:           color $link-transition-duration $link-transition-timing;
 
   &:hover,
