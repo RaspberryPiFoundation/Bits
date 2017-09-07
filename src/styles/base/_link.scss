@@ -1,8 +1,9 @@
-$link-color:               $color-primary-red;
-$link-hover-color:         $color-secondary-red;
-$link-visited-color:       $color-primary-violet;
-$link-transition-duration: $transition-duration-short;
-$link-transition-timing:   $transition-timing-eased;
+$link-color:                  $color-primary-navy;
+$link-hover-background-color: $color-ui-yellow;
+$link-hover-color:            $color-ui-greyscale-darkest;
+$link-visited-color:          $color-primary-violet;
+$link-transition-duration:    $transition-duration-short;
+$link-transition-timing:      $transition-timing-eased;
 
 @mixin link {
   color:                $link-color;
@@ -11,9 +12,10 @@ $link-transition-timing:   $transition-timing-eased;
   text-decoration-skip: ink;
   transition:           color $link-transition-duration $link-transition-timing;
 
-  &:hover {
-    color:           $link-hover-color;
-    text-decoration: none;
+  &:hover,
+  &:hover:visited {
+    background-color: $link-hover-background-color;
+    color:            $link-hover-color;
   }
 
   &:visited {
