@@ -9,6 +9,7 @@ const notify = require('gulp-notify')
 const header = require('gulp-header')
 const rename = require('gulp-rename')
 const sass = require('gulp-sass')
+const scsslint = require('gulp-scss-lint')
 const sourcemaps = require('gulp-sourcemaps')
 const stripComments = require('gulp-strip-css-comments')
 
@@ -37,7 +38,9 @@ const assetsConfig = {
   },
 }
 
-gulp.task('stylesheets', () => {
+gulp.task('compile_all', ['compile_stylesheets'])
+
+gulp.task('compile_stylesheets', () => {
   let config = assetsConfig.stylesheets
 
   return gulp
@@ -65,10 +68,12 @@ gulp.task('stylesheets', () => {
     .pipe(notify(`${pkg.name} Gulp: stylesheets completed`))
 })
 
-gulp.task('all', ['stylesheets'])
-
-gulp.task('watch', () => {
-  gulp.watch('./src/**/*.scss', ['stylesheets'])
+gulp.task('scsslint', () => {
+  return gulp.src('src/**/*.scss').pipe(scsslint())
 })
 
-gulp.task('default', ['all', 'watch'])
+gulp.task('watch', () => {
+  gulp.watch('./src/**/*.scss', ['scsslint', 'compile_stylesheets'])
+})
+
+gulp.task('default', ['scsslint', 'compile_all', 'watch'])
