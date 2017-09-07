@@ -2,10 +2,9 @@
 
 $card-background-color:      $color-white;
 $card-border-radius:         $border-radius;
-$card-box-shadow:            $box-shadow-25;
+$card-box-shadow:            $box-shadow;
 $card-content-p:             $baseline-x4;
 $card-link-color:            $color-ui-greyscale-darkest;
-$card-link-hover-box-shadow: $box-shadow-25;
 $card-mb:                    $baseline-x6;
 $card-transition-duration:   $transition-duration-short;
 $card-transition-timing:     $transition-timing-eased;
@@ -40,8 +39,4 @@ $card-transition-timing:     $transition-timing-eased;
   color:           $card-link-color;
   cursor:          pointer;
   text-decoration: none;
-}
-
-.c-card--link:hover {
-  box-shadow: $card-link-hover-box-shadow;
 }
