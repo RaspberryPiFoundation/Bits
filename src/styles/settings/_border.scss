@@ -1,7 +1,15 @@
-$border-radius: $baseline;
-$border-radius-x2: $border-radius * 2;
-$border-radius-x3: $border-radius * 3;
-$border-radius-x4: $border-radius * 4;
-$border-radius-x5: $border-radius * 5;
+$border-width:    .1rem;
+$border-width-x2: $border-width * 2;
+$border-width-x3: $border-width * 3;
 
-$border-width: .3rem;
+$border-radius:    $baseline;
+
+/*                 tl             tr             br             bl           */
+$border-radius-b:  0              0              $border-radius $border-radius;
+$border-radius-bl: 0              0              0              $border-radius;
+$border-radius-br: 0              0              $border-radius 0;
+$border-radius-l:  $border-radius 0              0              $border-radius;
+$border-radius-r:  0              $border-radius $border-radius 0;
+$border-radius-t:  $border-radius $border-radius 0              0;
+$border-radius-tl: $border-radius 0              0              0;
+$border-radius-tr: 0              $border-radius 0              0;
