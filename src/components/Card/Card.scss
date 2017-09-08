@@ -1,13 +1,13 @@
 @import '../../styles/component-helper';
 
-$card-background-color:      $color-white;
-$card-border-radius:         $border-radius;
-$card-box-shadow:            $box-shadow;
-$card-content-p:             $baseline-x4;
-$card-link-color:            $color-ui-greyscale-darkest;
-$card-mb:                    $baseline-x6;
-$card-transition-duration:   $transition-duration-short;
-$card-transition-timing:     $transition-timing-eased;
+$card-background-color:    $color-white;
+$card-border-radius:       $border-radius;
+$card-box-shadow:          $box-shadow;
+$card-content-p:           $baseline-x4;
+$card-link-color:          $color-ui-greyscale-darkest;
+$card-mb:                  $baseline-x6;
+$card-transition-duration: $transition-duration-short;
+$card-transition-timing:   $transition-timing-eased;
 
 .c-card {
   background-color: $card-background-color;
