@@ -1,7 +1,7 @@
 @import '../../styles/component-helper';
 
 $button-border-radius:              $border-radius;
-$button-border-width:               $border-width;
+$button-border-width:               $border-width-x3;
 $button-font-weight:                map-get($type-font-weights, sub-heading);
 $button-line-height:                $baseline-x7;
 $button-line-height-md:             $baseline-x8;
@@ -18,7 +18,6 @@ $button-primary-background-color:   $color-ui-yellow;
 $button-primary-border-color:       $color-ui-yellow;
 $button-primary-color:              $color-ui-greyscale-darkest;
 
-$button-secondary-background-color: $color-white;
 $button-secondary-border-color:     $color-ui-greyscale-mid;
 $button-secondary-color:            $color-ui-greyscale-mid;
 
@@ -44,9 +43,8 @@ $button-secondary-color:            $color-ui-greyscale-mid;
 }
 
 .c-button--secondary {
-  background-color: $button-secondary-background-color;
-  border-color:     $button-secondary-border-color;
-  color:            $button-secondary-color;
+  border-color: $button-secondary-border-color;
+  color:        $button-secondary-color;
 }
 
 .c-button--block {
