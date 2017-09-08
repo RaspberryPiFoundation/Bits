@@ -1,8 +1,7 @@
-$border-width:    .1rem;
-$border-width-x2: $border-width * 2;
-$border-width-x3: $border-width * 3;
-
 $border-radius:    $baseline;
+$border-width:     .1rem;
+$border-width-x2:  $border-width * 2;
+$border-width-x3:  $border-width * 3;
 
 /*                 tl             tr             br             bl           */
 $border-radius-b:  0              0              $border-radius $border-radius;
