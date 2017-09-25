@@ -1,12 +1,16 @@
 @import '../../styles/component-helper';
 
 .c-wysiwyg {
-  a  { @include link; }
+  a  { @include link;               }
   h1 { @include type-display-large; }
-  h2 { @include type-display; }
-  h3 { @include type-heading; }
-  h4 { @include type-sub-heading; }
-  p  { @include type-base; }
-  ul { @include type-base; }
-  ol { @include type-base; }
+  h2 { @include type-display;       }
+  h3 { @include type-heading;       }
+  h4 { @include type-sub-heading;   }
+  p  { @include type-base;          }
+  ul { @include type-base;          }
+  ol { @include type-base;          }
+
+  .c-light-on-dark & {
+    a { @include link-light-on-dark; }
+  }
 }

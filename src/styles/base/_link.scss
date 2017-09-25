@@ -5,6 +5,11 @@ $link-visited-color:          $color-primary-violet;
 $link-transition-duration:    $transition-duration-short;
 $link-transition-timing:      $transition-timing-eased;
 
+$link-lod-color:                  $color-primary-navy;
+$link-lod-hover-background-color: $color-ui-yellow;
+$link-lod-hover-color:            $color-ui-greyscale-darkest;
+$link-lod-visited-color:          $color-primary-violet;
+
 @mixin link {
   color:                $link-color;
   cursor:               pointer;
@@ -22,5 +27,21 @@ $link-transition-timing:      $transition-timing-eased;
 
   &:visited {
     color: $link-visited-color;
+  }
+}
+
+@mixin link-light-on-dark {
+  @include link;
+
+  color: $link-lod-color;
+
+  &:hover,
+  &:hover:visited {
+    background-color: $link-lod-hover-background-color;
+    color:            $link-lod-hover-color;
+  }
+
+  &:visited {
+    color: $link-lod-visited-color;
   }
 }
