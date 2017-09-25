@@ -498,6 +498,47 @@ body {
   cursor: pointer;
   text-decoration: none; }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+.c-figure {
+  margin-bottom: 1em;
+  text-align: center; }
+
+.c-figure__caption {
+  font-size: 1.4rem;
+  line-height: 1.5; }
+  @media screen and (min-width: 768px) {
+    .c-figure__caption {
+      font-size: 1.6rem;
+      line-height: 1.5; } }
+
+.c-figure__image {
+  max-width: 100%; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .c-light-on-dark {
   color: #fff; }
 
@@ -549,7 +590,18 @@ body {
   background-attachment: scroll;
   background-position: center center;
   background-repeat: no-repeat;
-  padding: 50px 0; }
+  padding: 25px 0; }
+  @media screen and (min-width: 768px) {
+    .c-slice {
+      padding: 50px 0; } }
+
+.c-slice--white {
+  background-color: #fff;
+  border-color: #ccc;
+  border-style: solid;
+  border-width: 0.1rem 0 0;
+  -webkit-box-shadow: 0 0.1rem 0rem rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0.1rem 0rem rgba(0, 0, 0, 0.25); }
 
 
 
