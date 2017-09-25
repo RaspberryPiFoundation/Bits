@@ -1,0 +1,17 @@
+@import '../../styles/component-helper';
+
+$figure-margin-bottom: map-get($type-margins, '-base');
+$figure-type-map:      $type-caption;
+
+.c-figure {
+  margin-bottom: $figure-margin-bottom;
+  text-align:    center;
+}
+
+.c-figure__caption {
+  @include iota-type($figure-type-map);
+}
+
+.c-figure__image {
+  max-width: 100%;
+}
