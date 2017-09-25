@@ -2,6 +2,9 @@
   "name": "Bits",
   "version": "1.0.0",
   "description": "The Raspberry Pi Front End Pattern Library",
+  "engines": {
+    "node": "8.5.x"
+  },
   "author": {
     "name": "The Raspberry Pi Foundation",
     "url": "https://raspberrypi.org"
