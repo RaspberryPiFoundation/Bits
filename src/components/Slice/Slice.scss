@@ -1,10 +1,28 @@
 @import '../../styles/component-helper';
 
-$slice-pv: $baseline-x10 0;
+$slice-pv:                 $baseline-x5 0;
+$slice-pv-md:              $baseline-x10 0;
+$slice-white-bgcolor:      $color-white;
+$slice-white-border-color: $color-ui-greyscale-light;
+$slice-white-border-style: solid;
+$slice-white-border-width: $border-width 0 0;
+$slice-white-box-shadow:   $box-shadow-b;
 
 .c-slice {
   background-attachment: scroll;
   background-position:   center center;
   background-repeat:     no-repeat;
   padding:               $slice-pv;
+
+  @include iota-breakpoint(md) {
+    padding: $slice-pv-md;
+  }
+}
+
+.c-slice--white {
+  background-color: $slice-white-bgcolor;
+  border-color:     $slice-white-border-color;
+  border-style:     $slice-white-border-style;
+  border-width:     $slice-white-border-width;
+  box-shadow:       $slice-white-box-shadow;
 }
