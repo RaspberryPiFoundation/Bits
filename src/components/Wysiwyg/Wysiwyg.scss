@@ -9,8 +9,8 @@
   p  { @include type-base;          }
   ul { @include type-base;          }
   ol { @include type-base;          }
+}
 
-  .c-light-on-dark & {
-    a { @include link-light-on-dark; }
-  }
+.c-wysiwyg--light-on-dark {
+  a { @include link-light-on-dark; }
 }

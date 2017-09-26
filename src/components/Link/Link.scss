@@ -3,3 +3,7 @@
 .c-link {
   @include link;
 }
+
+.c-link--light-on-dark {
+  @include link-light-on-dark;
+}
