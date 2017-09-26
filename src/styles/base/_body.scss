@@ -1,8 +1,8 @@
 body {
   @include iota-type($type-base);
 
-  background-color: $color-ui-greyscale-lightest;
-  color:            $color-ui-greyscale-dark;
+  background-color: $color-ui-grey-lightest;
+  color:            $color-ui-black;
   // Disable font-display check as it's still in draft
   // https://drafts.csswg.org/css-fonts-4/#font-display-desc
   font-display:     swap; // scss-lint:disable PropertySpelling

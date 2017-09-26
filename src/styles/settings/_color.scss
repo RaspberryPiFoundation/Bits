@@ -1,31 +1,37 @@
-$color-black:                    #000;
-$color-white:                    #fff;
-$color-brand-raspberry-pi-red:   #c51d4a;
-$color-brand-raspberry-pi-green: #6ac146;
-$color-primary-yellow:           #ffb12a;
-$color-primary-orange:           #f68e3b;
-$color-primary-red:              #f3524f;
-$color-primary-violet:           #a76fba;
-$color-primary-navy:             #004881;
-$color-primary-blue:             #41a6c4;
-$color-primary-turquoise:        #10aeb0;
-$color-primary-green:            #53ce63;
-$color-secondary-yellow:         #fddd42;
-$color-secondary-orange:         #ffc869;
-$color-secondary-red:            #f68583;
-$color-secondary-violet:         #c29acf;
-$color-secondary-navy:           #4c7fa7;
-$color-secondary-blue:           #87dcf6;
-$color-secondary-turquoise:      #58c7c8;
-$color-secondary-green:          #87dd92;
-$color-secondary-pink:           #f68583;
-$color-secondary-blue-dark:      #374e60;
-$color-ui-greyscale-darkest:     #222;
-$color-ui-greyscale-dark:        #444;
-$color-ui-greyscale-mid:         #999;
-$color-ui-greyscale-light:       #ccc;
-$color-ui-greyscale-lightest:    #f5f6f9;
-$color-ui-yellow:                #fcf67f;
+$color-black:                  #000;
+$color-white:                  #fff;
+
+$color-brand-rpi-red:       #c51d4a;
+$color-brand-rpi-green:     #6ac146;
+$color-brand-cc-green:      #009b3a;
+
+$color-primary-yellow:      #ffb12a;
+$color-primary-orange:      #f68e3b;
+$color-primary-red:         #f3524f;
+$color-primary-violet:      #a76fba;
+$color-primary-navy:        #004881;
+$color-primary-blue:        #41a6c4;
+$color-primary-turquoise:   #10aeb0;
+$color-primary-green:       #53ce63;
+
+$color-secondary-yellow:    #fddd42;
+$color-secondary-orange:    #ffc869;
+$color-secondary-red:       #f68583;
+$color-secondary-violet:    #c29acf;
+$color-secondary-navy:      #4c7fa7;
+$color-secondary-blue:      #87dcf6;
+$color-secondary-turquoise: #58c7c8;
+$color-secondary-green:     #87dd92;
+$color-secondary-pink:      #f68583;
+$color-secondary-blue-dark: #374e60;
+
+$color-ui-black:               #222;
+$color-ui-grey-dark:           #444;
+$color-ui-grey-medium:         #999;
+$color-ui-grey-light:          #ccc;
+$color-ui-grey-lightest:       #eee;
+$color-ui-white:            #f5f6f9;
+$color-ui-yellow:           #fcf67f;
 
 // scss-lint thinks the following "black" and "white" are color literals.
 // They're not, so disabling the rule.
@@ -33,8 +39,8 @@ $color-ui-yellow:                #fcf67f;
 $colors: (
   black:                    $color-black,
   white:                    $color-white,
-  brand-raspberry-pi-red:   $color-brand-raspberry-pi-red,
-  brand-raspberry-pi-green: $color-brand-raspberry-pi-green,
+  brand-raspberry-pi-red:   $color-brand-rpi-red,
+  brand-raspberry-pi-green: $color-brand-rpi-green,
   primary-yellow:           $color-primary-yellow,
   primary-orange:           $color-primary-orange,
   primary-red:              $color-primary-red,
@@ -53,11 +59,12 @@ $colors: (
   secondary-green:          $color-secondary-green,
   secondary-pink:           $color-secondary-pink,
   secondary-blue-dark:      $color-secondary-blue-dark,
-  ui-greyscale-darkest:     $color-ui-greyscale-darkest,
-  ui-greyscale-dark:        $color-ui-greyscale-dark,
-  ui-greyscale-mid:         $color-ui-greyscale-mid,
-  ui-greyscale-light:       $color-ui-greyscale-light,
-  ui-greyscale-lightest:    $color-ui-greyscale-lightest,
+  ui-black:                 $color-ui-black,
+  ui-greyscale-dark:        $color-ui-grey-dark,
+  ui-greyscale-medium:      $color-ui-grey-medium,
+  ui-greyscale-light:       $color-ui-grey-light,
+  ui-greyscale-lightest:    $color-ui-grey-lightest,
+  ui-white:                 $color-ui-white,
   ui-yellow:                $color-ui-yellow
 );
 // scss-lint:enable ColorKeyword

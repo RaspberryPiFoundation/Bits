@@ -16,10 +16,10 @@ $button-type-map:                   (
 
 $button-primary-background-color:   $color-ui-yellow;
 $button-primary-border-color:       $color-ui-yellow;
-$button-primary-color:              $color-ui-greyscale-darkest;
+$button-primary-color:              $color-ui-black;
 
-$button-secondary-border-color:     $color-ui-greyscale-mid;
-$button-secondary-color:            $color-ui-greyscale-mid;
+$button-secondary-border-color:     $color-ui-grey-medium;
+$button-secondary-color:            $color-ui-grey-medium;
 
 .c-button {
   @include iota-type($button-type-map);
