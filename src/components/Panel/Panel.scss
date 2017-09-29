@@ -1,9 +1,13 @@
 @import '../../styles/component-helper';
 
-$panel-border-radius: $border-radius;
-$panel-padding:       $baseline-x2;
+$panel-background-color: $color-white;
+$panel-border-radius:    $border-radius;
+$panel-box-shadow:       $box-shadow;
+$panel-padding:          $baseline-x2;
 
 .c-panel {
-  border-radius: $panel-border-radius;
-  padding:       $panel-padding;
+  background-color: $panel-background-color;
+  border-radius:    $panel-border-radius;
+  box-shadow:       $panel-box-shadow;
+  padding:          $panel-padding;
 }
