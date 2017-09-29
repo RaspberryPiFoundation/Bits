@@ -1,50 +1,64 @@
 @import '../../styles/component-helper';
 
-$button-border-radius:              $border-radius;
-$button-border-width:               $border-width-x3;
-$button-font-weight:                map-get($type-font-weights, sub-heading);
-$button-line-height:                $baseline-x7;
-$button-line-height-md:             $baseline-x8;
-$button-ph:                         0 $baseline-x4;
+$button-background-color:    $color-ui-yellow;
+$button-border-color:        $color-ui-yellow;
+$button-border-radius:       $border-radius;
+$button-border-width:        $border-width-x3;
+$button-color:               $color-ui-black;
+$button-font-weight:         map-get($type-font-weights, sub-heading);
+$button-line-height:         $baseline-x7;
+$button-line-height-md:      $baseline-x8;
+$button-ph:                  0 $baseline-x4;
+$button-transition-duration: $transition-duration-short;
+$button-transition-timing:   $transition-timing-eased;
 // SpaceAfterComma doesn't seem to work in Sass lists
 // scss-lint:disable SpaceAfterComma
-$button-type-map:                   (
+$button-type-map:            (
   null: ($type-sub-heading-font-size,    $button-line-height),
   md:   ($type-sub-heading-font-size-md, $button-line-height-md),
 );
 // scss-lint:enable SpaceAfterComma
 
-$button-primary-background-color:   $color-ui-yellow;
-$button-primary-border-color:       $color-ui-yellow;
-$button-primary-color:              $color-ui-black;
+$button-hover-background-color: $color-ui-grey-dark;
+$button-hover-border-color:     $color-ui-grey-dark;
+$button-hover-color:            $color-white;
 
-$button-secondary-border-color:     $color-ui-grey-medium;
-$button-secondary-color:            $color-ui-grey-medium;
+$button-secondary-border-color: $color-ui-grey-medium;
+$button-secondary-color:        $color-ui-grey-medium;
 
-.c-button {
+.c-button,
+.c-button:visited {
   @include iota-type($button-type-map);
 
-  border-radius:   $button-border-radius;
-  border-style:    solid;
-  border-width:    $button-border-width;
-  cursor:          pointer;
-  display:         inline-block;
-  font-weight:     $button-font-weight;
-  padding:         $button-ph;
-  text-align:      center;
-  text-decoration: none;
-  vertical-align:  middle;
+  background-color:           $button-background-color;
+  border-color:               $button-border-color;
+  border-radius:              $button-border-radius;
+  border-style:               solid;
+  border-width:               $button-border-width;
+  color:                      $button-color;
+  cursor:                     pointer;
+  display:                    inline-block;
+  font-weight:                $button-font-weight;
+  padding:                    $button-ph;
+  text-align:                 center;
+  text-decoration:            none;
+  transition-duration:        $button-transition-duration;
+  transition-property:        background-color, border-color, color;
+  transition-timing-function: $button-transition-timing;
+  vertical-align:             middle;
+
+  &:hover {
+    background-color: $button-hover-background-color;
+    border-color:     $button-hover-border-color;
+    color:            $button-hover-color;
+  }
 }
 
-.c-button--primary {
-  background-color: $button-primary-background-color;
-  border-color:     $button-primary-border-color;
-  color:            $button-primary-color;
-}
-
-.c-button--secondary {
-  border-color: $button-secondary-border-color;
-  color:        $button-secondary-color;
+.c-button--secondary,
+.c-button--secondary:visited {
+  background-color: transparent;
+  border-color:     $button-secondary-border-color;
+  color:            $button-secondary-color;
 }
 
 .c-button--block {
