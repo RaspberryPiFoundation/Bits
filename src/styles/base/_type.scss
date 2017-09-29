@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik:300,500,700');
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: map-get($font-weights, medium);
+}
+
 @mixin type-base {
   @include iota-type($type-base);
   font-weight:   map-get($type-font-weights, base);
