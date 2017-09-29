@@ -1,4 +1,5 @@
 $link-color:                       $color-primary-navy;
+$link-font-weight:                 $font-weight-medium;
 $link-hover-color:                 $color-ui-black;
 $link-visited-color:               $color-primary-violet;
 $link-transition-duration:         $transition-duration-short;
@@ -10,7 +11,7 @@ $link-light-on-dark-visited-color: $color-ui-grey-lightest;
 @mixin link {
   color:                      $link-color;
   cursor:                     pointer;
-  font-weight:                $font-weight-medium;
+  font-weight:                $link-font-weight;
   text-decoration:            underline;
   // Disable text-decoration-skip check as it's still in draft
   // https://drafts.csswg.org/css-text-decor-3/#text-decoration-skip-property
