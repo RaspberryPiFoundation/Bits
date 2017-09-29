@@ -1,7 +1,9 @@
 @import '../../styles/component-helper';
 
-$figure-margin-bottom: map-get($type-margins, '-base');
-$figure-type-map:      $type-caption;
+$figure-caption-color:            $color-ui-white;
+$figure-caption-background-color: $color-ui-grey-dark;
+$figure-margin-bottom:            map-get($type-margins, '-base');
+$figure-type-map:                 $type-caption;
 
 .c-figure {
   margin-bottom: $figure-margin-bottom;
@@ -10,8 +12,13 @@ $figure-type-map:      $type-caption;
 
 .c-figure__caption {
   @include iota-type($figure-type-map);
+
+  background-color: $figure-caption-background-color;
+  color:            $figure-caption-color;
+  display:          block;
 }
 
 .c-figure__image {
+  display:   block;
   max-width: 100%;
 }
