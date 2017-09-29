@@ -48,7 +48,9 @@ $iota-objs-list-gutter-default: $iota-global-gutter-default;
  * Type: Map
  */
 
-$iota-objs-list-gutter-extra: ();
+$iota-objs-list-gutter-extra: (
+  compact: 0,
+);
 
 
 /**
