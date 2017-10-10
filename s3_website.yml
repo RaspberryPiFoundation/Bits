@@ -19,6 +19,7 @@ s3_key_prefix: styles/Bits/<%= ENV['BITS_VERSION'] %>
 #   "assets/*": 6000
 #   "*": 300
 
+gzip: true
 # gzip:
 #   - .html
 #   - .css
@@ -47,7 +48,7 @@ cloudfront_distribution_id: <%= ENV['CLOUDFRONT_DIST_ID'] %>
 
 # cloudfront_invalidate_root: true
 
-cloudfront_wildcard_invalidation: false
+cloudfront_wildcard_invalidation: true
 
 # concurrency_level: 5
 
