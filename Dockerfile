@@ -10,9 +10,9 @@ RUN s3_website install
 RUN mkdir /Bits
 WORKDIR /Bits
 
-RUN npm install gulp -g
+RUN npm install gulp -g --loglevel=warn
 
 ADD package.json /Bits/package.json
-RUN npm install --dev
+RUN npm install --dev --loglevel=warn
 
 COPY . /Bits
