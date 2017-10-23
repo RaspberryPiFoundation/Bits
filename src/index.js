@@ -5,5 +5,5 @@
 export { default as Link } from './components/Link'
 export { default as Button } from './components/Button'
 
-import * as RaspberryPiBits from '.'
-export default RaspberryPiBits
+// import * as RaspberryPiBits from './components'
+// export default RaspberryPiBits
