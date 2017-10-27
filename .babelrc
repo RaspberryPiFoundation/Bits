@@ -1,17 +1,12 @@
 {
-  "plugins": [
-    "external-helpers",
-    "transform-object-rest-spread"
-  ],
   "presets": [
-    [
-      "env",
-      {
-        "modules": false
-      }
-    ],
-    [
-      "react"
-    ],
+    ["env", {
+      "modules": false
+    }],
+    "stage-0",
+    "react"
+  ],
+  "plugins": [
+    "external-helpers"
   ]
 }
