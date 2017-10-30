@@ -1,4 +1,20 @@
-Uses `linklocal`
+# Bits
+
+## Deployment to S3 & Cloudfront.
+
+Includes a new Docker Compose based dev env.
+
+Deploys to: https://static.raspberrypi.org/styles/Bits/<version> via:
+
+    docker-compose run web ./deploy.sh
+
+(where <version> is taken from package.json & ENV vars are in .env which needs to be created from .env.example)
+
+eg: https://static.raspberrypi.org/styles/Bits/1.0.0/Bits.min.css
+
+----
+
+### Dev Notes
 
 * Using iota-react for all the super low-level stuff - all colors,
   paddings/margins/font families/text styles/grid system all done for us
