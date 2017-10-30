@@ -1,0 +1,11 @@
+version: '2'
+services:
+  web:
+    build: .
+    command: gulp watch
+    volumes:
+      - .:/Bits
+      - ./node_modules:/Bits/node_modules
+    ports:
+      - "5000:5000"
+    env_file: .env
