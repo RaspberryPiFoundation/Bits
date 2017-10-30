@@ -1,0 +1,9 @@
+@import '../../../styles/component-helper';
+
+$input-group-margin-bottom: $baseline-x4;
+
+.c-input-group {
+  display:       block;
+  margin-bottom: $input-group-margin-bottom;
+  width:         100%;
+}

@@ -1,3 +1,35 @@
 @import '../../../styles/component-helper';
 
-.c-input {}
+$input-background-color:    $color-ui-white;
+$input-border-color:        $color-ui-grey-light;
+$input-border-radius:       $border-radius;
+$input-color:               $color-ui-grey-dark;
+$input-padding:             $baseline;
+$input-type-map:            $type-base;
+
+$input-placeholder-color:   $color-ui-grey-medium;
+
+$input--focus-border-color: #fff;
+$input--focus-color:        $color-ui-black;
+
+.c-input {
+  @include iota-type($input-type-map);
+
+  background-color: $input-background-color;
+  border-color:     $input-border-color;
+  border-radius:    $input-border-radius;
+  border-style:     solid;
+  color:            $input-color;
+  display:          block;
+  padding:          $input-padding;
+  width:            100%;
+
+  &::placeholder {
+    color: $input-placeholder-color;
+  }
+
+  &:focus {
+    border-color: $input--focus-border-color;
+    color:        $input--focus-color;
+  }
+}
