@@ -821,19 +821,19 @@ h6 {
 
 .c-input {
   font-size: 1.6rem;
-  line-height: 1.5;
+  line-height: 35px;
   background-color: #f5f6f9;
   border-color: #ccc;
   border-radius: 5px;
   border-style: solid;
   color: #444;
   display: block;
-  padding: 5px;
+  padding: 0 5px;
   width: 100%; }
   @media screen and (min-width: 768px) {
     .c-input {
       font-size: 1.8rem;
-      line-height: 1.5; } }
+      line-height: 40px; } }
   .c-input::-webkit-input-placeholder {
     color: #999; }
   .c-input:-ms-input-placeholder {
