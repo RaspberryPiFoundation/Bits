@@ -44,15 +44,12 @@
     "rollup-plugin-node-resolve": "^3.0.0",
     "rollup-plugin-sass": "^0.5.3"
   },
-  "files": [
-    "lib",
-    "src/styles"
-  ],
+  "files": ["lib", "src/styles"],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c",
     "start": "rollup -c -w",
-    "prepublish": "npm run build",
+    "prepublishOnly": "npm run build",
     "predeploy": "cd example && npm install && npm run build",
     "deploy": "gh-pages -d example/build",
     "gulp": "gulp"
