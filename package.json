@@ -36,6 +36,7 @@
     "gulp-strip-css-comments": "^1.2.0",
     "gulp-uglify": "^3.0.0",
     "iotacss": "^1.4.0",
+    "prettier": "^1.7.4",
     "react-router-dom": "^4.2.2",
     "rollup": "^0.50.0",
     "rollup-plugin-babel": "^3.0.2",
