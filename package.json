@@ -16,7 +16,6 @@
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
-    "classnames": "^2.2.5",
     "eslint": "^4.9.0",
     "eslint-config-prettier": "^2.6.0",
     "eslint-plugin-prettier": "^2.3.1",
@@ -37,14 +36,16 @@
     "gulp-uglify": "^3.0.0",
     "iotacss": "^1.4.0",
     "prettier": "^1.7.4",
-    "react-router-dom": "^4.2.2",
     "rollup": "^0.50.0",
     "rollup-plugin-babel": "^3.0.2",
     "rollup-plugin-commonjs": "^8.2.1",
     "rollup-plugin-node-resolve": "^3.0.0",
     "rollup-plugin-sass": "^0.5.3"
   },
-  "files": ["lib", "src/styles"],
+  "files": [
+    "lib",
+    "src/styles"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c",
@@ -59,8 +60,10 @@
   "jsnext:main": "lib/index.es.js",
   "dependencies": {},
   "peerDependencies": {
+    "classnames": "^2.2.5",
     "react": "^0.14.9 || ^15.0.0 || ^16.0.0",
     "react-dom": "^0.14.9 || ^15.0.0 || ^16.0.0",
+    "react-router-dom": "^4.2.2",
     "prop-types": "^15.5.4"
   }
 }
