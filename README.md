@@ -37,6 +37,18 @@ You're now ready to start the development server and use raspberry-pi-bits in yo
 
 Now, anytime you make a change to your component in src/ or to the example application's example/src, create-react-app will live-reload your local dev server so you can iterate on your component in real-time.
 
+## Usage in a React App
+
+Bits requires the following peer dependencies to be installed in the host application:
+
+```
+classnames: ^2.2.5
+react: ^0.14.9 || ^15.0.0 || ^16.0.0
+react-dom: ^0.14.9 || ^15.0.0 || ^16.0.0
+react-router-dom: ^4.2.2
+prop-types: ^15.5.4
+```
+
 ----
 
 ### Dev Notes
