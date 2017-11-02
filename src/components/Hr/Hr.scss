@@ -5,8 +5,8 @@ $hr-margin:    0 0 map-get($spacing-extra, '-x8');
 $hr-thickness: $border-width-x2;
 
 .c-hr {
-  border:           0;
   background-color: $hr-color;
+  border-width:     0;
   height:           $hr-thickness;
   margin:           $hr-margin;
 }

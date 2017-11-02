@@ -1,14 +1,23 @@
-$spacing-default: $baseline;
+$spacing:     $baseline;
+$spacing-x2:  $baseline-x2;
+$spacing-x3:  $baseline-x3;
+$spacing-x4:  $baseline-x4;
+$spacing-x5:  $baseline-x5;
+$spacing-x6:  $baseline-x6;
+$spacing-x7:  $baseline-x7;
+$spacing-x8:  $baseline-x8;
+$spacing-x9:  $baseline-x9;
+$spacing-x10: $baseline-x10;
 
 $spacing-extra: (
   -x0:  0,
-  -x2:  $baseline-x2,
-  -x3:  $baseline-x3,
-  -x4:  $baseline-x4,
-  -x5:  $baseline-x5,
-  -x6:  $baseline-x6,
-  -x7:  $baseline-x7,
-  -x8:  $baseline-x8,
-  -x9:  $baseline-x9,
-  -x10: $baseline-x10,
+  -x2:  $spacing-x2,
+  -x3:  $spacing-x3,
+  -x4:  $spacing-x4,
+  -x5:  $spacing-x5,
+  -x6:  $spacing-x6,
+  -x7:  $spacing-x7,
+  -x8:  $spacing-x8,
+  -x9:  $spacing-x9,
+  -x10: $spacing-x10,
 );
