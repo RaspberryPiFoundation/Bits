@@ -2,6 +2,11 @@
   "name": "raspberry-pi-bits",
   "version": "1.0.0",
   "description": "The Raspberry Pi Front End Pattern Library",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RaspberryPiFoundation/Bits.git"
+  },
   "engines": {
     "node": "8.5.x"
   },
@@ -42,10 +47,7 @@
     "rollup-plugin-node-resolve": "^3.0.0",
     "rollup-plugin-sass": "^0.5.3"
   },
-  "files": [
-    "lib",
-    "src/styles"
-  ],
+  "files": ["lib", "src/styles"],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c",
