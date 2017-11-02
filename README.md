@@ -12,6 +12,31 @@ Deploys to: https://static.raspberrypi.org/styles/Bits/<version> via:
 
 eg: https://static.raspberrypi.org/styles/Bits/1.0.0/Bits.min.css
 
+## Local Development
+
+**Taken from the README of https://github.com/transitive-bullshit/react-modern-library-boilerplate**
+
+# Setup this repo for local linking
+
+In the root of this directory, run the following:
+
+    npm link # the link commands are important for local development
+    npm install # disregard any warnings about missing peer dependencies
+    npm start # runs rollup with watch flag
+
+# Consume this repo in your local slash-learning-ui
+
+In the root of the slash-learning-ui repo, run the following
+
+    npm link raspberry-pi-bits
+    npm install
+    
+You're now ready to start the development server and use raspberry-pi-bits in your React components.
+
+    npm run dev # runs create-react-app hot-reload dev server
+
+Now, anytime you make a change to your component in src/ or to the example application's example/src, create-react-app will live-reload your local dev server so you can iterate on your component in real-time.
+
 ----
 
 ### Dev Notes
