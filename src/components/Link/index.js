@@ -1,15 +1,23 @@
+import { Link as RouterLink } from 'react-router-dom'
 import classnames from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { Link as RouterLink } from 'react-router-dom'
 
 import './Link.scss'
 
-const Link = ({ children, className, to, ...props }) => {
-  const classes = classnames('c-link', className)
+const Link = ({ children, className, href, routeTo, ...props }) => {
+  const classNames = classnames('c-link', className)
+
+  if (href) {
+    return (
+      <a {...props} className={classNames} href={href}>
+        {children}
+      </a>
+    )
+  }
 
   return (
-    <RouterLink className={classes} to={to} {...props}>
+    <RouterLink {...props} className={classNames} to={routeTo}>
       {children}
     </RouterLink>
   )
@@ -17,7 +25,9 @@ const Link = ({ children, className, to, ...props }) => {
 
 Link.propTypes = {
   className: PropTypes.string,
-  to: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
+  href: PropTypes.string,
+  routeTo: PropTypes.string,
 }
 
 export default Link
