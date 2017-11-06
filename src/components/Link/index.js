@@ -5,29 +5,34 @@ import React from 'react'
 
 import './Link.scss'
 
-const Link = ({ children, className, href, routeTo, ...props }) => {
+const Link = ({ children, className, to, ...props }) => {
   const classNames = classnames('c-link', className)
 
-  if (href) {
-    return (
-      <a {...props} className={classNames} href={href}>
-        {children}
-      </a>
-    )
-  }
+  const anchorLink = (
+    <a {...props} className={classNames} href={to}>
+      {children}
+    </a>
+  )
 
-  return (
-    <RouterLink {...props} className={classNames} to={routeTo}>
+  const isExternal = () => !/^https?:\/\//i.test(to)
+
+  const routerLink = (
+    <RouterLink {...props} className={classNames} to={to}>
       {children}
     </RouterLink>
   )
+
+  if (isExternal()) {
+    return anchorLink
+  }
+
+  return routerLink
 }
 
 Link.propTypes = {
   className: PropTypes.string,
   children: PropTypes.node.isRequired,
-  href: PropTypes.string,
-  routeTo: PropTypes.string,
+  to: PropTypes.string.isRequired,
 }
 
 export default Link
