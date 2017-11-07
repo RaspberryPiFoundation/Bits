@@ -46,9 +46,9 @@ const Pagination = ({
 
 Pagination.propTypes = {
   className: PropTypes.string,
-  linkNextDestination: PropTypes.string.isRequired,
+  linkNextHref: PropTypes.string.isRequired,
   linkNextLabel: PropTypes.string.isRequired,
-  linkPrevDestination: PropTypes.string.isRequired,
+  linkPrevHref: PropTypes.string.isRequired,
   linkPrevLabel: PropTypes.string.isRequired,
   pageCurrent: PropTypes.number.isRequired,
   pageMax: PropTypes.number.isRequired,
