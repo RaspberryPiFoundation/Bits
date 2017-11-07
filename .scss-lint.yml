@@ -16,6 +16,8 @@ linters:
   LengthVariable:
     enabled: true
     allowed_lengths: ["0", 100%, 100vh, 100vw]
+  NameFormat:
+    enabled: false
   PrivateNamingConvention:
     enabled: true
   SelectorFormat:
