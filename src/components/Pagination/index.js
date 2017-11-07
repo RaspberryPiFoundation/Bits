@@ -21,7 +21,7 @@ const Pagination = ({
     'c-pagination__link--next': true,
     'c-pagination__link--disabled': pageCurrent === pageMax,
   })
-  const PrevLinkclassNames = classnames({
+  const prevLinkclassNames = classnames({
     'c-pagination__link': true,
     'c-pagination__link--prev': true,
     'c-pagination__link--disabled': pageCurrent === 1,
@@ -29,7 +29,7 @@ const Pagination = ({
 
   return (
     <div className={classNames}>
-      <Link className={PrevLinkclassNames} to={linkPrevHref}>
+      <Link className={prevLinkclassNames} to={linkPrevHref}>
         <span className="u-hidden">{linkPrevLabel}</span>
       </Link>
 
