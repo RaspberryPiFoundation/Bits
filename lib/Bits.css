@@ -28,6 +28,25 @@
 
 
 @import url("https://fonts.googleapis.com/css?family=Rubik:300,500,700");
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,500,700");
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,500,700");
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,500,700");
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,500,700");
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,500,700");
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,500,700");
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,500,700");
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,500,700");
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,500,700");
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,500,700");
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,500,700");
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,500,700");
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,500,700");
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,500,700");
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,500,700");
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,500,700");
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,500,700");
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,500,700");
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,500,700");
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -434,6 +453,14 @@ h6 {
 
 
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500; }
+
 .c-button,
 .c-button:visited {
   font-size: 1.6rem;
@@ -491,6 +518,14 @@ h6 {
 
 
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500; }
+
 .c-card {
   background-color: #fff;
   border-radius: 5px;
@@ -510,13 +545,13 @@ h6 {
 .c-card__content {
   padding: 20px; }
 
-.c-card__title {
+.c-card__heading {
   font-size: 1.6rem;
   line-height: 1.5;
   font-weight: 500;
   margin-bottom: 1em; }
   @media screen and (min-width: 768px) {
-    .c-card__title {
+    .c-card__heading {
       font-size: 1.8rem;
       line-height: 1.5; } }
 
@@ -527,6 +562,7 @@ h6 {
 .c-card--link:visited {
   color: #222;
   cursor: pointer;
+  font-weight: normal;
   text-decoration: none; }
 
 
@@ -541,6 +577,14 @@ h6 {
 
 
 
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500; }
 
 .c-figure {
   margin-bottom: 1em;
@@ -575,6 +619,14 @@ h6 {
 
 
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500; }
+
 .c-hr {
   background-color: #eee;
   border-width: 0;
@@ -594,6 +646,14 @@ h6 {
 
 
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500; }
+
 .c-light-on-dark {
   color: #eee; }
 
@@ -609,6 +669,14 @@ h6 {
 
 
 
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500; }
 
 .c-link {
   color: #004881;
@@ -648,6 +716,91 @@ h6 {
 
 
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500; }
+
+.c-projects-pagination {
+  color: #999;
+  font-weight: 500;
+  margin-bottom: rpi-spacing-unit(2);
+  text-align: center; }
+  @media screen and (min-width: 576px) {
+    .c-projects-pagination {
+      margin-bottom: rpi-spacing-unit(4); } }
+  @media screen and (min-width: 768px) {
+    .c-projects-pagination {
+      margin-bottom: rpi-spacing-unit(6); } }
+
+.c-projects-pagination__label {
+  display: inline-block;
+  line-height: rpi-spacing-unit(5);
+  padding: 0 rpi-spacing-unit(3);
+  vertical-align: top; }
+
+.c-projects-pagination__link {
+  background-color: #f5f6f9;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: rpi-spacing-unit(2) rpi-spacing-unit(2);
+  border-color: #999;
+  border-radius: 100%;
+  border-style: solid;
+  border-width: 2px;
+  cursor: pointer;
+  height: rpi-spacing-unit(5);
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  vertical-align: top;
+  width: rpi-spacing-unit(5); }
+  .c-projects-pagination__link:hover {
+    background-color: #999; }
+  .c-projects-pagination__link:disabled {
+    background-color: #ccc;
+    border-color: #ccc;
+    pointer-events: none; }
+
+.c-projects-pagination__link--next {
+  background-image: url("./images/next.svg");
+  background-position: right 9px center; }
+  .c-projects-pagination__link--next:hover {
+    background-image: url("./images/next-hover.svg"); }
+  .c-projects-pagination__link--next:disabled {
+    background-image: url("./images/next-disabled.svg"); }
+
+.c-projects-pagination__link--prev {
+  background-image: url("./images/prev.svg");
+  background-position: left 9px center; }
+  .c-projects-pagination__link--prev:hover {
+    background-image: url("./images/prev-hover.svg"); }
+  .c-projects-pagination__link--prev:disabled {
+    background-image: url("./images/prev-disabled.svg"); }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500; }
+
 .c-panel {
   background-color: #fff;
   border-radius: 5px;
@@ -667,6 +820,14 @@ h6 {
 
 
 
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500; }
 
 .c-slice {
   background-attachment: scroll;
@@ -697,6 +858,14 @@ h6 {
 
 
 
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500; }
 
 .c-wysiwyg a {
   color: #004881;
@@ -806,6 +975,13 @@ h6 {
 
 
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500; }
 
 
 
@@ -818,6 +994,15 @@ h6 {
 
 
 
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500; }
 
 .c-input {
   font-size: 1.6rem;
@@ -838,6 +1023,8 @@ h6 {
     color: #999; }
   .c-input:-ms-input-placeholder {
     color: #999; }
+  .c-input::-ms-input-placeholder {
+    color: #999; }
   .c-input::placeholder {
     color: #999; }
   .c-input:focus {
@@ -857,6 +1044,14 @@ h6 {
 
 
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500; }
+
 .c-input-group {
   display: block;
   margin-bottom: 20px;
@@ -874,6 +1069,14 @@ h6 {
 
 
 
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500; }
 
 .c-type-base {
   font-size: 1.6rem;
@@ -898,6 +1101,14 @@ h6 {
 
 
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500; }
+
 .c-type-caption {
   font-size: 1.4rem;
   line-height: 1.5;
@@ -920,6 +1131,14 @@ h6 {
 
 
 
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500; }
 
 .c-type-display {
   font-size: 2rem;
@@ -944,6 +1163,14 @@ h6 {
 
 
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500; }
+
 .c-type-display-large {
   font-size: 2.4rem;
   line-height: 1.5;
@@ -967,6 +1194,14 @@ h6 {
 
 
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500; }
+
 .c-type-heading {
   font-size: 2rem;
   line-height: 1.5;
@@ -989,6 +1224,14 @@ h6 {
 
 
 
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500; }
 
 .c-type-sub-heading {
   font-size: 1.6rem;
