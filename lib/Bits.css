@@ -525,6 +525,65 @@ h5,
 h6 {
   font-weight: 500; }
 
+.c-card {
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 0.3rem 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 0.3rem 0 rgba(0, 0, 0, 0.25);
+  display: block;
+  margin-bottom: 30px;
+  overflow: hidden;
+  -webkit-transition: -webkit-box-shadow 100ms ease-in-out;
+  transition: -webkit-box-shadow 100ms ease-in-out;
+  transition: box-shadow 100ms ease-in-out;
+  transition: box-shadow 100ms ease-in-out, -webkit-box-shadow 100ms ease-in-out; }
+
+.c-card__image {
+  width: 100%; }
+
+.c-card__content {
+  padding: 20px; }
+
+.c-card__title {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-weight: 500;
+  margin-bottom: 1em; }
+  @media screen and (min-width: 768px) {
+    .c-card__title {
+      font-size: 1.8rem;
+      line-height: 1.5; } }
+
+.c-card--link,
+.c-card--link:active,
+.c-card--link:hover,
+.c-card--link:link,
+.c-card--link:visited {
+  color: #222;
+  cursor: pointer;
+  text-decoration: none; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500; }
+
 .c-figure {
   margin-bottom: 1em;
   text-align: center; }
@@ -903,27 +962,6 @@ h6 {
     color: #fff; }
   .c-wysiwyg--light-on-dark a:visited {
     color: #eee; }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 500; }
 
 
 
