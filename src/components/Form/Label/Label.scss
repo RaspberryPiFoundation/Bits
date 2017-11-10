@@ -1,0 +1,10 @@
+@import '../../../styles/component-helper';
+
+$label-font-weight:   $font-weight-medium;
+$label-margin-bottom: $baseline;
+
+.c-label {
+  display:       block;
+  font-weight:   $label-font-weight;
+  margin-bottom: $label-margin-bottom;
+}

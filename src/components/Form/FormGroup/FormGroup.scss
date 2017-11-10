@@ -1,0 +1,9 @@
+@import '../../../styles/component-helper';
+
+$form-group-margin-bottom: $baseline-x4;
+
+.c-form-group {
+  display:       block;
+  margin-bottom: $form-group-margin-bottom;
+  width:         100%;
+}

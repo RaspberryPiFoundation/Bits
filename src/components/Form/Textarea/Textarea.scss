@@ -1,0 +1,51 @@
+@import '../../../styles/component-helper';
+
+$textarea-background-color:    $color-ui-white;
+$textarea-border-color:        $color-ui-grey-light;
+$textarea-border-radius:       $border-radius;
+$textarea-border-width:        $border-width-x2;
+$textarea-color:               $color-ui-grey-dark;
+$textarea-font-family:         $font-family-sans-serif;
+$textarea-font-weight:         $font-weight-light;
+$textarea-height:              $spacing * 30;
+$textarea-line-height:         $spacing-x7;
+$textarea-line-height-md:      $spacing-x8;
+$textarea-padding:             0 $spacing-x2;
+$textarea-placeholder-color:   $color-ui-grey-medium;
+
+$textarea--focus-border-color: $color-ui-grey-medium;
+$textarea--focus-color:        $color-ui-black;
+// SpaceAfterComma doesn't seem to work in Sass lists
+// scss-lint:disable SpaceAfterComma
+$textarea-type-map:            (
+  null: ($type-base-font-size,    $textarea-line-height),
+  md:   ($type-base-font-size-md, $textarea-line-height-md),
+);
+// scss-lint:enable SpaceAfterComma
+
+.c-textarea {
+  @include iota-type($textarea-type-map);
+
+  background-color: $textarea-background-color;
+  border-color:     $textarea-border-color;
+  border-radius:    $textarea-border-radius;
+  border-style:     solid;
+  border-width:     $textarea-border-width;
+  color:            $textarea-color;
+  display:          block;
+  font-family:      $textarea-font-family;
+  font-weight:      $textarea-font-weight;
+  height:           $textarea-height;
+  padding:          $textarea-padding;
+  width:            100%;
+
+  &::placeholder {
+    color: $textarea-placeholder-color;
+  }
+
+  &:focus {
+    border-color: $textarea--focus-border-color;
+    color:        $textarea--focus-color;
+    outline:      none;
+  }
+}

@@ -3,13 +3,16 @@
 $input-background-color:    $color-ui-white;
 $input-border-color:        $color-ui-grey-light;
 $input-border-radius:       $border-radius;
+$input-border-width:        $border-width-x2;
 $input-color:               $color-ui-grey-dark;
+$input-font-family:         $font-family-sans-serif;
+$input-font-weight:         $font-weight-light;
 $input-line-height:         $spacing-x7;
 $input-line-height-md:      $spacing-x8;
-$input-padding:             0 $spacing;
+$input-padding:             0 $spacing-x2;
 $input-placeholder-color:   $color-ui-grey-medium;
 
-$input--focus-border-color: #fff;
+$input--focus-border-color: $color-ui-grey-medium;
 $input--focus-color:        $color-ui-black;
 // SpaceAfterComma doesn't seem to work in Sass lists
 // scss-lint:disable SpaceAfterComma
@@ -26,8 +29,11 @@ $input-type-map:            (
   border-color:     $input-border-color;
   border-radius:    $input-border-radius;
   border-style:     solid;
+  border-width:     $input-border-width;
   color:            $input-color;
   display:          block;
+  font-family:      $input-font-family;
+  font-weight:      $input-font-weight;
   padding:          $input-padding;
   width:            100%;
 
@@ -38,5 +44,6 @@ $input-type-map:            (
   &:focus {
     border-color: $input--focus-border-color;
     color:        $input--focus-color;
+    outline:      none;
   }
 }

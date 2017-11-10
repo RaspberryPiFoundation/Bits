@@ -1,0 +1,61 @@
+@import '../../../styles/component-helper';
+
+$select-background-color:    $color-ui-white;
+$select-background-position: right $spacing-x2 center;
+$select-border-color:        $color-ui-grey-light;
+$select-border-radius:       $border-radius;
+$select-border-width:        $border-width-x2;
+$select-color:               $color-ui-grey-dark;
+$select-font-family:         $font-family-sans-serif;
+$select-font-weight:         $font-weight-light;
+$select-height:              $spacing-x9;
+$select-line-height:         $spacing-x7;
+$select-line-height-md:      $spacing-x8;
+$select-padding:             0 $spacing-x2;
+$select-placeholder-color:   $color-ui-grey-medium;
+
+$select--focus-border-color: $color-ui-grey-medium;
+$select--focus-color:        $color-ui-black;
+// SpaceAfterComma doesn't seem to work in Sass lists
+// scss-lint:disable SpaceAfterComma
+$select-type-map:            (
+  null: ($type-base-font-size,    $select-line-height),
+  md:   ($type-base-font-size-md, $select-line-height-md),
+);
+// scss-lint:enable SpaceAfterComma
+
+.c-select {
+  @include iota-type($select-type-map);
+
+  appearance:          none;
+  background-color:    $select-background-color;
+  background-image:    url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTVweCIgaGVpZ2h0PSI5cHgiIHZpZXdCb3g9IjAgMCAxNSA5IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogIDxnIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTMzOC4wMDAwMDAsIC0xNy4wMDAwMDApIiBmaWxsPSIjQ0NDQ0NDIj4KICAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzQ2LjAwMDAwMCwgMjAuMDAwMDAwKSByb3RhdGUoLTkwLjAwMDAwMCkgdHJhbnNsYXRlKC0zNDYuMDAwMDAwLCAtMjAuMDAwMDAwKSB0cmFuc2xhdGUoMzM4LjAwMDAwMCwgMTIuMDAwMDAwKSI+CiAgICAgICAgPHBhdGgKICAgICAgICAgIGQ9Ik02Ljg1MjI3NjI1LDEwLjM2NjAwMTcgTDYuODUyMjc2MjUsMy40NjQwNDA5NiBDNi44NTIyNzYyNSwyLjc3MDk3Nzc0IDYuMjkwNDM3NTEsMi4yMDkxMzkgNS41OTczNzQyOSwyLjIwOTEzOSBMNS41OTczNzQyOSwyLjIwOTEzOSBMNS41OTczNzQyOSwyLjIwOTEzOSBDNC45MDQzMTEwOCwyLjIwOTEzOSA0LjM0MjQ3MjMzLDIuNzcwOTc3NzQgNC4zNDI0NzIzMywzLjQ2NDA0MDk2IEw0LjM0MjQ3MjMzLDMuNDY0MDQwOTYgTDQuMzQyNDcyMzMsMTEuNjIwOTAzNyBDNC4zNDI0NzIzMywxMS45Njc0MzUzIDQuNDgyOTMyMDIsMTIuMjgxMTYwOCA0LjcxMDAyNDYxLDEyLjUwODI1MzQgQzQuOTM3MTE3MiwxMi43MzUzNDYgNS4yNTA4NDI2OSwxMi44NzU4MDU3IDUuNTk3Mzc0MjksMTIuODc1ODA1NyBMNS41OTczNzQyOSwxMi44NzU4MDU3IEwxMy43NTQyMzcsMTIuODc1ODA1NyBDMTQuNDQ3MzAwMywxMi44NzU4MDU3IDE1LjAwOTEzOSwxMi4zMTM5NjY5IDE1LjAwOTEzOSwxMS42MjA5MDM3IEMxNS4wMDkxMzksMTAuOTI3ODQwNSAxNC40NDczMDAzLDEwLjM2NjAwMTcgMTMuNzU0MjM3LDEwLjM2NjAwMTcgTDYuODUyMjc2MjUsMTAuMzY2MDAxNyBaIgogICAgICAgICAgaWQ9IkNvbWJpbmVkLVNoYXBlIgogICAgICAgICAgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOS42NzU4MDYsIDcuNTQyNDcyKSByb3RhdGUoLTMxNS4wMDAwMDApIHRyYW5zbGF0ZSgtOS42NzU4MDYsIC03LjU0MjQ3MikgIj48L3BhdGg+CiAgICAgIDwvZz4KICAgIDwvZz4KICA8L2c+Cjwvc3ZnPgo=');
+  background-position: $select-background-position;
+  background-repeat:   no-repeat;
+  border-color:        $select-border-color;
+  border-radius:       $select-border-radius;
+  border-style:        solid;
+  border-width:        $select-border-width;
+  color:               $select-color;
+  cursor:              pointer;
+  display:             block;
+  font-family:         $select-font-family;
+  font-weight:         $select-font-weight;
+  height:              $select-height;
+  padding:             $select-padding;
+  width:               100%;
+
+  &:focus {
+    border-color: $select--focus-border-color;
+    color:        $select--focus-color;
+    outline:      none;
+  }
+
+  &:hover {
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTVweCIgaGVpZ2h0PSI5cHgiIHZpZXdCb3g9IjAgMCAxNSA5IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogIDxnIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTMzOC4wMDAwMDAsIC0xNy4wMDAwMDApIiBmaWxsPSIjMjIyMjIyIj4KICAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzQ2LjAwMDAwMCwgMjAuMDAwMDAwKSByb3RhdGUoLTkwLjAwMDAwMCkgdHJhbnNsYXRlKC0zNDYuMDAwMDAwLCAtMjAuMDAwMDAwKSB0cmFuc2xhdGUoMzM4LjAwMDAwMCwgMTIuMDAwMDAwKSI+CiAgICAgICAgPHBhdGgKICAgICAgICAgIGQ9Ik02Ljg1MjI3NjI1LDEwLjM2NjAwMTcgTDYuODUyMjc2MjUsMy40NjQwNDA5NiBDNi44NTIyNzYyNSwyLjc3MDk3Nzc0IDYuMjkwNDM3NTEsMi4yMDkxMzkgNS41OTczNzQyOSwyLjIwOTEzOSBMNS41OTczNzQyOSwyLjIwOTEzOSBMNS41OTczNzQyOSwyLjIwOTEzOSBDNC45MDQzMTEwOCwyLjIwOTEzOSA0LjM0MjQ3MjMzLDIuNzcwOTc3NzQgNC4zNDI0NzIzMywzLjQ2NDA0MDk2IEw0LjM0MjQ3MjMzLDMuNDY0MDQwOTYgTDQuMzQyNDcyMzMsMTEuNjIwOTAzNyBDNC4zNDI0NzIzMywxMS45Njc0MzUzIDQuNDgyOTMyMDIsMTIuMjgxMTYwOCA0LjcxMDAyNDYxLDEyLjUwODI1MzQgQzQuOTM3MTE3MiwxMi43MzUzNDYgNS4yNTA4NDI2OSwxMi44NzU4MDU3IDUuNTk3Mzc0MjksMTIuODc1ODA1NyBMNS41OTczNzQyOSwxMi44NzU4MDU3IEwxMy43NTQyMzcsMTIuODc1ODA1NyBDMTQuNDQ3MzAwMywxMi44NzU4MDU3IDE1LjAwOTEzOSwxMi4zMTM5NjY5IDE1LjAwOTEzOSwxMS42MjA5MDM3IEMxNS4wMDkxMzksMTAuOTI3ODQwNSAxNC40NDczMDAzLDEwLjM2NjAwMTcgMTMuNzU0MjM3LDEwLjM2NjAwMTcgTDYuODUyMjc2MjUsMTAuMzY2MDAxNyBaIgogICAgICAgICAgaWQ9IkNvbWJpbmVkLVNoYXBlIgogICAgICAgICAgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOS42NzU4MDYsIDcuNTQyNDcyKSByb3RhdGUoLTMxNS4wMDAwMDApIHRyYW5zbGF0ZSgtOS42NzU4MDYsIC03LjU0MjQ3MikgIj48L3BhdGg+CiAgICAgIDwvZz4KICAgIDwvZz4KICA8L2c+Cjwvc3ZnPgo=');
+  }
+
+  &::-ms-expand {
+    display: none;
+  }
+}
