@@ -9,7 +9,6 @@ import './Card.scss'
 const Card = ({
   children,
   className,
-  gridColumn,
   heading,
   imageAlt,
   imageSrc,
@@ -17,11 +16,9 @@ const Card = ({
   to,
   ...props
 }) => {
-  const isGridColumn = () => gridColumn
   const isLink = () => to !== null
 
   const classNames = classnames('c-card', className, {
-    'c-card--col': isGridColumn(),
     'c-card--link': isLink(),
   })
 
@@ -76,7 +73,6 @@ const Card = ({
 Card.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
-  gridColumn: PropTypes.bool,
   heading: PropTypes.string,
   imageAlt: PropTypes.string,
   imageSrc: PropTypes.string,

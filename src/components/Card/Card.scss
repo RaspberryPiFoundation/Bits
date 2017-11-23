@@ -5,7 +5,6 @@ $card-border-radius:       $border-radius;
 $card-box-shadow:          $box-shadow;
 $card-content-p:           $baseline-x4;
 $card-link-color:          $color-ui-black;
-$card-mb:                  $baseline-x6;
 $card-transition-duration: $transition-duration-short;
 $card-transition-timing:   $transition-timing-eased;
 
@@ -14,7 +13,6 @@ $card-transition-timing:   $transition-timing-eased;
   border-radius:    $card-border-radius;
   box-shadow:       $card-box-shadow;
   display:          block;
-  margin-bottom:    $card-mb;
   overflow:         hidden;
   transition:       box-shadow $card-transition-duration $card-transition-timing;
 }
@@ -27,8 +25,13 @@ $card-transition-timing:   $transition-timing-eased;
   padding: $card-content-p;
 }
 
+$c-card__heading-margin-bottom: $type-sub-heading-margin-bottom;
+
 .c-card__heading {
   @include type-sub-heading;
+
+  display:       block;
+  margin-bottom: $c-card__heading-margin-bottom;
 }
 
 .c-card--link,
@@ -39,8 +42,4 @@ $card-transition-timing:   $transition-timing-eased;
   color:           $card-link-color;
   cursor:          pointer;
   text-decoration: none;
-}
-
-.c-card--col {
-  height: 100%;
 }
