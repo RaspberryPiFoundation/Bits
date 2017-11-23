@@ -5,8 +5,13 @@ import React from 'react'
 
 import './Link.scss'
 
-const Link = ({ children, className, to, ...props }) => {
-  const classNames = classnames('c-link', className)
+const Link = ({ children, className, excludeClassname, to, ...props }) => {
+  const classNames = classnames(
+    {
+      'c-link': !excludeClassname,
+    },
+    className,
+  )
 
   const anchorLink = (
     <a {...props} className={classNames} href={to}>
@@ -32,6 +37,7 @@ const Link = ({ children, className, to, ...props }) => {
 Link.propTypes = {
   className: PropTypes.string,
   children: PropTypes.node.isRequired,
+  excludeClassname: PropTypes.bool,
   to: PropTypes.string.isRequired,
 }
 
