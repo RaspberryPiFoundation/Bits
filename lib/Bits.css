@@ -142,12 +142,12 @@ html {
 body {
   font-size: 1.6rem;
   line-height: 1.5;
-  background-color: #eee;
+  background-color: #f5f6f9;
   color: #222;
   font-display: swap;
   font-family: "Rubik", serif;
   font-weight: 300;
-  min-height: 100%;
+  min-height: 100vh;
   padding: constant(safe-area-inset-top) constant(safe-area-inset-right) constant(safe-area-inset-bottom) constant(safe-area-inset-left);
   position: relative;
   text-rendering: optimizeLegibility;
@@ -198,13 +198,13 @@ h6 {
       margin-left: -4%; } }
   @media screen and (min-width: 768px) {
     .o-grid {
-      margin-left: -4%; } }
+      margin-left: -3%; } }
   @media screen and (min-width: 992px) {
     .o-grid {
-      margin-left: -4%; } }
+      margin-left: -2.5%; } }
   @media screen and (min-width: 1200px) {
     .o-grid {
-      margin-left: -4%; } }
+      margin-left: -2%; } }
   .o-grid > .o-grid__col {
     padding-left: 20px;
     width: 100%;
@@ -215,13 +215,13 @@ h6 {
         padding-left: 4%; } }
     @media screen and (min-width: 768px) {
       .o-grid > .o-grid__col {
-        padding-left: 4%; } }
+        padding-left: 3%; } }
     @media screen and (min-width: 992px) {
       .o-grid > .o-grid__col {
-        padding-left: 4%; } }
+        padding-left: 2.5%; } }
     @media screen and (min-width: 1200px) {
       .o-grid > .o-grid__col {
-        padding-left: 4%; } }
+        padding-left: 2%; } }
 
 .o-grid {
   display: -webkit-box;
@@ -525,13 +525,13 @@ h6 {
 .c-card__content {
   padding: 20px; }
 
-.c-card__title {
+.c-card__heading {
   font-size: 1.6rem;
   line-height: 1.5;
   font-weight: 500;
   margin-bottom: 1em; }
   @media screen and (min-width: 768px) {
-    .c-card__title {
+    .c-card__heading {
       font-size: 1.8rem;
       line-height: 1.5; } }
 
@@ -543,6 +543,9 @@ h6 {
   color: #222;
   cursor: pointer;
   text-decoration: none; }
+
+.c-card--col {
+  height: 100%; }
 
 
 
