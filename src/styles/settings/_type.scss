@@ -1,26 +1,32 @@
-$type-base-font-size:             1.6rem;
-$type-base-font-size-md:          1.8rem;
-$type-base-line-height:           1.5;
+$type-base-font-size:              1.6rem;
+$type-base-font-size-md:           1.8rem;
+$type-base-line-height:            1.5;
+$type-base-margin-bottom:          1em;
 
-$type-caption-font-size:          1.4rem;
-$type-caption-font-size-md:       1.6rem;
-$type-caption-line-height:        1.5;
+$type-caption-font-size:           1.4rem;
+$type-caption-font-size-md:        1.6rem;
+$type-caption-line-height:         1.5;
+$type-caption-margin-bottom:       1em;
 
-$type-sub-heading-font-size:      1.6rem;
-$type-sub-heading-font-size-md:   1.8rem;
-$type-sub-heading-line-height:    1.3;
+$type-sub-heading-font-size:       1.6rem;
+$type-sub-heading-font-size-md:    1.8rem;
+$type-sub-heading-line-height:     1.3;
+$type-sub-heading-margin-bottom:   1em;
 
-$type-heading-font-size:          2rem;
-$type-heading-font-size-md:       2.2rem;
-$type-heading-line-height:        1.3;
+$type-heading-font-size:           2rem;
+$type-heading-font-size-md:        2.2rem;
+$type-heading-line-height:         1.3;
+$type-heading-margin-bottom:       1em;
 
-$type-display-font-size:          2rem;
-$type-display-font-size-md:       2.8rem;
-$type-display-line-height:        1.3;
+$type-display-font-size:           2rem;
+$type-display-font-size-md:        2.8rem;
+$type-display-line-height:         1.3;
+$type-display-margin-bottom:       1em;
 
-$type-display-large-font-size:    2.4rem;
-$type-display-large-font-size-md: 3.6rem;
-$type-display-large-line-height:  1.2;
+$type-display-large-font-size:     2.4rem;
+$type-display-large-font-size-md:  3.6rem;
+$type-display-large-line-height:   1.2;
+$type-display-large-margin-bottom: 1em;
 
 /*
 scss-lint:disable SpaceAfterComma
@@ -51,12 +57,12 @@ $type-display-large: (
 // scss-lint:enable SpaceAfterComma
 
 $type-margins: (
-  -base:          1em,
-  -caption:       1em,
-  -sub-heading:   1em,
-  -heading:       1em,
-  -display:       1em,
-  -display-large: 1em,
+  -base:          $type-base-margin-bottom,
+  -caption:       $type-caption-margin-bottom,
+  -sub-heading:   $type-sub-heading-margin-bottom,
+  -heading:       $type-heading-margin-bottom,
+  -display:       $type-display-margin-bottom,
+  -display-large: $type-display-large-margin-bottom,
 );
 
 $type-font-weights: (
