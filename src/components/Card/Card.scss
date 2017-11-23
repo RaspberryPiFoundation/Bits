@@ -27,7 +27,7 @@ $card-transition-timing:   $transition-timing-eased;
   padding: $card-content-p;
 }
 
-.c-card__title {
+.c-card__heading {
   @include type-sub-heading;
 }
 
@@ -39,4 +39,8 @@ $card-transition-timing:   $transition-timing-eased;
   color:           $card-link-color;
   cursor:          pointer;
   text-decoration: none;
+}
+
+.c-card--col {
+  height: 100%;
 }
