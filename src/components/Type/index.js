@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 export const Type = ({ children, className, element, ...props }) => {
-  const elementName = typeof element === 'undefined' ? 'span' : element
+  const elementName = typeof element === 'string' ? element : 'span'
 
   return React.createElement(
     elementName,
