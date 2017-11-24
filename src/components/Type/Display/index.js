@@ -1,0 +1,24 @@
+import classnames from 'classnames'
+import PropTypes from 'prop-types'
+import React from 'react'
+import Type from '../'
+
+import './Display.scss'
+
+export const TypeDisplay = ({ children, className, element, ...props }) => {
+  const classNames = classnames('c-type-display', className)
+
+  return (
+    <Type className={classNames} element={element} {...props}>
+      {children}
+    </Type>
+  )
+}
+
+TypeDisplay.propTypes = {
+  className: PropTypes.string,
+  children: PropTypes.node.isRequired,
+  element: PropTypes.string,
+}
+
+export default TypeDisplay

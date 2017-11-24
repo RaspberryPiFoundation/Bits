@@ -36,9 +36,9 @@ In the root of this directory, run the following:
 
 In the root of the slash-learning-ui repo, run the following
 
-    npm link raspberry-pi-bits
     npm install
-
+    npm link raspberry-pi-bits
+    
 You're now ready to start the development server and use raspberry-pi-bits in your React components.
 
     npm run dev # runs create-react-app hot-reload dev server
