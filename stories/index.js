@@ -1,9 +1,11 @@
 import { configure } from '@storybook/react'
 
-const req = require.context('./stories', true, /\.stories\.js$/)
-
+/* eslint-disable global-require */
 const loadStories = () => {
-  req.keys().forEach(filename => req(filename))
+  require('./components/Card/stories.js')
+  require('./components/Button/stories.js')
+  require('./components/Link/stories.js')
 }
+/* eslint-enable global-require */
 
 configure(loadStories, module)

@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Button Primary 1`] = `
+<button
+  className="c-button"
+  onClick={[Function]}
+>
+  Hello Button
+</button>
+`;
+
+exports[`Storyshots Button Secondary 1`] = `
+<button
+  className="c-button c-button--secondary"
+  onClick={[Function]}
+>
+  Hello Button
+</button>
+`;
+
+exports[`Storyshots Link Internal link 1`] = `
+<a
+  className="c-link"
+  href="/here"
+>
+  An internal link
+</a>
+`;
+
+exports[`Storyshots Link Light on dark external link 1`] = `
+<a
+  className="c-link c-link--light-on-dark"
+  href="/https://raspberrypi.org"
+  onClick={[Function]}
+>
+  Hello Link
+</a>
+`;
+
+exports[`Storyshots Link Light on dark internal link 1`] = `
+<a
+  className="c-link c-link--light-on-dark"
+  href="/"
+>
+  Hello Link
+</a>
+`;
+
+exports[`Storyshots Link external link 1`] = `
+<a
+  className="c-link"
+  href="/https://raspberrypi.org"
+  onClick={[Function]}
+>
+  An external link
+</a>
+`;
