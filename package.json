@@ -7,9 +7,6 @@
     "type": "git",
     "url": "https://github.com/RaspberryPiFoundation/Bits.git"
   },
-  "engines": {
-    "node": "8.5.x"
-  },
   "author": {
     "name": "The Raspberry Pi Foundation",
     "url": "https://raspberrypi.org"
