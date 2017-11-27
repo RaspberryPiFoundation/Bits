@@ -12,7 +12,7 @@ const Button = ({ children, className, to, ...props }) => {
   if (isLink()) {
     return (
       <Link {...props} className={classNames} excludeClassname={true} to={to}>
-        {cardChildren}
+        {children}
       </Link>
     )
   }
