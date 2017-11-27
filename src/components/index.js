@@ -2,6 +2,7 @@ import Button from './Button'
 import Card from './Card'
 import Link from './Link'
 import Pagination from './Pagination'
+import Panel from './Panel'
 import Slice from './Slice'
 import Type from './Type'
 import TypeBase from './Type/Base'
@@ -17,6 +18,7 @@ export {
   Card,
   Link,
   Pagination,
+  Panel
   Slice,
   Type,
   TypeBase,
