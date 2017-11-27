@@ -16,7 +16,7 @@ const Card = ({
   to,
   ...props
 }) => {
-  const isLink = () => to !== null
+  const isLink = () => typeof to === 'string'
 
   const classNames = classnames('c-card', className, {
     'c-card--link': isLink(),
