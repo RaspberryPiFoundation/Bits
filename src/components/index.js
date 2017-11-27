@@ -1,5 +1,8 @@
 import Button from './Button'
 import Card from './Card'
+import Figure from './Figure'
+import Hr from './Hr'
+import LightOnDark from './LightOnDark'
 import Link from './Link'
 import Pagination from './Pagination'
 import Panel from './Panel'
@@ -16,9 +19,12 @@ import Wysiwyg from './Wysiwyg'
 export {
   Button,
   Card,
+  Figure,
+  Hr,
+  LightOnDark,
   Link,
   Pagination,
-  Panel
+  Panel,
   Slice,
   Type,
   TypeBase,
