@@ -12,11 +12,19 @@ Deploys to: https://static.raspberrypi.org/styles/Bits/<version> via:
 
 eg: https://static.raspberrypi.org/styles/Bits/1.0.0/Bits.min.css
 
-## Local Development
+## Local Development using storybook
+
+[Storybook](https://storybook.js.org/) is set up on this app to allow interactive development. To use it, run:
+```
+npm run storybook
+```
+and visit http://localhost:9001
+
+## Local Development in another app
 
 **Taken from the README of https://github.com/transitive-bullshit/react-modern-library-boilerplate**
 
-# Setup this repo for local linking
+### Setup this repo for local linking
 
 In the root of this directory, run the following:
 
@@ -24,7 +32,7 @@ In the root of this directory, run the following:
     npm install # disregard any warnings about missing peer dependencies
     npm start # runs rollup with watch flag
 
-# Consume this repo in your local slash-learning-ui
+### Consume this repo in your local slash-learning-ui
 
 In the root of the slash-learning-ui repo, run the following
 
@@ -43,9 +51,6 @@ Bits requires the following peer dependencies to be installed in the host applic
 
 ```
 classnames: ^2.2.5
-react: ^0.14.9 || ^15.0.0 || ^16.0.0
-react-dom: ^0.14.9 || ^15.0.0 || ^16.0.0
-react-router-dom: ^4.2.2
 prop-types: ^15.5.4
 ```
 
