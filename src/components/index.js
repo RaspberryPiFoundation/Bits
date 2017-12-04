@@ -16,13 +16,18 @@ import TypeHeading from './Type/Heading'
 import TypeSubHeading from './Type/SubHeading'
 import Wysiwyg from './Wysiwyg'
 
+import { Container, Grid, Media } from 'react-iotacss'
+
 export {
   Button,
   Card,
+  Container,
   Figure,
+  Grid,
   Hr,
   LightOnDark,
   Link,
+  Media,
   Pagination,
   Panel,
   Slice,
