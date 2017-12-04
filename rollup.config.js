@@ -30,6 +30,7 @@ export default {
     sass({ insert: true }),
     babel({
       exclude: 'node_modules/**',
+      plugins: ['external-helpers'],
     }),
   ],
 }
