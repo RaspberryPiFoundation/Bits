@@ -1,16 +1,16 @@
+import './LightOnDark.scss'
+import { Base } from 'react-iotacss'
 import classnames from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-
-import './LightOnDark.scss'
 
 export const LightOnDark = ({ children, className, ...props }) => {
   const classNames = classnames('c-light-on-dark', className)
 
   return (
-    <div {...props} className={classNames}>
+    <Base {...props} className={classNames}>
       {children}
-    </div>
+    </Base>
   )
 }
 

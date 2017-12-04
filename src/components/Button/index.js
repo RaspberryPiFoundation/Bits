@@ -1,9 +1,9 @@
+import './Button.scss'
+import { Base } from 'react-iotacss'
 import classnames from 'classnames'
 import Link from '../Link'
 import PropTypes from 'prop-types'
 import React from 'react'
-
-import './Button.scss'
 
 const Button = ({ children, className, to, ...props }) => {
   const classNames = classnames('c-button', className)
@@ -18,9 +18,9 @@ const Button = ({ children, className, to, ...props }) => {
   }
 
   return (
-    <button {...props} className={classNames}>
+    <Base {...props} className={classNames} tagName="button">
       {children}
-    </button>
+    </Base>
   )
 }
 

@@ -1,16 +1,14 @@
+import { Base } from 'react-iotacss'
 import PropTypes from 'prop-types'
 import React from 'react'
 
 export const Type = ({ children, className, element, ...props }) => {
-  const elementName = typeof element === 'string' ? element : 'span'
+  const elementName = typeof element === 'undefined' ? 'span' : element
 
-  return React.createElement(
-    elementName,
-    {
-      className: className,
-      ...props,
-    },
-    children,
+  return (
+    <Base {...props} className={className} tagName={elementName}>
+      {children}
+    </Base>
   )
 }
 
