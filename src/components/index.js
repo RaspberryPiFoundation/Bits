@@ -16,9 +16,10 @@ import TypeHeading from './Type/Heading'
 import TypeSubHeading from './Type/SubHeading'
 import Wysiwyg from './Wysiwyg'
 
-import { Container, Grid, Media } from 'react-iotacss'
+import { Base, Container, Grid, Media } from 'react-iotacss'
 
 export {
+  Base,
   Button,
   Card,
   Container,
