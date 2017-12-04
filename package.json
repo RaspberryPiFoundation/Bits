@@ -1,18 +1,37 @@
 {
   "name": "raspberry-pi-bits",
-  "version": "1.0.0",
   "description": "The Raspberry Pi Front End Pattern Library",
+  "author": "The Raspberry Pi Foundation (https://raspberrypi.org)",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/RaspberryPiFoundation/Bits.git"
   },
-  "engines": {
-    "node": "8.5.x"
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "files": ["lib", "src/styles"],
+  "scripts": {
+    "build": "rollup -c",
+    "eslint-check":
+      "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
+    "fix": "eslint src/. --ext .js --fix; exit 0;",
+    "gulp": "gulp",
+    "lint": "eslint src/. --ext .js; exit 0;",
+    "lint:staged": "lint-staged",
+    "prepublishOnly": "npm run build",
+    "start": "rollup -c -w",
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "test": "jest --env=jsdom --notify --watch"
   },
-  "author": {
-    "name": "The Raspberry Pi Foundation",
-    "url": "https://raspberrypi.org"
+  "dependencies": {
+    "prettier-package-json": "^1.4.0",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
+    "react-router-dom": "^4.2.2"
+  },
+  "peerDependencies": {
+    "classnames": "^2.2.5",
+    "prop-types": "^15.5.4"
   },
   "devDependencies": {
     "@storybook/addon-storyshots": "^3.2.16",
@@ -29,6 +48,8 @@
     "enzyme-adapter-react-16": "^1.1.0",
     "eslint": "^4.9.0",
     "eslint-config-prettier": "^2.6.0",
+    "eslint-plugin-jest": "21.3.2",
+    "eslint-plugin-jsx-a11y": "5.1.1",
     "eslint-plugin-prettier": "^2.3.1",
     "eslint-plugin-react": "^7.4.0",
     "gulp": "^3.9.1",
@@ -48,6 +69,7 @@
     "jest": "^21.2.1",
     "jest-css-modules": "^1.1.0",
     "jest-enzyme": "^4.0.1",
+    "lint-staged": "5.0.0",
     "prettier": "^1.7.4",
     "raf": "^3.4.0",
     "react-test-renderer": "^16.1.1",
@@ -60,31 +82,20 @@
     "sass-loader": "^6.0.6",
     "style-loader": "^0.19.0"
   },
-  "files": ["lib", "src/styles"],
-  "scripts": {
-    "test": "jest --env=jsdom --notify --watch",
-    "build": "rollup -c",
-    "start": "rollup -c -w",
-    "prepublishOnly": "npm run build",
-    "gulp": "gulp",
-    "storybook": "start-storybook -p 9001 -c .storybook"
-  },
-  "main": "lib/index.js",
-  "module": "lib/index.es.js",
-  "jsnext:main": "lib/index.es.js",
-  "dependencies": {
-    "react": "^16.1.1",
-    "react-dom": "^16.1.1",
-    "react-router-dom": "^4.2.2"
-  },
-  "peerDependencies": {
-    "classnames": "^2.2.5",
-    "prop-types": "^15.5.4"
+  "engines": {
+    "node": "8.5.x"
   },
   "jest": {
     "setupTestFrameworkScriptFile": "./src/setupTests.js",
     "transform": {
       ".*": "./node_modules/jest-css-modules"
     }
-  }
+  },
+  "jsnext:main": "lib/index.es.js",
+  "lint-staged": {
+    "package.json": ["prettier-package-json --write", "git add"],
+    "*.js": ["eslint --fix", "git add"]
+  },
+  "module": "lib/index.es.js",
+  "pre-commit": "lint:staged"
 }
