@@ -14,20 +14,20 @@ storiesOf('Button', module)
   ))
   .add('Secondary', () => (
     <Slice>
-      <Button className="c-button--secondary">Hello Button</Button>
+      <Button secondary>Hello Button</Button>
     </Slice>
   ))
   .add('Primary on dark background', () => (
     <Slice uBgcolor="ui-black">
       <LightOnDark>
-        <Button className="c-button--light-on-dark">Hello Button</Button>
+        <Button lightOnDark>Hello Button</Button>
       </LightOnDark>
     </Slice>
   ))
   .add('Secondary on dark background', () => (
     <Slice uBgcolor="ui-black">
       <LightOnDark>
-        <Button className="c-button--light-on-dark c-button--secondary">
+        <Button lightOnDark secondary>
           Hello Button
         </Button>
       </LightOnDark>

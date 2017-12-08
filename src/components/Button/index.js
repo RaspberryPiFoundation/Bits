@@ -5,8 +5,18 @@ import Link from '../Link'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-const Button = ({ children, className, to, ...props }) => {
-  const classNames = classnames('c-button', className)
+const Button = ({
+  children,
+  className,
+  lightOnDark,
+  secondary,
+  to,
+  ...props
+}) => {
+  const classNames = classnames('c-button', className, {
+    'c-button--light-on-dark': lightOnDark,
+    'c-button--secondary': secondary,
+  })
   const isLink = () => typeof to === 'string'
 
   if (isLink()) {
@@ -27,6 +37,8 @@ const Button = ({ children, className, to, ...props }) => {
 Button.propTypes = {
   className: PropTypes.string,
   children: PropTypes.node.isRequired,
+  lightOnDark: PropTypes.bool,
+  secondary: PropTypes.bool,
   to: PropTypes.string,
 }
 
