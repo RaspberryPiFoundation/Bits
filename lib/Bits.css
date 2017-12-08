@@ -478,17 +478,18 @@ strong {
     background-color: #444;
     border-color: #444;
     color: #fff; }
-  .c-button.c-button--light-on-dark:hover,
-  .c-button:visited.c-button--light-on-dark:hover {
-    background-color: #fff;
-    border-color: #fff;
-    color: #444; }
 
 .c-button--secondary,
 .c-button--secondary:visited {
   background-color: transparent;
   border-color: #999;
   color: #999; }
+
+.c-button--light-on-dark:hover,
+.c-button--light-on-dark:visited:hover {
+  background-color: #fff;
+  border-color: #fff;
+  color: #444; }
 
 .c-button--block {
   display: block;
