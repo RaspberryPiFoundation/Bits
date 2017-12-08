@@ -498,6 +498,11 @@ strong {
     background-color: #444;
     border-color: #444;
     color: #fff; }
+  .c-button.c-button--light-on-dark:hover,
+  .c-button:visited.c-button--light-on-dark:hover {
+    background-color: #fff;
+    border-color: #fff;
+    color: #444; }
 
 .c-button--secondary,
 .c-button--secondary:visited {
@@ -508,11 +513,6 @@ strong {
 .c-button--block {
   display: block;
   width: 100%; }
-
-.c-button--light-on-dark:hover {
-  background-color: #fff;
-  border-color: #fff;
-  color: #444; }
 
 
 
