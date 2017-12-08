@@ -445,26 +445,6 @@ strong {
 
 
 
-b {
-  font-weight: 500; }
-
-code {
-  font-family: "Lucida Console", "Monaco", monospace; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 500; }
-
-pre {
-  font-family: "Lucida Console", "Monaco", monospace; }
-
-strong {
-  font-weight: 500; }
-
 .c-button,
 .c-button:visited {
   font-size: 1.6rem;
@@ -527,26 +507,6 @@ strong {
 
 
 
-b {
-  font-weight: 500; }
-
-code {
-  font-family: "Lucida Console", "Monaco", monospace; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 500; }
-
-pre {
-  font-family: "Lucida Console", "Monaco", monospace; }
-
-strong {
-  font-weight: 500; }
-
 .c-card {
   background-color: #fff;
   border-radius: 5px;
@@ -599,26 +559,6 @@ strong {
 
 
 
-b {
-  font-weight: 500; }
-
-code {
-  font-family: "Lucida Console", "Monaco", monospace; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 500; }
-
-pre {
-  font-family: "Lucida Console", "Monaco", monospace; }
-
-strong {
-  font-weight: 500; }
-
 .c-figure {
   margin-bottom: 1em;
   text-align: center; }
@@ -652,26 +592,6 @@ strong {
 
 
 
-b {
-  font-weight: 500; }
-
-code {
-  font-family: "Lucida Console", "Monaco", monospace; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 500; }
-
-pre {
-  font-family: "Lucida Console", "Monaco", monospace; }
-
-strong {
-  font-weight: 500; }
-
 .c-hr {
   background-color: #eee;
   border-width: 0;
@@ -691,26 +611,6 @@ strong {
 
 
 
-b {
-  font-weight: 500; }
-
-code {
-  font-family: "Lucida Console", "Monaco", monospace; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 500; }
-
-pre {
-  font-family: "Lucida Console", "Monaco", monospace; }
-
-strong {
-  font-weight: 500; }
-
 .c-light-on-dark {
   color: #eee; }
 
@@ -726,26 +626,6 @@ strong {
 
 
 
-
-b {
-  font-weight: 500; }
-
-code {
-  font-family: "Lucida Console", "Monaco", monospace; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 500; }
-
-pre {
-  font-family: "Lucida Console", "Monaco", monospace; }
-
-strong {
-  font-weight: 500; }
 
 .c-link {
   color: #004881;
@@ -784,26 +664,6 @@ strong {
 
 
 
-
-b {
-  font-weight: 500; }
-
-code {
-  font-family: "Lucida Console", "Monaco", monospace; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 500; }
-
-pre {
-  font-family: "Lucida Console", "Monaco", monospace; }
-
-strong {
-  font-weight: 500; }
 
 .c-pagination {
   margin-bottom: 20px;
@@ -877,26 +737,6 @@ strong {
 
 
 
-b {
-  font-weight: 500; }
-
-code {
-  font-family: "Lucida Console", "Monaco", monospace; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 500; }
-
-pre {
-  font-family: "Lucida Console", "Monaco", monospace; }
-
-strong {
-  font-weight: 500; }
-
 .c-panel {
   background-color: #fff;
   border-radius: 5px;
@@ -916,26 +756,6 @@ strong {
 
 
 
-
-b {
-  font-weight: 500; }
-
-code {
-  font-family: "Lucida Console", "Monaco", monospace; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 500; }
-
-pre {
-  font-family: "Lucida Console", "Monaco", monospace; }
-
-strong {
-  font-weight: 500; }
 
 .c-slice {
   background-attachment: scroll;
@@ -966,26 +786,6 @@ strong {
 
 
 
-
-b {
-  font-weight: 500; }
-
-code {
-  font-family: "Lucida Console", "Monaco", monospace; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 500; }
-
-pre {
-  font-family: "Lucida Console", "Monaco", monospace; }
-
-strong {
-  font-weight: 500; }
 
 .c-wysiwyg a {
   color: #004881;
@@ -1095,26 +895,6 @@ strong {
 
 
 
-b {
-  font-weight: 500; }
-
-code {
-  font-family: "Lucida Console", "Monaco", monospace; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 500; }
-
-pre {
-  font-family: "Lucida Console", "Monaco", monospace; }
-
-strong {
-  font-weight: 500; }
-
 .c-input {
   font-size: 1.6rem;
   line-height: 35px;
@@ -1159,26 +939,6 @@ strong {
 
 
 
-b {
-  font-weight: 500; }
-
-code {
-  font-family: "Lucida Console", "Monaco", monospace; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 500; }
-
-pre {
-  font-family: "Lucida Console", "Monaco", monospace; }
-
-strong {
-  font-weight: 500; }
-
 .c-label {
   display: block;
   font-weight: 500;
@@ -1197,26 +957,6 @@ strong {
 
 
 
-b {
-  font-weight: 500; }
-
-code {
-  font-family: "Lucida Console", "Monaco", monospace; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 500; }
-
-pre {
-  font-family: "Lucida Console", "Monaco", monospace; }
-
-strong {
-  font-weight: 500; }
-
 .c-form-group {
   display: block;
   margin-bottom: 20px;
@@ -1234,26 +974,6 @@ strong {
 
 
 
-
-b {
-  font-weight: 500; }
-
-code {
-  font-family: "Lucida Console", "Monaco", monospace; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 500; }
-
-pre {
-  font-family: "Lucida Console", "Monaco", monospace; }
-
-strong {
-  font-weight: 500; }
 
 .c-select {
   font-size: 1.6rem;
@@ -1303,26 +1023,6 @@ strong {
 
 
 
-b {
-  font-weight: 500; }
-
-code {
-  font-family: "Lucida Console", "Monaco", monospace; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 500; }
-
-pre {
-  font-family: "Lucida Console", "Monaco", monospace; }
-
-strong {
-  font-weight: 500; }
-
 .c-textarea {
   font-size: 1.6rem;
   line-height: 35px;
@@ -1368,26 +1068,6 @@ strong {
 
 
 
-b {
-  font-weight: 500; }
-
-code {
-  font-family: "Lucida Console", "Monaco", monospace; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 500; }
-
-pre {
-  font-family: "Lucida Console", "Monaco", monospace; }
-
-strong {
-  font-weight: 500; }
-
 .c-type-base {
   font-size: 1.6rem;
   line-height: 1.5;
@@ -1410,26 +1090,6 @@ strong {
 
 
 
-
-b {
-  font-weight: 500; }
-
-code {
-  font-family: "Lucida Console", "Monaco", monospace; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 500; }
-
-pre {
-  font-family: "Lucida Console", "Monaco", monospace; }
-
-strong {
-  font-weight: 500; }
 
 .c-type-caption {
   font-size: 1.4rem;
@@ -1454,26 +1114,6 @@ strong {
 
 
 
-b {
-  font-weight: 500; }
-
-code {
-  font-family: "Lucida Console", "Monaco", monospace; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 500; }
-
-pre {
-  font-family: "Lucida Console", "Monaco", monospace; }
-
-strong {
-  font-weight: 500; }
-
 .c-type-display {
   font-size: 2rem;
   line-height: 1.5;
@@ -1496,26 +1136,6 @@ strong {
 
 
 
-
-b {
-  font-weight: 500; }
-
-code {
-  font-family: "Lucida Console", "Monaco", monospace; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 500; }
-
-pre {
-  font-family: "Lucida Console", "Monaco", monospace; }
-
-strong {
-  font-weight: 500; }
 
 .c-type-display-large {
   font-size: 2.4rem;
@@ -1540,26 +1160,6 @@ strong {
 
 
 
-b {
-  font-weight: 500; }
-
-code {
-  font-family: "Lucida Console", "Monaco", monospace; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 500; }
-
-pre {
-  font-family: "Lucida Console", "Monaco", monospace; }
-
-strong {
-  font-weight: 500; }
-
 .c-type-heading {
   font-size: 2rem;
   line-height: 1.5;
@@ -1582,26 +1182,6 @@ strong {
 
 
 
-
-b {
-  font-weight: 500; }
-
-code {
-  font-family: "Lucida Console", "Monaco", monospace; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 500; }
-
-pre {
-  font-family: "Lucida Console", "Monaco", monospace; }
-
-strong {
-  font-weight: 500; }
 
 .c-type-sub-heading {
   font-size: 1.6rem;
