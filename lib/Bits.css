@@ -3,9 +3,9 @@
 
   The Raspberry Pi Front End Pattern Library
 
-  Author:      The Raspberry Pi Foundation
-  Author URI:  https://raspberrypi.org
-  Version:     1.0.0
+  Author:      undefined
+  Author URI:  undefined
+  Version:     1.1.0
 */
 
 
@@ -508,6 +508,11 @@ strong {
 .c-button--block {
   display: block;
   width: 100%; }
+
+.c-button--light-on-dark:hover {
+  background-color: #fff;
+  border-color: #fff;
+  color: #444; }
 
 
 
