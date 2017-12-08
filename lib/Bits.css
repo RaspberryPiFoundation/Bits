@@ -145,7 +145,7 @@ body {
   background-color: #f5f6f9;
   color: #222;
   font-display: swap;
-  font-family: "Rubik", serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 300;
   min-height: 100vh;
   padding: constant(safe-area-inset-top) constant(safe-area-inset-right) constant(safe-area-inset-bottom) constant(safe-area-inset-left);
