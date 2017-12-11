@@ -1,10 +1,10 @@
+import { Base } from 'react-iotacss'
 import classnames from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import Link from '../Link'
-
 import './Pagination.scss'
+import Link from '../Link'
 
 const Pagination = ({
   className,
@@ -28,7 +28,7 @@ const Pagination = ({
   })
 
   return (
-    <div className={classNames}>
+    <Base className={classNames}>
       <Link className={prevLinkclassNames} to={linkPrevHref}>
         <span className="u-hidden">{linkPrevLabel}</span>
       </Link>
@@ -40,7 +40,7 @@ const Pagination = ({
       <Link className={nextLinkclassNames} to={linkNextHref}>
         <span className="u-hidden">{linkNextLabel}</span>
       </Link>
-    </div>
+    </Base>
   )
 }
 

@@ -1,9 +1,9 @@
 import classnames from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import Type from '../'
 
 import './DisplayLarge.scss'
+import Type from '../'
 
 export const TypeDisplayLarge = ({
   children,

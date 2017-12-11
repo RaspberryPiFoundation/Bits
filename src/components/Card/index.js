@@ -1,10 +1,10 @@
+import { Base } from 'react-iotacss'
 import classnames from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import Link from '../Link'
-
 import './Card.scss'
+import Link from '../Link'
 
 const Card = ({
   children,
@@ -64,9 +64,9 @@ const Card = ({
   }
 
   return (
-    <div {...props} className={classNames}>
+    <Base {...props} className={classNames}>
       {cardChildren}
-    </div>
+    </Base>
   )
 }
 

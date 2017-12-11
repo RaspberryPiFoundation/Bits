@@ -23,9 +23,6 @@ $button-hover-background-color: $color-ui-grey-dark;
 $button-hover-border-color:     $color-ui-grey-dark;
 $button-hover-color:            $color-white;
 
-$button-secondary-border-color: $color-ui-grey-medium;
-$button-secondary-color:        $color-ui-grey-medium;
-
 .c-button,
 .c-button:visited {
   @include iota-type($button-type-map);
@@ -54,11 +51,27 @@ $button-secondary-color:        $color-ui-grey-medium;
   }
 }
 
+$button-secondary-border-color: $color-ui-grey-medium;
+$button-secondary-color:        $color-ui-grey-medium;
+
 .c-button--secondary,
 .c-button--secondary:visited {
   background-color: transparent;
   border-color:     $button-secondary-border-color;
   color:            $button-secondary-color;
+}
+
+$button-lod-hover-background-color: $color-white;
+$button-lod-hover-border-color:     $color-white;
+$button-lod-hover-color:            $color-ui-grey-dark;
+
+.c-button--light-on-dark,
+.c-button--light-on-dark:visited {
+  &:hover {
+    background-color: $button-lod-hover-background-color;
+    border-color:     $button-lod-hover-border-color;
+    color:            $button-lod-hover-color;
+  }
 }
 
 .c-button--block {

@@ -1,3 +1,4 @@
+import { Base } from 'react-iotacss'
 import { Link as RouterLink } from 'react-router-dom'
 import classnames from 'classnames'
 import PropTypes from 'prop-types'
@@ -14,9 +15,9 @@ const Link = ({ children, className, excludeClassname, to, ...props }) => {
   )
 
   const anchorLink = (
-    <a {...props} className={classNames} href={to}>
+    <Base {...props} className={classNames} href={to} tagName="a">
       {children}
-    </a>
+    </Base>
   )
 
   const isExternal = () => !/^https?:\/\//i.test(to)

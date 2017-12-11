@@ -1,9 +1,9 @@
 import classnames from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import Type from '../'
 
 import './Display.scss'
+import Type from '../'
 
 export const TypeDisplay = ({ children, className, element, ...props }) => {
   const classNames = classnames('c-type-display', className)

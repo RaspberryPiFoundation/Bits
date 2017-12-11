@@ -1,9 +1,9 @@
 import classnames from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import Type from '../'
 
 import './Heading.scss'
+import Type from '../'
 
 export const TypeHeading = ({ children, className, element, ...props }) => {
   const classNames = classnames('c-type-heading', className)

@@ -3,10 +3,10 @@ import classnames from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import './Wysiwyg.scss'
+import './LightOnDark.scss'
 
-export const Wysiwyg = ({ children, className, ...props }) => {
-  const classNames = classnames('c-wysiwyg', className)
+export const LightOnDark = ({ children, className, ...props }) => {
+  const classNames = classnames('c-light-on-dark', className)
 
   return (
     <Base {...props} className={classNames}>
@@ -15,9 +15,9 @@ export const Wysiwyg = ({ children, className, ...props }) => {
   )
 }
 
-Wysiwyg.propTypes = {
+LightOnDark.propTypes = {
   className: PropTypes.string,
   children: PropTypes.node.isRequired,
 }
 
-export default Wysiwyg
+export default LightOnDark

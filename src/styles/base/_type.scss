@@ -33,29 +33,3 @@
   font-weight:   map-get($type-font-weights, caption);
   margin-bottom: map-get($type-margins, -caption);
 }
-
-
-b {
-  font-weight: map-get($font-weights, medium);
-}
-
-code {
-  font-family: $font-family-monospace;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: map-get($font-weights, medium);
-}
-
-pre {
-  font-family: $font-family-monospace;
-}
-
-strong {
-  font-weight: map-get($font-weights, medium);
-}

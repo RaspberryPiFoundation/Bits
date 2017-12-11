@@ -21,6 +21,7 @@ export default {
     'classnames',
     'react',
     'react-dom',
+    'react-iotacss',
     'react-router-dom',
     'prop-types',
   ],
