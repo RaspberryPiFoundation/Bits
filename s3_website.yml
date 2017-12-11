@@ -32,6 +32,10 @@ gzip: true
 ignore_on_server: _DELETE_NOTHING_ON_THE_S3_BUCKET_
 
 exclude_from_upload:
+  - .DS_Store
+  - .keep
+  - index.es.js
+  - index.js
   - Bits.min.css.map
 
 # s3_reduced_redundancy: true
