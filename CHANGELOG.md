@@ -22,6 +22,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Base styles updated - defaults to `sans-serif` font face if Rubrik is unavailable
 - `Button` modifiers can now be specified with props
 - Primary `Button` has light on dark hover styles
+- `Button` can render a `Link`
 
 ## [1.0.0] - 2017-12-11
 
