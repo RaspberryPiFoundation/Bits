@@ -1,9 +1,10 @@
-import './Link.scss'
 import { Base } from 'react-iotacss'
 import { Link as RouterLink } from 'react-router-dom'
 import classnames from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
+
+import './Link.scss'
 
 const Link = ({ children, className, excludeClassname, to, ...props }) => {
   const classNames = classnames(

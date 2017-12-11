@@ -1,8 +1,9 @@
-import './Figure.scss'
 import { Base } from 'react-iotacss'
 import classnames from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
+
+import './Figure.scss'
 
 export const Figure = ({
   className,

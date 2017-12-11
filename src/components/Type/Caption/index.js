@@ -1,9 +1,9 @@
 import classnames from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import Type from '../'
 
 import './Caption.scss'
+import Type from '../'
 
 export const TypeCaption = ({ children, className, element, ...props }) => {
   const classNames = classnames('c-type-caption', className)

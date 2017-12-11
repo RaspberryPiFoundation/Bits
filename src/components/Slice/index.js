@@ -1,8 +1,9 @@
-import './Slice.scss'
 import { Base } from 'react-iotacss'
 import classnames from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
+
+import './Slice.scss'
 
 export const Slice = ({ children, className, ...props }) => {
   const classNames = classnames('c-slice', className)

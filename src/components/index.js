@@ -1,3 +1,5 @@
+import { Base, Container, Grid, Media } from 'react-iotacss'
+
 import Button from './Button'
 import Card from './Card'
 import Figure from './Figure'
@@ -15,8 +17,6 @@ import TypeDisplayLarge from './Type/DisplayLarge'
 import TypeHeading from './Type/Heading'
 import TypeSubHeading from './Type/SubHeading'
 import Wysiwyg from './Wysiwyg'
-
-import { Base, Container, Grid, Media } from 'react-iotacss'
 
 export {
   Base,

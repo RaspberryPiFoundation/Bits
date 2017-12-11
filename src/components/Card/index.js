@@ -1,9 +1,10 @@
-import './Card.scss'
 import { Base } from 'react-iotacss'
 import classnames from 'classnames'
-import Link from '../Link'
 import PropTypes from 'prop-types'
 import React from 'react'
+
+import './Card.scss'
+import Link from '../Link'
 
 const Card = ({
   children,
