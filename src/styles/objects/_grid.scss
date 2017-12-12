@@ -70,12 +70,12 @@ $iota-objs-grid-equal-height: true;
  * Type: String
  */
 
-$iota-objs-grid-namespace         : 'grid';
-$iota-objs-grid-column-name       : 'col';
-$iota-objs-grid-align-right-name  : 'right';
-$iota-objs-grid-align-center-name : 'center';
-$iota-objs-grid-align-top-name    : 'top';
-$iota-objs-grid-namespace         : 'grid';
+$iota-objs-grid-namespace:         'grid';
+$iota-objs-grid-column-name:       'col';
+$iota-objs-grid-align-right-name:  'right';
+$iota-objs-grid-align-center-name: 'center';
+$iota-objs-grid-align-top-name:    'top';
+$iota-objs-grid-namespace:         'grid';
 
 
 @import 'node_modules/iotacss/objects/grid';

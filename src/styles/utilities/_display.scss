@@ -23,11 +23,11 @@ $iota-utils-display-breakpoints: $iota-global-breakpoints;
  * Type: String
  */
 
-$iota-utils-display-namespace         : '';
-$iota-utils-display-block-name        : 'block';
-$iota-utils-display-hidden-name       : 'hidden';
-$iota-utils-display-inline-name       : 'inline';
-$iota-utils-display-inline-block-name : 'inline-block';
+$iota-utils-display-namespace:         '';
+$iota-utils-display-block-name:        'block';
+$iota-utils-display-hidden-name:       'hidden';
+$iota-utils-display-inline-name:       'inline';
+$iota-utils-display-inline-block-name: 'inline-block';
 
 
 @import 'node_modules/iotacss/utilities/display';

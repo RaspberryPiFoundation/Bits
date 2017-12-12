@@ -59,11 +59,11 @@ $iota-objs-list-gutter-extra: (
  * Type: String
  */
 
-$iota-objs-list-namespace   : 'list';
-$iota-objs-list-item-name   : 'item';
-$iota-objs-list-block-name  : 'block';
-$iota-objs-list-inline-name : 'inline';
-$iota-objs-list-span-name   : 'span';
+$iota-objs-list-namespace:   'list';
+$iota-objs-list-item-name:   'item';
+$iota-objs-list-block-name:  'block';
+$iota-objs-list-inline-name: 'inline';
+$iota-objs-list-span-name:   'span';
 
 
 @import 'node_modules/iotacss/objects/list';

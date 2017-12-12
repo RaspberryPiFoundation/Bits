@@ -42,13 +42,13 @@ $iota-utils-padding-breakpoints: $iota-global-breakpoints;
  * Type: String
  */
 
-$iota-utils-padding-namespace        : 'p';
-$iota-utils-padding-top-name         : 't';
-$iota-utils-padding-right-name       : 'r';
-$iota-utils-padding-bottom-name      : 'b';
-$iota-utils-padding-left-name        : 'l';
-$iota-utils-padding-vertical-name    : 'v';
-$iota-utils-padding-horizontal-name  : 'h';
+$iota-utils-padding-namespace:       'p';
+$iota-utils-padding-top-name:        't';
+$iota-utils-padding-right-name:      'r';
+$iota-utils-padding-bottom-name:     'b';
+$iota-utils-padding-left-name:       'l';
+$iota-utils-padding-vertical-name:   'v';
+$iota-utils-padding-horizontal-name: 'h';
 
 
 @import 'node_modules/iotacss/utilities/padding';
