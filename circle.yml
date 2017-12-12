@@ -7,6 +7,6 @@ machine:
     version: 8.9.0
 test:
   override:
-    - npm run jest --env=jsdom --coverage; ./cc-test-reporter after-build --exit-code $?
+    - npm run test-ci; ./cc-test-reporter after-build --exit-code $?
   pre:
     - ./cc-test-reporter before-build

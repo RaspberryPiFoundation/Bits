@@ -20,7 +20,8 @@
     "prepublishOnly": "npm run build",
     "start": "rollup -c -w",
     "storybook": "start-storybook -p 9001 -c .storybook",
-    "test": "jest --env=jsdom --notify --watch"
+    "test": "jest --env=jsdom --notify --watch",
+    "test-ci": "jest --env=jsdom --notify --coverage"
   },
   "peerDependencies": {
     "classnames": "^2.2.5",
