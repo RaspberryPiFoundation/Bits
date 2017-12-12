@@ -1,17 +1,27 @@
-# Button
+## Primary Button
 
-Buttons can be represented with the `<a>` or `<button>` elements. There are primary and secondary styles, and a block modifier.
-
+```js
+<Button>Click me!</Button>
 ```
-<button class="c-button" type="submit">Button Primary</button>
-<button class="c-button c-button--secondary" type="submit">Button Secondary</button>
 
-<button class="c-button c-button--block" type="submit">Button Primary - Block</button>
-<button class="c-button c-button--secondary c-button--block" type="submit">Button Secondary - Block</button>
+### Variants
 
-<a class="c-button" href="/submit">Link Button Primary</a>
-<a class="c-button c-button--secondary" href="/submit">Link Button Secondary</a>
+#### Secondary Button
 
-<a class="c-button c-button--block" href="/submit">Link Button Primary - Block</a>
-<a class="c-button c-button--secondary c-button--block" href="/submit">Link Button Secondary - Block</a>
+```js
+<Button secondary>Secondary button</Button>
+```
+
+### Light-on-Dark
+
+```js
+<LightOnDark uBgcolor="ui-black">
+  <Button secondary lightOnDark>Use this one on dark backgrounds</Button>
+</LightOnDark>
+```
+
+## Block
+
+```js
+<Button block>Block Button</Button>
 ```
