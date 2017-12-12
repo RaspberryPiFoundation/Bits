@@ -8,23 +8,29 @@ let wrapper
 
 const children = <span>Whatever</span>
 const heading = 'Card Heading'
-const imageSrc = 'https://'
+const imageSrc = 'http://via.placeholder.com/350x150'
 const to = 'https://raspberrypi.org'
 
 describe('<Card />', () => {
-  describe('Props', () => {
-    beforeEach(() => {
-      wrapper = shallow(
-        <Card heading={heading} imageSrc={imageSrc}>
-          {children}
-        </Card>,
-      )
-    })
+  beforeEach(() => {
+    wrapper = shallow(
+      <Card heading={heading} imageSrc={imageSrc}>
+        {children}
+      </Card>,
+    )
+  })
 
-    it('renders without crashing', () => {
+  describe('Renders', () => {
+    it('without crashing', () => {
       expect(wrapper.find('.c-card')).toBePresent()
     })
 
+    it('matches its snapshot', () => {
+      expect(wrapper).toMatchSnapshot()
+    })
+  })
+
+  describe('Props', () => {
     it('renders an image with the correct src', () => {
       expect(wrapper.find('.c-card__image')).toHaveProp('src', imageSrc)
     })
@@ -53,19 +59,31 @@ describe('<Card />', () => {
     })
   })
 
-  describe('Card as Link', () => {
-    beforeEach(() => {
-      wrapper = mount(
-        <MemoryRouter>
-          <Card heading={heading} imageSrc={imageSrc} to={to}>
-            {children}
-          </Card>
-        </MemoryRouter>,
-      )
+  describe('Methods', () => {
+    describe('#imageJSX', () => {
+      xit('returns null if no imageSrc prop', () => {
+        wrapper = shallow(<Card heading={heading}>{children}</Card>)
+        let value = wrapper.instance().imageJSX()
+        expect(value).toEqual(null)
+      })
     })
+  })
 
-    it('links to the right place', () => {
-      expect(wrapper.find(Link)).toHaveProp('to', to)
+  describe('Variants', () => {
+    describe('...as Link', () => {
+      beforeEach(() => {
+        wrapper = mount(
+          <MemoryRouter>
+            <Card heading={heading} imageSrc={imageSrc} to={to}>
+              {children}
+            </Card>
+          </MemoryRouter>,
+        )
+      })
+
+      it('links to the right place', () => {
+        expect(wrapper.find(Link)).toHaveProp('to', to)
+      })
     })
   })
 })
