@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Card /> Renders matches its snapshot 1`] = `
+<Base
+  className="c-card"
+  tagName="div"
+>
+  <Base
+    className="c-card__image"
+    key="imageJSX"
+    src="http://via.placeholder.com/350x150"
+    tagName="img"
+  />
+  <div
+    className="c-card__content"
+    key="cardChildren"
+  >
+    <span
+      className="c-card__heading"
+    >
+      Card Heading
+    </span>
+    <span>
+      Whatever
+    </span>
+  </div>
+</Base>
+`;
