@@ -1,11 +1,9 @@
 import { configure } from '@storybook/react'
 
-/* eslint-disable global-require */
-const loadStories = () => {
-  require('./components/Card/stories.js')
-  require('./components/Button/stories.js')
-  require('./components/Link/stories.js')
-}
-/* eslint-enable global-require */
+const components = ['Button', 'Card', 'Link']
 
-configure(loadStories, module)
+configure(() => {
+  for (let component of components) {
+    require(`./components/${component}/stories.js`) // eslint-disable-line global-require
+  }
+}, module)
