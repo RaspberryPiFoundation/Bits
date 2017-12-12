@@ -13,6 +13,8 @@ linters:
     enabled: true
   ExtendDirective:
     enabled: true
+  ImportPath:
+    enabled: false
   LengthVariable:
     enabled: true
     allowed_lengths: ["0", 100%, 100vh, 100vw]
