@@ -1,7 +1,7 @@
 import { Base } from 'react-iotacss'
 import classnames from 'classnames'
 import PropTypes from 'prop-types'
-import React from 'react'
+import React, { Fragment } from 'react'
 
 import './Card.scss'
 import Link from '../Link'
@@ -28,10 +28,11 @@ const Card = ({
     }
 
     return (
-      <img
+      <Base
         alt={imageAlt}
         className="c-card__image"
         src={imageSrc}
+        tagName="img"
         title={imageTitle}
       />
     )
@@ -45,27 +46,27 @@ const Card = ({
     return <span className="c-card__heading">{heading}</span>
   }
 
-  const cardChildren = (
-    <div>
+  const cardChildren = () => (
+    <Fragment>
       {imageJSX()}
       <div className="c-card__content">
         {headingJSX()}
         {children}
       </div>
-    </div>
+    </Fragment>
   )
 
   if (isLink()) {
     return (
       <Link className={classNames} excludeClassname={true} to={to} {...props}>
-        {cardChildren}
+        {cardChildren()}
       </Link>
     )
   }
 
   return (
     <Base className={classNames} {...props}>
-      {cardChildren}
+      {cardChildren()}
     </Base>
   )
 }
