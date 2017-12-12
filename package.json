@@ -12,8 +12,7 @@
   "files": ["lib", "src/styles"],
   "scripts": {
     "build": "rollup -c",
-    "eslint-check":
-      "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
+    "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
     "fix": "eslint src/. --ext .js --fix; exit 0;",
     "gulp": "gulp",
     "lint": "eslint src/. --ext .js; exit 0;",
