@@ -9,7 +9,7 @@ export const Slice = ({ children, className, ...props }) => {
   const classNames = classnames('c-slice', className)
 
   return (
-    <Base {...props} className={classNames}>
+    <Base className={classNames} {...props}>
       {children}
     </Base>
   )

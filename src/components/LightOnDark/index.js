@@ -9,7 +9,7 @@ export const LightOnDark = ({ children, className, ...props }) => {
   const classNames = classnames('c-light-on-dark', className)
 
   return (
-    <Base {...props} className={classNames}>
+    <Base className={classNames} {...props}>
       {children}
     </Base>
   )

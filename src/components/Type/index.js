@@ -6,7 +6,7 @@ export const Type = ({ children, className, element, ...props }) => {
   const elementName = typeof element === 'undefined' ? 'span' : element
 
   return (
-    <Base {...props} className={className} tagName={elementName}>
+    <Base className={className} tagName={elementName} {...props}>
       {children}
     </Base>
   )

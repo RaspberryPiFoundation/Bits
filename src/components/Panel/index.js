@@ -9,7 +9,7 @@ export const Panel = ({ children, className, ...props }) => {
   const classNames = classnames('c-panel', className)
 
   return (
-    <Base {...props} className={classNames}>
+    <Base className={classNames} {...props}>
       {children}
     </Base>
   )

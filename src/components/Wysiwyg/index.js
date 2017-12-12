@@ -9,7 +9,7 @@ export const Wysiwyg = ({ children, className, ...props }) => {
   const classNames = classnames('c-wysiwyg', className)
 
   return (
-    <Base {...props} className={classNames}>
+    <Base className={classNames} {...props}>
       {children}
     </Base>
   )

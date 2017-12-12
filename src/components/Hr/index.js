@@ -7,7 +7,7 @@ import './Hr.scss'
 
 export const Hr = ({ className, ...props }) => {
   const classNames = classnames('c-hr', className)
-  return <Base {...props} className={classNames} tagName="hr" />
+  return <Base className={classNames} tagName="hr" {...props} />
 }
 
 Hr.propTypes = {

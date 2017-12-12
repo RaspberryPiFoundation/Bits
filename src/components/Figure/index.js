@@ -22,7 +22,7 @@ export const Figure = ({
   }
 
   return (
-    <Base {...props} className={classNames} tagName="figure">
+    <Base className={classNames} tagName="figure" {...props}>
       <img
         alt={imageAlt}
         className="c-figure__image"

@@ -22,14 +22,14 @@ const Button = ({
 
   if (isLink()) {
     return (
-      <Link {...props} className={classNames} excludeClassname={true} to={to}>
+      <Link className={classNames} excludeClassname={true} to={to} {...props}>
         {children}
       </Link>
     )
   }
 
   return (
-    <Base {...props} className={classNames} tagName="button">
+    <Base className={classNames} tagName="button" {...props}>
       {children}
     </Base>
   )

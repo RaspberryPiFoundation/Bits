@@ -57,14 +57,14 @@ const Card = ({
 
   if (isLink()) {
     return (
-      <Link {...props} className={classNames} excludeClassname={true} to={to}>
+      <Link className={classNames} excludeClassname={true} to={to} {...props}>
         {cardChildren}
       </Link>
     )
   }
 
   return (
-    <Base {...props} className={classNames}>
+    <Base className={classNames} {...props}>
       {cardChildren}
     </Base>
   )
