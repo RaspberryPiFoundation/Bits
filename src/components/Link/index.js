@@ -6,10 +6,18 @@ import React from 'react'
 
 import './Link.scss'
 
-const Link = ({ children, className, excludeClassname, to, ...props }) => {
+const Link = ({
+  children,
+  className,
+  excludeClassname,
+  lightOnDark,
+  to,
+  ...props
+}) => {
   const classNames = classnames(
     {
       'c-link': !excludeClassname,
+      'c-link--light-on-dark': !excludeClassname && lightOnDark,
     },
     className,
   )
@@ -39,6 +47,7 @@ Link.propTypes = {
   className: PropTypes.string,
   children: PropTypes.node.isRequired,
   excludeClassname: PropTypes.bool,
+  lightOnDark: PropTypes.bool,
   to: PropTypes.string.isRequired,
 }
 

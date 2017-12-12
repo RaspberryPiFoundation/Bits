@@ -5,8 +5,14 @@ import React from 'react'
 
 import './Slice.scss'
 
-export const Slice = ({ children, className, ...props }) => {
-  const classNames = classnames('c-slice', className)
+export const Slice = ({ children, className, white, ...props }) => {
+  const classNames = classnames(
+    'c-slice',
+    {
+      'c-slice--white': white,
+    },
+    className,
+  )
 
   return (
     <Base className={classNames} {...props}>
@@ -18,6 +24,7 @@ export const Slice = ({ children, className, ...props }) => {
 Slice.propTypes = {
   className: PropTypes.string,
   children: PropTypes.node.isRequired,
+  white: PropTypes.bool,
 }
 
 export default Slice
