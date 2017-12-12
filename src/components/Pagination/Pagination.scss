@@ -10,13 +10,10 @@ $pagination-margin-bottom: $baseline-x4;
 $pagination__label-color:       $color-ui-grey-medium;
 $pagination__label-font-weight: $font-weight-medium;
 $pagination__label-padding:     0 $baseline-x3;
-// SpaceAfterComma doesn't seem to work in Sass lists
-// scss-lint:disable SpaceAfterComma
 $pagination__label-type-map:    (
-  null: ($type-base-font-size,    $baseline-x8),
+  null: ($type-base-font-size, $baseline-x8),
   md:   ($type-base-font-size-md, $baseline-x8),
 );
-// scss-lint:enable SpaceAfterComma
 
 .c-pagination__label {
   @include iota-type($pagination__label-type-map);

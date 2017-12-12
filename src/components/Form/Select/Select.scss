@@ -16,13 +16,10 @@ $select-placeholder-color:   $color-ui-grey-medium;
 
 $select--focus-border-color: $color-ui-grey-medium;
 $select--focus-color:        $color-ui-black;
-// SpaceAfterComma doesn't seem to work in Sass lists
-// scss-lint:disable SpaceAfterComma
 $select-type-map:            (
-  null: ($type-base-font-size,    $select-line-height),
+  null: ($type-base-font-size, $select-line-height),
   md:   ($type-base-font-size-md, $select-line-height-md),
 );
-// scss-lint:enable SpaceAfterComma
 
 .c-select {
   @include iota-type($select-type-map);

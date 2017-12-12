@@ -14,13 +14,10 @@ $input-placeholder-color:   $color-ui-grey-medium;
 
 $input--focus-border-color: $color-ui-grey-medium;
 $input--focus-color:        $color-ui-black;
-// SpaceAfterComma doesn't seem to work in Sass lists
-// scss-lint:disable SpaceAfterComma
 $input-type-map:            (
-  null: ($type-base-font-size,    $input-line-height),
+  null: ($type-base-font-size, $input-line-height),
   md:   ($type-base-font-size-md, $input-line-height-md),
 );
-// scss-lint:enable SpaceAfterComma
 
 .c-input {
   @include iota-type($input-type-map);

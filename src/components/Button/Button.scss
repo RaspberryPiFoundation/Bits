@@ -11,13 +11,10 @@ $button-line-height-md:      $baseline-x8;
 $button-ph:                  0 $baseline-x4;
 $button-transition-duration: $transition-duration-short;
 $button-transition-timing:   $transition-timing-eased;
-// SpaceAfterComma doesn't seem to work in Sass lists
-// scss-lint:disable SpaceAfterComma
 $button-type-map:            (
-  null: ($type-sub-heading-font-size,    $button-line-height),
+  null: ($type-sub-heading-font-size, $button-line-height),
   md:   ($type-sub-heading-font-size-md, $button-line-height-md),
 );
-// scss-lint:enable SpaceAfterComma
 
 $button-hover-background-color: $color-ui-grey-dark;
 $button-hover-border-color:     $color-ui-grey-dark;
