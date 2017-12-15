@@ -3,5 +3,5 @@
 *TBD*
 
 ```
-<span class="c-type-display">Display</span>
+<TypeDisplay>Lorem ipsum dolor sit amet, yeah.</TypeDisplay>
 ```

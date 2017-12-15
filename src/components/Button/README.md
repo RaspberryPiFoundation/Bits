@@ -15,9 +15,7 @@
 ### Light-on-Dark
 
 ```js
-<LightOnDark uBgcolor="ui-black">
-  <Button secondary lightOnDark>Use this one on dark backgrounds</Button>
-</LightOnDark>
+<Button secondary lightOnDark>Use this one on dark backgrounds</Button>
 ```
 
 ## Block
