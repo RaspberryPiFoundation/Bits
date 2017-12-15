@@ -1,5 +1,3 @@
-# Bits
-
 ## Do-s and Don't-s
 
 ### DO

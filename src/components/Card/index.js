@@ -1,7 +1,7 @@
 import { Base } from 'react-iotacss'
 import classnames from 'classnames'
 import PropTypes from 'prop-types'
-import React, { Fragment } from 'react'
+import React from 'react'
 
 import './Card.scss'
 import Link from '../Link'
@@ -47,13 +47,13 @@ const Card = ({
   }
 
   const cardChildren = () => (
-    <Fragment>
+    <div>
       {imageJSX()}
       <div className="c-card__content">
         {headingJSX()}
         {children}
       </div>
-    </Fragment>
+    </div>
   )
 
   if (isLink()) {
@@ -72,12 +72,15 @@ const Card = ({
 }
 
 Card.propTypes = {
+  /** @ignore */
   children: PropTypes.node,
+  /** @ignore */
   className: PropTypes.string,
   heading: PropTypes.string,
   imageAlt: PropTypes.string,
   imageSrc: PropTypes.string,
   imageTitle: PropTypes.string,
+  /** relative or qualified URL - determines if component renders `<a>` or `<div>` */
   to: PropTypes.string,
 }
 

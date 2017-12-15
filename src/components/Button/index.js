@@ -45,9 +45,9 @@ Button.propTypes = {
   /** adds `c-button--block` to className */
   block: PropTypes.bool,
   /** @ignore */
-  className: PropTypes.string,
-  /** @ignore */
   children: PropTypes.node.isRequired,
+  /** @ignore */
+  className: PropTypes.string,
   /** adds `c-button--light-on-dark` to className */
   lightOnDark: PropTypes.bool,
   /** adds `c-button--secondary` to className */
