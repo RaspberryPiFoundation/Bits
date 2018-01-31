@@ -10,11 +10,11 @@ Component           | Styles | Docs | React | Tests | Snapshot
 `Form/Textarea`     | ✅      | ✅| - | - | -
 `Hr`                | ✅      | - | ✅ | - | -
 `LightOnDark`       | ✅      | - | ✅ | - | -
-`Link`              | ✅      | - | ✅ | - | -
+`Link`              | ✅      | - | ✅ | ✅ | ✅
 `Pagination`        | ✅      | ✅ | ✅ | - | -
 `Panel`             | ✅      | ✅ | ✅ | - | -
 `Slice`             | ✅      | ✅ | ✅ | - | -
-`Type`              | ✅      | ✅ | ✅ | - | -
+`Type`              | ✅      | ✅ | ✅ | ✅ | ✅
 `Type/Base`         | ✅      | ✅ | ✅ | - | -
 `Type/Caption`      | ✅      | ✅ | ✅ | - | -
 `Type/Display`      | ✅      | ✅ | ✅ | - | -
