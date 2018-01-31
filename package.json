@@ -9,13 +9,11 @@
   },
   "version": "1.1.0",
   "main": "lib/index.js",
-  "files": [
-    "lib",
-    "src/styles"
-  ],
+  "files": ["lib", "src/styles"],
   "scripts": {
     "build": "rollup -c",
-    "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
+    "eslint-check":
+      "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
     "fix": "eslint src/. --ext .js --fix; exit 0;",
     "gulp": "gulp",
     "lint": "eslint src/. --ext .js; exit 0;",
@@ -23,7 +21,8 @@
     "prepublishOnly": "npm run build",
     "start": "rollup -c -w",
     "storybook": "start-storybook -p 9001 -c .storybook",
-    "test": "jest --env=jsdom --notify --watch"
+    "test": "jest --env=jsdom --notify --watch",
+    "circle-test": "jest --env=jsdom --notify"
   },
   "peerDependencies": {
     "classnames": "^2.2.5",
@@ -76,14 +75,8 @@
   },
   "jsnext:main": "lib/index.es.js",
   "lint-staged": {
-    "package.json": [
-      "prettier-package-json --write",
-      "git add"
-    ],
-    "*.js": [
-      "eslint --fix",
-      "git add"
-    ]
+    "package.json": ["prettier-package-json --write", "git add"],
+    "*.js": ["eslint --fix", "git add"]
   },
   "module": "lib/index.es.js",
   "pre-commit": "lint:staged",
