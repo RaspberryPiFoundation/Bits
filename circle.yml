@@ -11,4 +11,4 @@ test:
   pre:
     - ./cc-test-reporter before-build
   override:
-    - npm test -- --coverage; ./cc-test-reporter after-build --exit-code $?
+    - jest --env=jsdom -- --coverage; ./cc-test-reporter after-build --exit-code $?
