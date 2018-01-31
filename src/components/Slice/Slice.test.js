@@ -6,7 +6,7 @@ let slice
 
 const children = 'Whatever'
 
-describe('<Player />', () => {
+describe('<Slice />', () => {
   describe('Renders...', () => {
     beforeEach(() => {
       slice = shallow(<Slice>{children}</Slice>)
