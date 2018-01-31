@@ -6,16 +6,24 @@ import React from 'react'
 
 import './Link.scss'
 
-const Link = ({ children, className, excludeClassname, to, ...props }) => {
+const Link = ({
+  children,
+  className,
+  excludeClassname,
+  lightOnDark,
+  to,
+  ...props
+}) => {
   const classNames = classnames(
     {
       'c-link': !excludeClassname,
+      'c-link--light-on-dark': !excludeClassname && lightOnDark,
     },
     className,
   )
 
   const anchorLink = (
-    <Base {...props} className={classNames} href={to} tagName="a">
+    <Base className={classNames} href={to} tagName="a" {...props}>
       {children}
     </Base>
   )
@@ -23,7 +31,7 @@ const Link = ({ children, className, excludeClassname, to, ...props }) => {
   const isExternal = () => !/^https?:\/\//i.test(to)
 
   const routerLink = (
-    <RouterLink {...props} className={classNames} to={to}>
+    <RouterLink className={classNames} to={to} {...props}>
       {children}
     </RouterLink>
   )
@@ -39,6 +47,7 @@ Link.propTypes = {
   className: PropTypes.string,
   children: PropTypes.node.isRequired,
   excludeClassname: PropTypes.bool,
+  lightOnDark: PropTypes.bool,
   to: PropTypes.string.isRequired,
 }
 

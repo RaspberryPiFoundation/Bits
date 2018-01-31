@@ -21,14 +21,15 @@
     "prepublishOnly": "npm run build",
     "start": "rollup -c -w",
     "storybook": "start-storybook -p 9001 -c .storybook",
-    "test": "jest --env=jsdom --notify --watch"
+    "test": "jest --env=jsdom --notify --watch",
+    "circle-test": "jest --env=jsdom --notify"
   },
   "peerDependencies": {
     "classnames": "^2.2.5",
     "prop-types": "^15.5.4"
   },
   "devDependencies": {
-    "@storybook/addon-storyshots": "^3.2.16",
+    "@storybook/addon-storyshots": "^3.3.11",
     "@storybook/react": "^3.2.16",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.0.1",
@@ -46,19 +47,6 @@
     "eslint-plugin-jsx-a11y": "5.1.1",
     "eslint-plugin-prettier": "^2.3.1",
     "eslint-plugin-react": "^7.4.0",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.0.0",
-    "gulp-babel": "^7.0.0",
-    "gulp-clean": "^0.3.2",
-    "gulp-concat": "^2.6.1",
-    "gulp-cssnano": "^2.1.2",
-    "gulp-header": "^1.8.9",
-    "gulp-notify": "^3.0.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
-    "gulp-scss-lint": "^0.5.0",
-    "gulp-strip-css-comments": "^1.2.0",
-    "gulp-uglify": "^3.0.0",
     "jest": "^21.2.1",
     "jest-css-modules": "^1.1.0",
     "jest-enzyme": "^4.0.1",

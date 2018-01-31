@@ -1,26 +1,64 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Button Primary 1`] = `
-<button
-  className="c-button"
-  onClick={[Function]}
+<div
+  className="c-slice "
 >
-  Hello Button
-</button>
+  <button
+    className="c-button "
+  >
+    Hello Button
+  </button>
+</div>
+`;
+
+exports[`Storyshots Button Primary on dark background 1`] = `
+<div
+  className="c-slice u-bgcolor-ui-black"
+>
+  <div
+    className="c-light-on-dark "
+  >
+    <button
+      className="c-button c-button--light-on-dark "
+    >
+      Hello Button
+    </button>
+  </div>
+</div>
 `;
 
 exports[`Storyshots Button Secondary 1`] = `
-<button
-  className="c-button c-button--secondary"
-  onClick={[Function]}
+<div
+  className="c-slice "
 >
-  Hello Button
-</button>
+  <button
+    className="c-button c-button--secondary "
+  >
+    Hello Button
+  </button>
+</div>
+`;
+
+exports[`Storyshots Button Secondary on dark background 1`] = `
+<div
+  className="c-slice u-bgcolor-ui-black"
+>
+  <div
+    className="c-light-on-dark "
+  >
+    <button
+      className="c-button c-button--light-on-dark c-button--secondary "
+    >
+      Hello Button
+    </button>
+  </div>
+</div>
 `;
 
 exports[`Storyshots Link Internal link 1`] = `
 <a
-  className="c-link"
+  className="c-link "
   href="/here"
 >
   An internal link
@@ -39,7 +77,7 @@ exports[`Storyshots Link Light on dark external link 1`] = `
 
 exports[`Storyshots Link Light on dark internal link 1`] = `
 <a
-  className="c-link c-link--light-on-dark"
+  className="c-link c-link--light-on-dark "
   href="/"
 >
   Hello Link
