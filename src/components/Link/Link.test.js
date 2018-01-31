@@ -10,7 +10,7 @@ const children = 'Whatever'
 const internalTo = '/path/to/wherever'
 const externalTo = 'https://www.100yen.co.uk'
 
-describe('<Slice />', () => {
+describe('<Link />', () => {
   describe('Renders...', () => {
     beforeEach(() => {
       internalLink = shallow(<Link to={internalTo}>{children}</Link>)
