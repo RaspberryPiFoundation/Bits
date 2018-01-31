@@ -23,7 +23,7 @@ const Link = ({
   )
 
   const anchorLink = (
-    <Base {...props} className={classNames} href={to} tagName="a">
+    <Base className={classNames} href={to} tagName="a" {...props}>
       {children}
     </Base>
   )
@@ -31,7 +31,7 @@ const Link = ({
   const isExternal = () => !/^https?:\/\//i.test(to)
 
   const routerLink = (
-    <RouterLink {...props} className={classNames} to={to}>
+    <RouterLink className={classNames} to={to} {...props}>
       {children}
     </RouterLink>
   )
