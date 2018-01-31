@@ -24,6 +24,7 @@ const Button = ({
     'c-button--light-on-dark': lightOnDark,
     'c-button--secondary': secondary,
   })
+
   const isLink = () => typeof to === 'string'
 
   if (isLink()) {
