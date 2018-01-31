@@ -1,6 +1,6 @@
 import { mount, shallow } from 'enzyme'
 import { MemoryRouter } from 'react-router-dom'
-import Card from '.'
+import Card, { imageJSX } from '.'
 import Link from '../Link'
 import React from 'react'
 
@@ -44,8 +44,18 @@ describe('<Card />', () => {
       expect(shallowComp.find('.c-card__image')).toHaveProp('src', imageSrc)
     })
 
+    it('does not renders the image if prop not supplied', () => {
+      shallowComp = shallow(<Card heading={heading}>{children}</Card>)
+      expect(shallowComp.find('.c-card__image')).not.toBePresent()
+    })
+
     it('renders the title', () => {
       expect(shallowComp.find('.c-card__heading')).toIncludeText(heading)
+    })
+
+    it('does not renders the title if prop not supplied', () => {
+      shallowComp = shallow(<Card imageSrc={imageSrc}>{children}</Card>)
+      expect(shallowComp.find('.c-card__heading')).not.toBePresent()
     })
 
     it('renders the content', () => {
@@ -65,23 +75,6 @@ describe('<Card />', () => {
 
     it('renders the technologies element', () => {
       expect(shallowComp.find('span')).toBePresent()
-    })
-  })
-
-  describe('Methods', () => {
-    describe('#imageJSX', () => {
-      it('returns null if no imageSrc prop', () => {
-        shallowComp = shallow(<Card>{children}</Card>)
-        console.log(shallowComp)
-        let value = shallowComp.instance().imageJSX()
-        expect(value).toEqual(null)
-      })
-
-      fit('returns HTML if imageSrc prop supplied', () => {
-        shallowComp = shallow(<Card imageSrc={imageSrc}>{children}</Card>)
-        let value = shallowComp.instance().imageJSX()
-        expect(value).toEqual(null)
-      })
     })
   })
 

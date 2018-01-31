@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Card /> Renders matches its snapshot 1`] = `
+<Card
+  heading="Card Heading"
+  imageSrc="http://via.placeholder.com/350x150"
+>
+  <Base
+    className="c-card"
+    tagName="div"
+  >
+    <div
+      className="c-card "
+    >
+      <div>
+        <Base
+          className="c-card__image"
+          src="http://via.placeholder.com/350x150"
+          tagName="img"
+        >
+          <img
+            className="c-card__image "
+            src="http://via.placeholder.com/350x150"
+          />
+        </Base>
+        <div
+          className="c-card__content"
+        >
+          <span
+            className="c-card__heading"
+          >
+            Card Heading
+          </span>
+          <span>
+            Whatever
+          </span>
+        </div>
+      </div>
+    </div>
+  </Base>
+</Card>
+`;
