@@ -54,7 +54,8 @@ gulp.task('compile_stylesheets', () => {
     .pipe(autoprefixer({
         browsers: ['last 2 versions'],
         cascade: false,
-    }))
+      }),
+    )
     .pipe(
       header(banner, {
         buildFile: config.buildFile,
