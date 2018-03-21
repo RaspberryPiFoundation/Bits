@@ -11,6 +11,10 @@
   ol { @include type-base;          }
 }
 
+.c-wysiwyg--rpi {
+  a { @include link--rpi; }
+}
+
 .c-wysiwyg--light-on-dark {
-  a { @include link-light-on-dark; }
+  a { @include link--light-on-dark; }
 }
