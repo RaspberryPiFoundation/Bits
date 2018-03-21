@@ -14,9 +14,22 @@
 .u-border-t-x2 { border-top-width:    $border-width-x2; }
 .u-border-t-x3 { border-top-width:    $border-width-x3; }
 
+.u-border-none,
+.u-border-b-none,
+.u-border-l-none,
+.u-border-r-none,
+.u-border-t-none {
+  border-width: 0;
+}
+
 .u-border-h {
   border-left-width:  $border-width;
   border-right-width: $border-width;
+}
+
+.u-border-h-none {
+  border-left-width:  0;
+  border-right-width: 0;
 }
 
 .u-border-h-x2 {
@@ -32,6 +45,11 @@
 .u-border-v {
   border-bottom-width: $border-width;
   border-top-width:    $border-width;
+}
+
+.u-border-v-none {
+  border-bottom-width: 0;
+  border-top-width:    0;
 }
 
 .u-border-v-x2 {
