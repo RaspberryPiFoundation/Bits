@@ -51,7 +51,8 @@ gulp.task('compile_stylesheets', () => {
       }),
     )
     .pipe(stripComments())
-    .pipe(autoprefixer({
+    .pipe(
+      autoprefixer({
         browsers: ['last 2 versions'],
         cascade: false,
       }),

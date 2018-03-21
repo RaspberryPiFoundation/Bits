@@ -767,8 +767,8 @@ strong {
 
 
 .c-slice {
-  background-color: #f5f6f9;
   background-attachment: scroll;
+  background-color: #f5f6f9;
   background-position: center center;
   background-repeat: no-repeat;
   padding: 25px 0; }
