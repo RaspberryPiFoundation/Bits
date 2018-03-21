@@ -1,5 +1,6 @@
 @import '../../styles/component-helper';
 
+$slice-bgcolor:            $color-ui-white;
 $slice-pv:                 $baseline-x5 0;
 $slice-pv-md:              $baseline-x10 0;
 $slice-white-bgcolor:      $color-white;
@@ -10,6 +11,7 @@ $slice-white-box-shadow:   $box-shadow-b;
 
 .c-slice {
   background-attachment: scroll;
+  background-color:      $slice-bgcolor;
   background-position:   center center;
   background-repeat:     no-repeat;
   padding:               $slice-pv;
