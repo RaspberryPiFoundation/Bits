@@ -22,7 +22,8 @@
     "lint:staged": "lint-staged",
     "prepublishOnly": "npm run build",
     "start": "rollup -c -w",
-    "storybook": "start-storybook -p 9001 -c .storybook",
+    "styleguide": "styleguidist server",
+    "styleguide:build": "styleguidist build",
     "test": "jest --watch",
     "test-ci": "jest --coverage"
   },
@@ -31,6 +32,7 @@
     "prop-types": "^15.5.4"
   },
   "devDependencies": {
+    "autoprefixer": "^8.0.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.0.1",
     "babel-jest": "^21.2.0",
@@ -68,7 +70,7 @@
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
     "react-router-dom": "^4.2.2",
-    "react-styleguidist": "^6.0.33",
+    "react-styleguidist": "^6.2.4",
     "react-test-renderer": "^16.1.1",
     "regenerator-runtime": "^0.11.0",
     "rollup": "^0.50.0",
