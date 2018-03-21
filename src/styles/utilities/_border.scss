@@ -72,6 +72,18 @@
 .u-border-radius-tl { border-radius: $border-radius-tl; }
 .u-border-radius-tr { border-radius: $border-radius-tr; }
 
+.u-border-radius-none,
+.u-border-radius-b-none,
+.u-border-radius-bl-none,
+.u-border-radius-br-none,
+.u-border-radius-l-none,
+.u-border-radius-r-none,
+.u-border-radius-t-none,
+.u-border-radius-tl-none,
+.u-border-radius-tr-none {
+  border-radius: 0;
+}
+
 @each $name, $value in $colors {
   .u-border-color-#{$name}   { border-color:        $value; }
   .u-border-color-b-#{$name} { border-bottom-color: $value; }
