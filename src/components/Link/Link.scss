@@ -5,5 +5,9 @@
 }
 
 .c-link--light-on-dark {
-  @include link-light-on-dark;
+  @include link--light-on-dark;
+}
+
+.c-link--rpi {
+  @include link--rpi;
 }

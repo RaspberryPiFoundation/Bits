@@ -15,6 +15,7 @@ $card-transition-timing:   $transition-timing-eased;
   display:          block;
   overflow:         hidden;
   transition:       box-shadow $card-transition-duration $card-transition-timing;
+  width:            100%;
 }
 
 .c-card__image {
