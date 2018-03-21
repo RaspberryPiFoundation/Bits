@@ -7,15 +7,16 @@
     "type": "git",
     "url": "https://github.com/RaspberryPiFoundation/Bits.git"
   },
-  "version": "1.1.1",
+  "version": "1.1.2",
   "main": "lib/index.js",
-  "files": ["lib", "src/styles"],
+  "files": [
+    "lib",
+    "src/styles"
+  ],
   "scripts": {
     "build": "rollup -c",
-    "eslint-check":
-      "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
+    "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
     "fix": "eslint src/. --ext .js --fix; exit 0;",
-    "gulp": "gulp",
     "lint": "eslint src/. --ext .js; exit 0;",
     "lint:staged": "lint-staged",
     "prepublishOnly": "npm run build",
@@ -47,6 +48,16 @@
     "eslint-plugin-jsx-a11y": "5.1.1",
     "eslint-plugin-prettier": "^2.3.1",
     "eslint-plugin-react": "^7.4.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-header": "^2.0.5",
+    "gulp-notify": "^3.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-scss-lint": "^0.6.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-strip-css-comments": "^2.0.0",
     "jest": "^21.2.1",
     "jest-css-modules": "^1.1.0",
     "jest-enzyme": "^4.0.1",
@@ -75,12 +86,19 @@
   },
   "jsnext:main": "lib/index.es.js",
   "lint-staged": {
-    "package.json": ["prettier-package-json --write", "git add"],
-    "*.js": ["eslint --fix", "git add"]
+    "package.json": [
+      "prettier-package-json --write",
+      "git add"
+    ],
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
   },
   "module": "lib/index.es.js",
   "pre-commit": "lint:staged",
   "dependencies": {
+    "@storybook/addons": "^3.3.15",
     "iotacss": "^1.5.0",
     "react-iotacss": "^1.3.1"
   }
