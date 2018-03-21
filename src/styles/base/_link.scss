@@ -44,8 +44,8 @@ $link-light-on-dark-visited-color: $color-ui-grey-lightest;
   }
 }
 
-$link-rpi-color:         $color-brand-rpi-red;
-$link-rpi-font-weight:   $font-weight-light;
+$link-rpi-color:       $color-brand-rpi-red;
+$link-rpi-font-weight: $font-weight-light;
 
 @mixin link--rpi {
   color:       $color-brand-rpi-red;
