@@ -14,6 +14,7 @@ const Button = ({
   block,
   children,
   className,
+  disabled,
   lightOnDark,
   secondary,
   to,
@@ -21,6 +22,7 @@ const Button = ({
 }) => {
   const classNames = classnames('c-button', className, {
     'c-button--block': block,
+    'c-button--disabled': disabled,
     'c-button--light-on-dark': lightOnDark,
     'c-button--secondary': secondary,
   })
@@ -49,6 +51,8 @@ Button.propTypes = {
   children: PropTypes.node.isRequired,
   /** @ignore */
   className: PropTypes.string,
+  /** adds `c-button--disabled` to className */
+  disabled: PropTypes.bool,
   /** adds `c-button--light-on-dark` to className */
   lightOnDark: PropTypes.bool,
   /** adds `c-button--secondary` to className */
