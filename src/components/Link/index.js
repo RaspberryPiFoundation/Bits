@@ -28,7 +28,7 @@ const Link = ({
     </Base>
   )
 
-  const isExternal = () => !/^https?:\/\//i.test(to)
+  const isExternal = () => /^https?:\/\//i.test(to)
 
   const routerLink = (
     <RouterLink className={classNames} to={to} {...props}>

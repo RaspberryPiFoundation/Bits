@@ -58,8 +58,9 @@ exports[`Storyshots Button Secondary on dark background 1`] = `
 
 exports[`Storyshots Link Internal link 1`] = `
 <a
-  className="c-link "
+  className="c-link"
   href="/here"
+  onClick={[Function]}
 >
   An internal link
 </a>
@@ -67,9 +68,8 @@ exports[`Storyshots Link Internal link 1`] = `
 
 exports[`Storyshots Link Light on dark external link 1`] = `
 <a
-  className="c-link c-link--light-on-dark"
-  href="/https://raspberrypi.org"
-  onClick={[Function]}
+  className="c-link c-link--light-on-dark "
+  href="https://raspberrypi.org"
 >
   Hello Link
 </a>
@@ -77,8 +77,9 @@ exports[`Storyshots Link Light on dark external link 1`] = `
 
 exports[`Storyshots Link Light on dark internal link 1`] = `
 <a
-  className="c-link c-link--light-on-dark "
+  className="c-link c-link--light-on-dark"
   href="/"
+  onClick={[Function]}
 >
   Hello Link
 </a>
@@ -86,9 +87,8 @@ exports[`Storyshots Link Light on dark internal link 1`] = `
 
 exports[`Storyshots Link external link 1`] = `
 <a
-  className="c-link"
-  href="/https://raspberrypi.org"
-  onClick={[Function]}
+  className="c-link "
+  href="https://raspberrypi.org"
 >
   An external link
 </a>

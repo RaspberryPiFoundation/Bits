@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Link /> Renders... matches its snapshot 1`] = `
-<Base
+<Link
   className="c-link"
-  href="/path/to/wherever"
-  tagName="a"
+  replace={false}
+  to="/path/to/wherever"
 >
   Whatever
-</Base>
+</Link>
 `;
