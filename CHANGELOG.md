@@ -3,6 +3,12 @@
 *The format of this document is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).*
 
+## [v1.1.3](https://github.com/RaspberryPiFoundation/Bits/compare/v1.1.2...v1.1.3) - 2018-04-05
+
+### Fixed
+
+- External urls were rendered as Router links and Internal urls were rendered as anchor links
+
 ## [v1.1.2](https://github.com/RaspberryPiFoundation/Bits/compare/v1.1.1...v1.1.2) - 2017-12-11
 
 ### Fixed
