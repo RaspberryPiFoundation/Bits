@@ -24,14 +24,20 @@ describe('<Link />', () => {
       expect(internalLink).toMatchSnapshot()
     })
 
+    it('renders a React Router Link component', () => {
+      expect(internalLink.find(RouterLink)).toBePresent()
+    })
+
     describe('external links', () => {
-      it('renders a React Router Link component', () => {
+      it('renders an anchor link', () => {
         let externalLink = mount(
           <MemoryRouter>
             <Link to={externalTo}>{children}</Link>
           </MemoryRouter>,
         )
-        expect(externalLink.find(RouterLink)).toBePresent()
+        expect(externalLink.html()).toEqual(
+          '<a class="c-link " href="https://www.100yen.co.uk">Whatever</a>',
+        )
       })
     })
   })
