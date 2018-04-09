@@ -5,6 +5,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [v1.1.4](https://github.com/RaspberryPiFoundation/Bits/compare/v1.1.3...v1.1.4) - 2018-04-08
 
+### Added
+
+- Minified CSS includes banner with version number
+
 ### Fixed
 
 - Box shadow utility now actually has option for "none"
