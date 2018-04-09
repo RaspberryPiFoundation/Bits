@@ -1,13 +1,16 @@
 {
   "name": "raspberry-pi-bits",
   "description": "The Raspberry Pi Front End Pattern Library",
-  "author": "The Raspberry Pi Foundation (https://raspberrypi.org)",
+  "author": {
+    "name": "The Raspberry Pi Foundation",
+    "url": "https://raspberrypi.org"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/RaspberryPiFoundation/Bits.git"
   },
-  "version": "1.1.4",
+  "version": "1.1.5",
   "main": "lib/index.js",
   "files": [
     "lib",

@@ -3,6 +3,12 @@
 *The format of this document is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).*
 
+## [v1.1.4](https://github.com/RaspberryPiFoundation/Bits/compare/v1.1.4...v1.1.5) - 2018-04-08
+
+### Fixed
+
+- CSS banner correctly outputs package author details
+
 ## [v1.1.4](https://github.com/RaspberryPiFoundation/Bits/compare/v1.1.3...v1.1.4) - 2018-04-08
 
 ### Added
