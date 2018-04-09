@@ -67,6 +67,12 @@ gulp.task('compile_stylesheets', () => {
     .pipe(gulp.dest(config.destDir))
     .pipe(sourcemaps.init())
     .pipe(cssnano())
+    .pipe(
+      header(banner, {
+        buildFile: config.buildFile,
+        pkg: pkg,
+      }),
+    )
     .pipe(rename(config.buildFileMin))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(config.destDir))
