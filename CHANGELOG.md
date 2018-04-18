@@ -3,6 +3,12 @@
 *The format of this document is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).*
 
+## [v1.1.6](https://github.com/RaspberryPiFoundation/Bits/compare/v1.1.5...v1.1.6) - 2018-04-18
+
+### Added
+
+- `npm` now inclues the `src/components` directory, so you can install this package and access the raw `.sass` files for each component to be compiled in your project.
+
 ## [v1.1.5](https://github.com/RaspberryPiFoundation/Bits/compare/v1.1.4...v1.1.5) - 2018-04-09
 
 ### Fixed
