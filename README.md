@@ -8,7 +8,7 @@ In the interests of performance, it's best to include these in the HTML so we ca
 
 ```html
 <link rel="preconnect stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300,500,700|Space+Mono" media="all" type="text/css" crossorigin />
-``
+```
 
 ## Deployment to S3 & Cloudfront.
 
