@@ -1,5 +1,15 @@
 # Bits
 
+## FONTS
+
+Bits doesn't include the CSS for requiring fonts from the Google Fonts CDN.
+
+In the interests of performance, it's best to include these in the HTML so we can prompt the browser to be smarter about connecting and downloading these assets. Use this HTML snippet for MAXIMUM PERFORMANCE:
+
+```html
+<link rel="preconnect stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300,500,700|Space+Mono" media="all" type="text/css" crossorigin />
+``
+
 ## Deployment to S3 & Cloudfront.
 
 Includes a new Docker Compose based dev env.
@@ -38,7 +48,7 @@ In the root of the slash-learning-ui repo, run the following
 
     npm install
     npm link raspberry-pi-bits
-    
+
 You're now ready to start the development server and use raspberry-pi-bits in your React components.
 
     npm run dev # runs create-react-app hot-reload dev server
