@@ -10,7 +10,7 @@
     "type": "git",
     "url": "https://github.com/RaspberryPiFoundation/Bits.git"
   },
-  "version": "1.1.6",
+  "version": "1.1.7",
   "main": "lib/index.js",
   "files": [
     "lib",
@@ -59,7 +59,6 @@
     "gulp-notify": "^3.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
-    "gulp-scss-lint": "^0.6.1",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-strip-css-comments": "^2.0.0",
     "jest": "^21.2.1",

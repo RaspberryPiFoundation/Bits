@@ -9,7 +9,6 @@ const header = require('gulp-header')
 const notify = require('gulp-notify')
 const rename = require('gulp-rename')
 const sass = require('gulp-sass')
-const scsslint = require('gulp-scss-lint')
 const sourcemaps = require('gulp-sourcemaps')
 const stripComments = require('gulp-strip-css-comments')
 
@@ -78,12 +77,8 @@ gulp.task('compile_stylesheets', () => {
     .pipe(notify(`${pkg.name} Gulp: stylesheets completed`))
 })
 
-gulp.task('scsslint', () => {
-  return gulp.src('src/**/*.scss').pipe(scsslint())
-})
-
 gulp.task('watch', () => {
-  gulp.watch('./src/**/*.scss', ['scsslint', 'compile_stylesheets'])
+  gulp.watch('./src/**/*.scss', ['compile_stylesheets'])
 })
 
-gulp.task('default', ['scsslint', 'compile_all', 'watch'])
+gulp.task('default', ['compile_all', 'watch'])
