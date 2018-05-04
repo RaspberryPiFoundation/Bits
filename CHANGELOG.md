@@ -3,6 +3,20 @@
 *The format of this document is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).*
 
+## [v1.1.7](https://github.com/RaspberryPiFoundation/Bits/compare/v1.1.6...v1.1.7) - 2018-05-04
+
+### Added
+
+- New `.u-no-motion` classname to remove animations and transitions
+- Accessbility base file. Currently just reduces motion if user has requested it
+- Updated default font stack for monospace fonts
+- Added some guidance on font inclusion in README file
+- A PR template to make sure this changelog actually gets updated
+
+### Removed
+
+- Anything relating to scss-lint. We'll be moving away from that to stylelint and Prettier for styles in future.
+
 ## [v1.1.6](https://github.com/RaspberryPiFoundation/Bits/compare/v1.1.5...v1.1.6) - 2018-04-18
 
 ### Added
