@@ -5,7 +5,7 @@
 
   Author:      The Raspberry Pi Foundation
   Author URI:  https://raspberrypi.org
-  Version:     1.1.6
+  Version:     1.1.7
 */
 
 
@@ -135,6 +135,13 @@ select {
   font: inherit;
    }
 
+@media screen and (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation: none !important;
+    animation: none !important;
+    -webkit-transition: none !important;
+    transition: none !important; } }
+
 html {
   background-color: transparent;
   font-size: 62.5%; }
@@ -165,7 +172,7 @@ b {
   font-weight: 500; }
 
 code {
-  font-family: "Lucida Console", "Monaco", monospace; }
+  font-family: "Space Mono", "Lucida Console", "Monaco", monospace; }
 
 h1,
 h2,
@@ -176,7 +183,7 @@ h6 {
   font-weight: 500; }
 
 pre {
-  font-family: "Lucida Console", "Monaco", monospace; }
+  font-family: "Space Mono", "Lucida Console", "Monaco", monospace; }
 
 strong {
   font-weight: 500; }
@@ -1209,6 +1216,12 @@ strong {
     .c-type-sub-heading {
       font-size: 1.8rem;
       line-height: 1.5; } }
+
+.u-no-motion {
+  -webkit-animation: none !important;
+  animation: none !important;
+  -webkit-transition: none !important;
+  transition: none !important; }
 
 
 
