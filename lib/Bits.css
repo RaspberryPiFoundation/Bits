@@ -5762,6 +5762,18 @@ strong {
     position: -webkit-sticky !important;
     position: sticky !important; } }
 
+.u-no-print {
+  display: initial !important; }
+  @media print {
+    .u-no-print {
+      display: none !important; } }
+
+.u-print-only {
+  display: none !important; }
+  @media print {
+    .u-print-only {
+      display: initial !important; } }
+
 
 
 
