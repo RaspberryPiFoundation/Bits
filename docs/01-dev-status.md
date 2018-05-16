@@ -11,8 +11,10 @@ Component           | Styles | Docs | React | Tests | Snapshot | Story
 `Hr`                | ✅      | - | ✅ | - | - | -
 `LightOnDark`       | ✅      | - | ✅ | - | - | -
 `Link`              | ✅      | - | ✅ | - | - | -
+`NoPrint`           | ✅      | - | ✅ | ✅ | - | -
 `Pagination`        | ✅      | ✅ | ✅ | - | - | -
 `Panel`             | ✅      | ✅ | ✅ | - | - | -
+`PrintOnly`         | ✅      | - | ✅ | ✅ | - | -
 `Slice`             | ✅      | ✅ | ✅ | - | - | -
 `Type`              | ✅      | ✅ | ✅ | - | - | -
 `Type/Base`         | ✅      | ✅ | ✅ | - | - | -
