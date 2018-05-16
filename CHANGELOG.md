@@ -3,6 +3,18 @@
 *The format of this document is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).*
 
+## [v1.1.8](https://github.com/RaspberryPiFoundation/Bits/compare/v1.1.7...v1.1.8) - 2018-05-16
+
+### Added
+
+- New `.u-no-print` classname to hide content in `@media print {}`
+- New `.u-print-only` classname to only show content in `@media print {}`
+- Created NoPrint and PrintOnly components for the two new utility classes
+
+### Removed
+
+- The `/stories` directory - we won't be using [Storybook](https://storybook.js.org/) for the docs, and the tests in this directory were failing and would prevent a merge.
+
 ## [v1.1.7](https://github.com/RaspberryPiFoundation/Bits/compare/v1.1.6...v1.1.7) - 2018-05-04
 
 ### Added
