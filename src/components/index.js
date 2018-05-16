@@ -6,8 +6,10 @@ import Figure from './Figure'
 import Hr from './Hr'
 import LightOnDark from './LightOnDark'
 import Link from './Link'
+import NoPrint from './NoPrint'
 import Pagination from './Pagination'
 import Panel from './Panel'
+import PrintOnly from './PrintOnly'
 import Slice from './Slice'
 import Type from './Type'
 import TypeBase from './Type/Base'
@@ -29,8 +31,10 @@ export {
   LightOnDark,
   Link,
   Media,
+  NoPrint,
   Pagination,
   Panel,
+  PrintOnly,
   Slice,
   Type,
   TypeBase,
