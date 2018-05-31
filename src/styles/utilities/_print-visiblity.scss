@@ -1,15 +1,11 @@
-.u-no-print {
-  display: initial !important;
-
-  @media print {
+@media screen {
+  .u-print-only {
     display: none !important;
   }
 }
 
-.u-print-only {
-  display: none !important;
-
-  @media print {
-    display: initial !important;
+@media print {
+  .u-no-print {
+    display: none !important;
   }
 }

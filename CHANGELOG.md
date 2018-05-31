@@ -3,6 +3,12 @@
 *The format of this document is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).*
 
+## [v1.1.9](https://github.com/RaspberryPiFoundation/Bits/compare/v1.1.8...v1.1.9) - 2018-05-31
+
+### fixed
+
+- Print visibility utility classes work in IE11
+
 ## [v1.1.8](https://github.com/RaspberryPiFoundation/Bits/compare/v1.1.7...v1.1.8) - 2018-05-16
 
 ### Added
