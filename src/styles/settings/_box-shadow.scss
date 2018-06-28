@@ -1,7 +1,7 @@
-$box-shadow-color:  rgba($color-black, .25);
+$box-shadow-color:  rgba($color-black, .25) !default;
 
-$box-shadow-offset: .1rem;
-$box-shadow-blur:   .3rem;
+$box-shadow-offset: .1rem !default;
+$box-shadow-blur:   .3rem !default;
 
 $box-shadow-all:    0                     0                     $box-shadow-blur 0;
 $box-shadow-b-edge: 0                     $box-shadow-offset    $box-shadow-blur (-$box-shadow-offset);

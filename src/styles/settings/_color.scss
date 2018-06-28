@@ -1,37 +1,37 @@
-$color-black:                  #000;
-$color-white:                  #fff;
+$color-black:                  #000 !default;
+$color-white:                  #fff !default;
 
-$color-brand-rpi-red:       #c51d4a;
-$color-brand-rpi-green:     #6ac146;
-$color-brand-cc-green:      #009b3a;
+$color-brand-rpi-red:       #c51d4a !default;
+$color-brand-rpi-green:     #6ac146 !default;
+$color-brand-cc-green:      #009b3a !default;
 
-$color-primary-yellow:      #ffb12a;
-$color-primary-orange:      #f68e3b;
-$color-primary-red:         #f3524f;
-$color-primary-violet:      #a76fba;
-$color-primary-navy:        #004881;
-$color-primary-blue:        #41a6c4;
-$color-primary-turquoise:   #10aeb0;
-$color-primary-green:       #53ce63;
+$color-primary-yellow:      #ffb12a !default;
+$color-primary-orange:      #f68e3b !default;
+$color-primary-red:         #f3524f !default;
+$color-primary-violet:      #a76fba !default;
+$color-primary-navy:        #004881 !default;
+$color-primary-blue:        #41a6c4 !default;
+$color-primary-turquoise:   #10aeb0 !default;
+$color-primary-green:       #53ce63 !default;
 
-$color-secondary-yellow:    #fddd42;
-$color-secondary-orange:    #ffc869;
-$color-secondary-red:       #f68583;
-$color-secondary-violet:    #c29acf;
-$color-secondary-navy:      #4c7fa7;
-$color-secondary-blue:      #87dcf6;
-$color-secondary-turquoise: #58c7c8;
-$color-secondary-green:     #87dd92;
-$color-secondary-pink:      #f68583;
-$color-secondary-blue-dark: #374e60;
+$color-secondary-yellow:    #fddd42 !default;
+$color-secondary-orange:    #ffc869 !default;
+$color-secondary-red:       #f68583 !default;
+$color-secondary-violet:    #c29acf !default;
+$color-secondary-navy:      #4c7fa7 !default;
+$color-secondary-blue:      #87dcf6 !default;
+$color-secondary-turquoise: #58c7c8 !default;
+$color-secondary-green:     #87dd92 !default;
+$color-secondary-pink:      #f68583 !default;
+$color-secondary-blue-dark: #374e60 !default;
 
-$color-ui-black:               #222;
-$color-ui-grey-dark:           #444;
-$color-ui-grey-medium:         #999;
-$color-ui-grey-light:          #ccc;
-$color-ui-grey-lightest:       #eee;
-$color-ui-white:            #f5f6f9;
-$color-ui-yellow:           #fcf67f;
+$color-ui-black:               #222 !default;
+$color-ui-grey-dark:           #444 !default;
+$color-ui-grey-medium:         #999 !default;
+$color-ui-grey-light:          #ccc !default;
+$color-ui-grey-lightest:       #eee !default;
+$color-ui-white:            #f5f6f9 !default;
+$color-ui-yellow:           #fcf67f !default;
 
 // scss-lint thinks the following "black" and "white" are color literals.
 // They're not, so disabling the rule.
