@@ -55,6 +55,34 @@ You're now ready to start the development server and use raspberry-pi-bits in yo
 
 Now, anytime you make a change to your component in src/ or to the example application's example/src, create-react-app will live-reload your local dev server so you can iterate on your component in real-time.
 
+### Releasing
+
+Before merging a PR, make sure you've updated the `version` in `package.json` & the [changelog](./CHANGELOG.md).
+Then once the PR is merged:
+* Create & push a tag for the release
+  ```
+  git tag -a v1.1.10 -m "Release version 1.1.10"
+  git push origin --tags
+  ```
+* Create a release in github:
+    * Visit the [repository releases page](https://github.com/RaspberryPiFoundation/Bits/releases)
+    * Click "Draft a new release"
+    * Select your release tag
+    * Use the release version as the title
+    * Fill in an appropriate message to describe the changes
+    * "Publish release"
+* Create a new version of the minified styles on AWS
+    * Make sure you have the environment varibles set appropriately in `.env` - you will need S3 access keys available from https://console.aws.amazon.com/iam/home?region=eu-west-1#/users/engineering?section=security_credentials
+    * Build the docker container
+      ```
+      docker-compose build
+      ```
+    * Run the deploy script in the docker container
+      ```
+      docker-compose run web ./deploy.sh
+      ```
+
+
 ## Usage in a React App
 
 Bits requires the following peer dependencies to be installed in the host application:
