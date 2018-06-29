@@ -1,0 +1,7 @@
+@function set-color($color) {
+  @if (lightness($color) > 50) {
+    @return $color-ui-black;
+  } @else {
+    @return $color-ui-white;
+  }
+}
