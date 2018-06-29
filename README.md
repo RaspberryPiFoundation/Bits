@@ -22,13 +22,18 @@ Deploys to: https://static.raspberrypi.org/styles/Bits/<version> via:
 
 eg: https://static.raspberrypi.org/styles/Bits/1.0.0/Bits.min.css
 
-## Local Development using storybook
+## Local Development
 
-[Storybook](https://storybook.js.org/) is set up on this app to allow interactive development. To use it, run:
+You can use gulp to watch the scss files & rebuild as necessary:
 ```
-npm run storybook
+npm run gulp:watch
 ```
-and visit http://localhost:9001
+
+Before creating a PR, make sure you run:
+```
+npm run build
+```
+to build all the css & javascript files.
 
 ## Local Development in another app
 
@@ -58,6 +63,7 @@ Now, anytime you make a change to your component in src/ or to the example appli
 ### Releasing
 
 Before merging a PR, make sure you've updated the `version` in `package.json` & the [changelog](./CHANGELOG.md).
+Also make sure you've run `npm run build`.
 Then once the PR is merged:
 * Create & push a tag for the release
   ```
