@@ -486,22 +486,6 @@ strong {
     border-color: #444;
     color: #fff; }
 
-.c-button--secondary,
-.c-button--secondary:visited {
-  background-color: transparent;
-  border-color: #999;
-  color: #999; }
-
-.c-button--light-on-dark:hover,
-.c-button--light-on-dark:visited:hover {
-  background-color: #fff;
-  border-color: #fff;
-  color: #444; }
-
-.c-button--block {
-  display: block;
-  width: 100%; }
-
 .c-button--black {
   background-color: #000 !important;
   border-color: #000 !important;
@@ -646,6 +630,22 @@ strong {
   background-color: #fcf67f !important;
   border-color: #fcf67f !important;
   color: #222 !important; }
+
+.c-button--secondary,
+.c-button--secondary:visited {
+  background-color: transparent;
+  border-color: #999;
+  color: #999; }
+
+.c-button--light-on-dark:hover,
+.c-button--light-on-dark:visited:hover {
+  background-color: #fff;
+  border-color: #fff;
+  color: #444; }
+
+.c-button--block {
+  display: block;
+  width: 100%; }
 
 
 

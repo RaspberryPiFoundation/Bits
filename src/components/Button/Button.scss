@@ -51,6 +51,11 @@ $button-hover-color:            $color-white;
   }
 }
 
+.c-button {
+  @include color-variants;
+
+}
+
 $button-secondary-border-color: $color-ui-grey-medium;
 $button-secondary-color:        $color-ui-grey-medium;
 
@@ -79,10 +84,10 @@ $button-lod-hover-color:            $color-ui-grey-dark;
   width:   100%;
 }
 
-@each $color-name, $color-value in $colors {
-  .#{'c-button--' + $color-name} {
-    background-color: #{$color-value} !important;
-    border-color:     #{$color-value} !important;
-    color:            set-color($color-value) !important;
-  }
-}
+// @each $color-name, $color-value in $colors {
+//   .#{'c-button--' + $color-name} {
+//     background-color: #{$color-value} !important;
+//     border-color:     #{$color-value} !important;
+//     color:            set-color($color-value) !important;
+//   }
+// }

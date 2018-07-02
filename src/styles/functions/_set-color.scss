@@ -5,3 +5,13 @@
     @return $color-ui-white;
   }
 }
+
+@mixin color-variants {
+  @each $color-name, $color-value in $colors {
+    &--#{$color-name} {
+      background-color: #{$color-value} !important;
+      border-color:     #{$color-value} !important;
+      color:            set-color($color-value) !important;
+    }
+  }
+}
