@@ -78,3 +78,12 @@ $button-lod-hover-color:            $color-ui-grey-dark;
   display: block;
   width:   100%;
 }
+
+@each $color-name, $color-value in $colors {
+  .#{'c-button--' + $color-name},
+  .#{'c-button--' + $color-name + ':visited'} {
+    background-color: #{$color-value};
+    border-color:          #{$color-value};
+    color:                      set-color($color-value);
+  }
+}

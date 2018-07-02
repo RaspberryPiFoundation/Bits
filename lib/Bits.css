@@ -5,7 +5,7 @@
 
   Author:      The Raspberry Pi Foundation
   Author URI:  https://raspberrypi.org
-  Version:     1.1.7
+  Version:     1.1.11
 */
 
 
@@ -501,6 +501,180 @@ strong {
 .c-button--block {
   display: block;
   width: 100%; }
+
+.c-button--black,
+.c-button--black:visited {
+  background-color: #000;
+  border-color: #000;
+  color: #f5f6f9; }
+
+.c-button--white,
+.c-button--white:visited {
+  background-color: #fff;
+  border-color: #fff;
+  color: #222; }
+
+.c-button--brand-raspberry-pi-red,
+.c-button--brand-raspberry-pi-red:visited {
+  background-color: #c51d4a;
+  border-color: #c51d4a;
+  color: #f5f6f9; }
+
+.c-button--brand-raspberry-pi-green,
+.c-button--brand-raspberry-pi-green:visited {
+  background-color: #6ac146;
+  border-color: #6ac146;
+  color: #222; }
+
+.c-button--primary-yellow,
+.c-button--primary-yellow:visited {
+  background-color: #ffb12a;
+  border-color: #ffb12a;
+  color: #222; }
+
+.c-button--primary-orange,
+.c-button--primary-orange:visited {
+  background-color: #f68e3b;
+  border-color: #f68e3b;
+  color: #222; }
+
+.c-button--primary-red,
+.c-button--primary-red:visited {
+  background-color: #f3524f;
+  border-color: #f3524f;
+  color: #222; }
+
+.c-button--primary-violet,
+.c-button--primary-violet:visited {
+  background-color: #a76fba;
+  border-color: #a76fba;
+  color: #222; }
+
+.c-button--primary-navy,
+.c-button--primary-navy:visited {
+  background-color: #004881;
+  border-color: #004881;
+  color: #f5f6f9; }
+
+.c-button--primary-blue,
+.c-button--primary-blue:visited {
+  background-color: #41a6c4;
+  border-color: #41a6c4;
+  color: #222; }
+
+.c-button--primary-turquoise,
+.c-button--primary-turquoise:visited {
+  background-color: #10aeb0;
+  border-color: #10aeb0;
+  color: #f5f6f9; }
+
+.c-button--primary-green,
+.c-button--primary-green:visited {
+  background-color: #53ce63;
+  border-color: #53ce63;
+  color: #222; }
+
+.c-button--secondary-yellow,
+.c-button--secondary-yellow:visited {
+  background-color: #fddd42;
+  border-color: #fddd42;
+  color: #222; }
+
+.c-button--secondary-orange,
+.c-button--secondary-orange:visited {
+  background-color: #ffc869;
+  border-color: #ffc869;
+  color: #222; }
+
+.c-button--secondary-red,
+.c-button--secondary-red:visited {
+  background-color: #f68583;
+  border-color: #f68583;
+  color: #222; }
+
+.c-button--secondary-violet,
+.c-button--secondary-violet:visited {
+  background-color: #c29acf;
+  border-color: #c29acf;
+  color: #222; }
+
+.c-button--secondary-navy,
+.c-button--secondary-navy:visited {
+  background-color: #4c7fa7;
+  border-color: #4c7fa7;
+  color: #f5f6f9; }
+
+.c-button--secondary-blue,
+.c-button--secondary-blue:visited {
+  background-color: #87dcf6;
+  border-color: #87dcf6;
+  color: #222; }
+
+.c-button--secondary-turquoise,
+.c-button--secondary-turquoise:visited {
+  background-color: #58c7c8;
+  border-color: #58c7c8;
+  color: #222; }
+
+.c-button--secondary-green,
+.c-button--secondary-green:visited {
+  background-color: #87dd92;
+  border-color: #87dd92;
+  color: #222; }
+
+.c-button--secondary-pink,
+.c-button--secondary-pink:visited {
+  background-color: #f68583;
+  border-color: #f68583;
+  color: #222; }
+
+.c-button--secondary-blue-dark,
+.c-button--secondary-blue-dark:visited {
+  background-color: #374e60;
+  border-color: #374e60;
+  color: #f5f6f9; }
+
+.c-button--ui-black,
+.c-button--ui-black:visited {
+  background-color: #222;
+  border-color: #222;
+  color: #f5f6f9; }
+
+.c-button--ui-grey-dark,
+.c-button--ui-grey-dark:visited {
+  background-color: #444;
+  border-color: #444;
+  color: #f5f6f9; }
+
+.c-button--ui-grey-medium,
+.c-button--ui-grey-medium:visited {
+  background-color: #999;
+  border-color: #999;
+  color: #222; }
+
+.c-button--ui-grey-light,
+.c-button--ui-grey-light:visited {
+  background-color: #ccc;
+  border-color: #ccc;
+  color: #222; }
+
+.c-button--ui-grey-lightest,
+.c-button--ui-grey-lightest:visited {
+  background-color: #eee;
+  border-color: #eee;
+  color: #222; }
+
+.c-button--ui-white,
+.c-button--ui-white:visited {
+  background-color: #f5f6f9;
+  border-color: #f5f6f9;
+  color: #222; }
+
+.c-button--ui-yellow,
+.c-button--ui-yellow:visited {
+  background-color: #fcf67f;
+  border-color: #fcf67f;
+  color: #222; }
 
 
 
@@ -5762,17 +5936,13 @@ strong {
     position: -webkit-sticky !important;
     position: sticky !important; } }
 
-.u-no-print {
-  display: initial !important; }
-  @media print {
-    .u-no-print {
-      display: none !important; } }
+@media screen {
+  .u-print-only {
+    display: none !important; } }
 
-.u-print-only {
-  display: none !important; }
-  @media print {
-    .u-print-only {
-      display: initial !important; } }
+@media print {
+  .u-no-print {
+    display: none !important; } }
 
 
 
