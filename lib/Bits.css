@@ -487,149 +487,149 @@ strong {
     color: #fff; }
 
 .c-button--black {
-  background-color: #000 !important;
-  border-color: #000 !important;
-  color: #f5f6f9 !important; }
+  background-color: #000;
+  border-color: #000;
+  color: #f5f6f9; }
 
 .c-button--white {
-  background-color: #fff !important;
-  border-color: #fff !important;
-  color: #222 !important; }
+  background-color: #fff;
+  border-color: #fff;
+  color: #222; }
 
 .c-button--brand-raspberry-pi-red {
-  background-color: #c51d4a !important;
-  border-color: #c51d4a !important;
-  color: #f5f6f9 !important; }
+  background-color: #c51d4a;
+  border-color: #c51d4a;
+  color: #f5f6f9; }
 
 .c-button--brand-raspberry-pi-green {
-  background-color: #6ac146 !important;
-  border-color: #6ac146 !important;
-  color: #222 !important; }
+  background-color: #6ac146;
+  border-color: #6ac146;
+  color: #222; }
 
 .c-button--primary-yellow {
-  background-color: #ffb12a !important;
-  border-color: #ffb12a !important;
-  color: #222 !important; }
+  background-color: #ffb12a;
+  border-color: #ffb12a;
+  color: #222; }
 
 .c-button--primary-orange {
-  background-color: #f68e3b !important;
-  border-color: #f68e3b !important;
-  color: #222 !important; }
+  background-color: #f68e3b;
+  border-color: #f68e3b;
+  color: #222; }
 
 .c-button--primary-red {
-  background-color: #f3524f !important;
-  border-color: #f3524f !important;
-  color: #222 !important; }
+  background-color: #f3524f;
+  border-color: #f3524f;
+  color: #222; }
 
 .c-button--primary-violet {
-  background-color: #a76fba !important;
-  border-color: #a76fba !important;
-  color: #222 !important; }
+  background-color: #a76fba;
+  border-color: #a76fba;
+  color: #222; }
 
 .c-button--primary-navy {
-  background-color: #004881 !important;
-  border-color: #004881 !important;
-  color: #f5f6f9 !important; }
+  background-color: #004881;
+  border-color: #004881;
+  color: #f5f6f9; }
 
 .c-button--primary-blue {
-  background-color: #41a6c4 !important;
-  border-color: #41a6c4 !important;
-  color: #222 !important; }
+  background-color: #41a6c4;
+  border-color: #41a6c4;
+  color: #222; }
 
 .c-button--primary-turquoise {
-  background-color: #10aeb0 !important;
-  border-color: #10aeb0 !important;
-  color: #f5f6f9 !important; }
+  background-color: #10aeb0;
+  border-color: #10aeb0;
+  color: #f5f6f9; }
 
 .c-button--primary-green {
-  background-color: #53ce63 !important;
-  border-color: #53ce63 !important;
-  color: #222 !important; }
+  background-color: #53ce63;
+  border-color: #53ce63;
+  color: #222; }
 
 .c-button--secondary-yellow {
-  background-color: #fddd42 !important;
-  border-color: #fddd42 !important;
-  color: #222 !important; }
+  background-color: #fddd42;
+  border-color: #fddd42;
+  color: #222; }
 
 .c-button--secondary-orange {
-  background-color: #ffc869 !important;
-  border-color: #ffc869 !important;
-  color: #222 !important; }
+  background-color: #ffc869;
+  border-color: #ffc869;
+  color: #222; }
 
 .c-button--secondary-red {
-  background-color: #f68583 !important;
-  border-color: #f68583 !important;
-  color: #222 !important; }
+  background-color: #f68583;
+  border-color: #f68583;
+  color: #222; }
 
 .c-button--secondary-violet {
-  background-color: #c29acf !important;
-  border-color: #c29acf !important;
-  color: #222 !important; }
+  background-color: #c29acf;
+  border-color: #c29acf;
+  color: #222; }
 
 .c-button--secondary-navy {
-  background-color: #4c7fa7 !important;
-  border-color: #4c7fa7 !important;
-  color: #f5f6f9 !important; }
+  background-color: #4c7fa7;
+  border-color: #4c7fa7;
+  color: #f5f6f9; }
 
 .c-button--secondary-blue {
-  background-color: #87dcf6 !important;
-  border-color: #87dcf6 !important;
-  color: #222 !important; }
+  background-color: #87dcf6;
+  border-color: #87dcf6;
+  color: #222; }
 
 .c-button--secondary-turquoise {
-  background-color: #58c7c8 !important;
-  border-color: #58c7c8 !important;
-  color: #222 !important; }
+  background-color: #58c7c8;
+  border-color: #58c7c8;
+  color: #222; }
 
 .c-button--secondary-green {
-  background-color: #87dd92 !important;
-  border-color: #87dd92 !important;
-  color: #222 !important; }
+  background-color: #87dd92;
+  border-color: #87dd92;
+  color: #222; }
 
 .c-button--secondary-pink {
-  background-color: #f68583 !important;
-  border-color: #f68583 !important;
-  color: #222 !important; }
+  background-color: #f68583;
+  border-color: #f68583;
+  color: #222; }
 
 .c-button--secondary-blue-dark {
-  background-color: #374e60 !important;
-  border-color: #374e60 !important;
-  color: #f5f6f9 !important; }
+  background-color: #374e60;
+  border-color: #374e60;
+  color: #f5f6f9; }
 
 .c-button--ui-black {
-  background-color: #222 !important;
-  border-color: #222 !important;
-  color: #f5f6f9 !important; }
+  background-color: #222;
+  border-color: #222;
+  color: #f5f6f9; }
 
 .c-button--ui-grey-dark {
-  background-color: #444 !important;
-  border-color: #444 !important;
-  color: #f5f6f9 !important; }
+  background-color: #444;
+  border-color: #444;
+  color: #f5f6f9; }
 
 .c-button--ui-grey-medium {
-  background-color: #999 !important;
-  border-color: #999 !important;
-  color: #222 !important; }
+  background-color: #999;
+  border-color: #999;
+  color: #222; }
 
 .c-button--ui-grey-light {
-  background-color: #ccc !important;
-  border-color: #ccc !important;
-  color: #222 !important; }
+  background-color: #ccc;
+  border-color: #ccc;
+  color: #222; }
 
 .c-button--ui-grey-lightest {
-  background-color: #eee !important;
-  border-color: #eee !important;
-  color: #222 !important; }
+  background-color: #eee;
+  border-color: #eee;
+  color: #222; }
 
 .c-button--ui-white {
-  background-color: #f5f6f9 !important;
-  border-color: #f5f6f9 !important;
-  color: #222 !important; }
+  background-color: #f5f6f9;
+  border-color: #f5f6f9;
+  color: #222; }
 
 .c-button--ui-yellow {
-  background-color: #fcf67f !important;
-  border-color: #fcf67f !important;
-  color: #222 !important; }
+  background-color: #fcf67f;
+  border-color: #fcf67f;
+  color: #222; }
 
 .c-button--secondary,
 .c-button--secondary:visited {
