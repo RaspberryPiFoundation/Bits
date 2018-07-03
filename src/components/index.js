@@ -1,5 +1,6 @@
 import { Base, Container, Grid, Media } from 'react-iotacss'
 
+import Badge from './Badge'
 import Button from './Button'
 import Card from './Card'
 import Figure from './Figure'
@@ -22,6 +23,7 @@ import Wysiwyg from './Wysiwyg'
 
 export {
   Base,
+  Badge,
   Button,
   Card,
   Container,
