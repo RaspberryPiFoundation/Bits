@@ -1,0 +1,47 @@
+@import '../../styles/component-helper';
+
+$badge-background-color:    $color-ui-yellow;
+$badge-border-color:        $color-ui-yellow;
+$badge-border-radius:       $border-radius;
+$badge-border-width:        $border-width-x3;
+$badge-color:               $color-ui-black;
+$badge-font-size:           14px;
+$badge-font-weight:         700;
+$badge-p:                   2px;
+$badge-mh:                  0 $baseline-x2;
+
+.c-badge {
+  background-color: $badge-background-color;
+  border-color:     $badge-border-color;
+  border-radius:    $badge-border-radius;
+  border-style:     solid;
+  border-width:     $badge-border-width;
+  color:            $badge-color;
+  display:          inline;
+  font-size:        $badge-font-size;
+  font-weight:      $badge-font-weight;
+  margin:           $badge-mh;
+  padding:          $badge-p;
+  text-align:       center;
+  text-decoration:  none;
+  text-transform:   uppercase;
+  white-space:      nowrap;
+  vertical-align:   middle;
+}
+
+$badge-secondary-border-color: $color-ui-grey-medium;
+$badge-secondary-color:        $color-ui-grey-medium;
+
+.c-badge--secondary {
+  background-color: transparent;
+  border-color:     $badge-secondary-border-color;
+  color:            $badge-secondary-color;
+}
+
+@each $color-name, $color-value in $colors {
+  .#{'c-badge--' + $color-name} {
+    background-color: #{$color-value};
+    border-color:     #{$color-value};
+    color:            set-color($color-value);
+  }
+}
