@@ -1,26 +1,26 @@
 @import '../../../styles/component-helper';
 
-$textarea-background-color:    $color-ui-white;
-$textarea-border-color:        $color-ui-grey-light;
-$textarea-border-radius:       $border-radius;
-$textarea-border-width:        $border-width-x2;
-$textarea-color:               $color-ui-grey-dark;
-$textarea-font-family:         $font-family-sans-serif;
-$textarea-font-weight:         $font-weight-light;
-$textarea-height:              $spacing * 30;
-$textarea-line-height:         $spacing-x7;
-$textarea-line-height-md:      $spacing-x8;
-$textarea-padding:             0 $spacing-x2;
-$textarea-placeholder-color:   $color-ui-grey-medium;
+$textarea-background-color:    $color-ui-white !default;
+$textarea-border-color:        $color-ui-grey-light !default;
+$textarea-border-radius:       $border-radius !default;
+$textarea-border-width:        $border-width-x2 !default;
+$textarea-color:               $color-ui-grey-dark !default;
+$textarea-font-family:         $font-family-sans-serif !default;
+$textarea-font-weight:         $font-weight-light !default;
+$textarea-height:              $spacing * 30 !default;
+$textarea-line-height:         $spacing-x7 !default;
+$textarea-line-height-md:      $spacing-x8 !default;
+$textarea-padding:             0 $spacing-x2 !default;
+$textarea-placeholder-color:   $color-ui-grey-medium !default;
 
-$textarea--focus-border-color: $color-ui-grey-medium;
-$textarea--focus-color:        $color-ui-black;
+$textarea--focus-border-color: $color-ui-grey-medium !default;
+$textarea--focus-color:        $color-ui-black !default;
 // SpaceAfterComma doesn't seem to work in Sass lists
 // scss-lint:disable SpaceAfterComma
 $textarea-type-map:            (
   null: ($type-base-font-size,    $textarea-line-height),
   md:   ($type-base-font-size-md, $textarea-line-height-md),
-);
+) !default;
 // scss-lint:enable SpaceAfterComma
 
 .c-textarea {

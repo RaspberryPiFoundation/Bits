@@ -1,7 +1,7 @@
 @import '../../../styles/component-helper';
 
-$label-font-weight:   $font-weight-medium;
-$label-margin-bottom: $baseline;
+$label-font-weight:   $font-weight-medium !default;
+$label-margin-bottom: $baseline !default;
 
 .c-label {
   display:       block;

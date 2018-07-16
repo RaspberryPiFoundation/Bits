@@ -1,27 +1,27 @@
 @import '../../styles/component-helper';
 
-$button-background-color:    $color-ui-yellow;
-$button-border-color:        $color-ui-yellow;
-$button-border-radius:       $border-radius;
-$button-border-width:        $border-width-x3;
-$button-color:               $color-ui-black;
-$button-font-weight:         map-get($type-font-weights, sub-heading);
-$button-line-height:         $baseline-x7;
-$button-line-height-md:      $baseline-x8;
-$button-ph:                  0 $baseline-x4;
-$button-transition-duration: $transition-duration-short;
-$button-transition-timing:   $transition-timing-eased;
+$button-background-color:    $color-ui-yellow !default;
+$button-border-color:        $color-ui-yellow !default;
+$button-border-radius:       $border-radius !default;
+$button-border-width:        $border-width-x3 !default;
+$button-color:               $color-ui-black !default;
+$button-font-weight:         map-get($type-font-weights, sub-heading) !default;
+$button-line-height:         $baseline-x7 !default;
+$button-line-height-md:      $baseline-x8 !default;
+$button-ph:                  0 $baseline-x4 !default;
+$button-transition-duration: $transition-duration-short !default;
+$button-transition-timing:   $transition-timing-eased !default;
 // SpaceAfterComma doesn't seem to work in Sass lists
 // scss-lint:disable SpaceAfterComma
 $button-type-map:            (
   null: ($type-sub-heading-font-size,    $button-line-height),
   md:   ($type-sub-heading-font-size-md, $button-line-height-md),
-);
+) !default;
 // scss-lint:enable SpaceAfterComma
 
-$button-hover-background-color: $color-ui-grey-dark;
-$button-hover-border-color:     $color-ui-grey-dark;
-$button-hover-color:            $color-white;
+$button-hover-background-color: $color-ui-grey-dark !default;
+$button-hover-border-color:     $color-ui-grey-dark !default;
+$button-hover-color:            $color-white !default;
 
 .c-button,
 .c-button:visited {
@@ -51,8 +51,8 @@ $button-hover-color:            $color-white;
   }
 }
 
-$button-secondary-border-color: $color-ui-grey-medium;
-$button-secondary-color:        $color-ui-grey-medium;
+$button-secondary-border-color: $color-ui-grey-medium !default;
+$button-secondary-color:        $color-ui-grey-medium !default;
 
 .c-button--secondary,
 .c-button--secondary:visited {
@@ -61,9 +61,9 @@ $button-secondary-color:        $color-ui-grey-medium;
   color:            $button-secondary-color;
 }
 
-$button-lod-hover-background-color: $color-white;
-$button-lod-hover-border-color:     $color-white;
-$button-lod-hover-color:            $color-ui-grey-dark;
+$button-lod-hover-background-color: $color-white !default;
+$button-lod-hover-border-color:     $color-white !default;
+$button-lod-hover-color:            $color-ui-grey-dark !default;
 
 .c-button--light-on-dark,
 .c-button--light-on-dark:visited {

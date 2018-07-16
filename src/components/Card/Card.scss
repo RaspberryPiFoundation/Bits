@@ -1,12 +1,12 @@
 @import '../../styles/component-helper';
 
-$card-background-color:    $color-white;
-$card-border-radius:       $border-radius;
-$card-box-shadow:          $box-shadow;
-$card-content-p:           $baseline-x4;
-$card-link-color:          $color-ui-black;
-$card-transition-duration: $transition-duration-short;
-$card-transition-timing:   $transition-timing-eased;
+$card-background-color:    $color-white !default;
+$card-border-radius:       $border-radius !default;
+$card-box-shadow:          $box-shadow !default;
+$card-content-p:           $baseline-x4 !default;
+$card-link-color:          $color-ui-black !default;
+$card-transition-duration: $transition-duration-short !default;
+$card-transition-timing:   $transition-timing-eased !default;
 
 .c-card {
   background-color: $card-background-color;
@@ -26,7 +26,7 @@ $card-transition-timing:   $transition-timing-eased;
   padding: $card-content-p;
 }
 
-$c-card__heading-margin-bottom: $type-sub-heading-margin-bottom;
+$c-card__heading-margin-bottom: $type-sub-heading-margin-bottom !default;
 
 .c-card__heading {
   @include type-sub-heading;

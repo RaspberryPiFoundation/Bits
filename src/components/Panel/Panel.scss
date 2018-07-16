@@ -1,9 +1,9 @@
 @import '../../styles/component-helper';
 
-$panel-background-color: $color-white;
-$panel-border-radius:    $border-radius;
-$panel-box-shadow:       $box-shadow;
-$panel-padding:          $baseline-x2;
+$panel-background-color: $color-white !default;
+$panel-border-radius:    $border-radius !default;
+$panel-box-shadow:       $box-shadow !default;
+$panel-padding:          $baseline-x2 !default;
 
 .c-panel {
   background-color: $panel-background-color;

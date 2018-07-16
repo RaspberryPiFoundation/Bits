@@ -1,21 +1,21 @@
 @import '../../styles/component-helper';
 
-$pagination-margin-bottom: $baseline-x4;
+$pagination-margin-bottom: $baseline-x4 !default;
 
 .c-pagination {
   margin-bottom: $pagination-margin-bottom;
   text-align:    center;
 }
 
-$pagination__label-color:       $color-ui-grey-medium;
-$pagination__label-font-weight: $font-weight-medium;
-$pagination__label-padding:     0 $baseline-x3;
+$pagination__label-color:       $color-ui-grey-medium !default;
+$pagination__label-font-weight: $font-weight-medium !default;
+$pagination__label-padding:     0 $baseline-x3 !default;
 // SpaceAfterComma doesn't seem to work in Sass lists
 // scss-lint:disable SpaceAfterComma
 $pagination__label-type-map:    (
   null: ($type-base-font-size,    $baseline-x8),
   md:   ($type-base-font-size-md, $baseline-x8),
-);
+) !default;
 // scss-lint:enable SpaceAfterComma
 
 .c-pagination__label {
@@ -28,14 +28,14 @@ $pagination__label-type-map:    (
   vertical-align: top;
 }
 
-$pagination__link-background-color:        $color-ui-white;
-$pagination__link-background-size:         $baseline-x3 $baseline-x3;
-$pagination__link-border-color:            $color-ui-grey-medium;
-$pagination__link-border-width:            $border-width-x2;
-$pagination__link-height:                  $baseline-x8;
-$pagination__link-transition-duration:     $transition-duration-med;
-$pagination__link-transition-timing:       $transition-timing-eased;
-$pagination__link-width:                   $baseline-x8;
+$pagination__link-background-color:        $color-ui-white !default;
+$pagination__link-background-size:         $baseline-x3 $baseline-x3 !default;
+$pagination__link-border-color:            $color-ui-grey-medium !default;
+$pagination__link-border-width:            $border-width-x2 !default;
+$pagination__link-height:                  $baseline-x8 !default;
+$pagination__link-transition-duration:     $transition-duration-med !default;
+$pagination__link-transition-timing:       $transition-timing-eased !default;
+$pagination__link-width:                   $baseline-x8 !default;
 
 .c-pagination__link {
   background-color:           $pagination__link-background-color;
@@ -55,15 +55,15 @@ $pagination__link-width:                   $baseline-x8;
   vertical-align:             top;
   width:                      $pagination__link-width;
 
-  $pagination__link--hover-background-color: $color-ui-grey-medium;
+  $pagination__link--hover-background-color: $color-ui-grey-medium !default;
 
   &:hover {
     background-color: $pagination__link--hover-background-color;
   }
 }
 
-$pagination__link--disabled-background-color: $color-ui-grey-light;
-$pagination__link--disabled-border-color:     $color-ui-grey-light;
+$pagination__link--disabled-background-color: $color-ui-grey-light !default;
+$pagination__link--disabled-border-color:     $color-ui-grey-light !default;
 
 .c-pagination__link--disabled {
   background-color: $pagination__link--disabled-background-color;

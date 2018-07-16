@@ -1,5 +1,7 @@
 @import '../../styles/component-helper';
 
+$light-on-dark-color: $color-ui-grey-lightest !default;
+
 .c-light-on-dark {
-  color: $color-ui-grey-lightest;
+  color: $light-on-dark-color;
 }

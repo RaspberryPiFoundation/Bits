@@ -1,9 +1,9 @@
 @import '../../styles/component-helper';
 
-$figure-caption-color:            $color-ui-white;
-$figure-caption-background-color: $color-ui-grey-dark;
-$figure-margin-bottom:            map-get($type-margins, '-base');
-$figure-type-map:                 $type-caption;
+$figure-caption-color:            $color-ui-white !default;
+$figure-caption-background-color: $color-ui-grey-dark !default;
+$figure-margin-bottom:            map-get($type-margins, '-base') !default;
+$figure-type-map:                 $type-caption !default;
 
 .c-figure {
   margin-bottom: $figure-margin-bottom;
