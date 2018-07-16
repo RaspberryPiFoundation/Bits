@@ -1,8 +1,8 @@
-$grid-gutter-base: $baseline-x4;
-$grid-gutter-sm:   4%;
-$grid-gutter-md:   3%;
-$grid-gutter-lg:   2.5%;
-$grid-gutter-xl:   2%;
+$grid-gutter-base: $baseline-x4 !default;
+$grid-gutter-sm:   4% !default;
+$grid-gutter-md:   3% !default;
+$grid-gutter-lg:   2.5% !default;
+$grid-gutter-xl:   2% !default;
 
 $grid-gutters: (
   null: $grid-gutter-base,

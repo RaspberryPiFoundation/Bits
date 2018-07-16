@@ -1,6 +1,6 @@
 @import '../../../styles/component-helper';
 
-$form-group-margin-bottom: $baseline-x4;
+$form-group-margin-bottom: $baseline-x4 !default;
 
 .c-form-group {
   display:       block;

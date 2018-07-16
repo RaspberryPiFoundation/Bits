@@ -1,8 +1,8 @@
 @import '../../styles/component-helper';
 
-$hr-color:     $color-ui-grey-lightest;
-$hr-margin:    0 0 map-get($spacing-extra, '-x8');
-$hr-thickness: $border-width-x2;
+$hr-color:     $color-ui-grey-lightest !default;
+$hr-margin:    0 0 map-get($spacing-extra, '-x8') !default;
+$hr-thickness: $border-width-x2 !default;
 
 .c-hr {
   background-color: $hr-color;

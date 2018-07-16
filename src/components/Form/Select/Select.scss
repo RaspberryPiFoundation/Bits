@@ -1,27 +1,27 @@
 @import '../../../styles/component-helper';
 
-$select-background-color:    $color-ui-white;
-$select-background-position: right $spacing-x2 center;
-$select-border-color:        $color-ui-grey-light;
-$select-border-radius:       $border-radius;
-$select-border-width:        $border-width-x2;
-$select-color:               $color-ui-grey-dark;
-$select-font-family:         $font-family-sans-serif;
-$select-font-weight:         $font-weight-light;
-$select-height:              $spacing-x9;
-$select-line-height:         $spacing-x7;
-$select-line-height-md:      $spacing-x8;
-$select-padding:             0 $spacing-x2;
-$select-placeholder-color:   $color-ui-grey-medium;
+$select-background-color:    $color-ui-white !default;
+$select-background-position: right $spacing-x2 center !default;
+$select-border-color:        $color-ui-grey-light !default;
+$select-border-radius:       $border-radius !default;
+$select-border-width:        $border-width-x2 !default;
+$select-color:               $color-ui-grey-dark !default;
+$select-font-family:         $font-family-sans-serif !default;
+$select-font-weight:         $font-weight-light !default;
+$select-height:              $spacing-x9 !default;
+$select-line-height:         $spacing-x7 !default;
+$select-line-height-md:      $spacing-x8 !default;
+$select-padding:             0 $spacing-x2 !default;
+$select-placeholder-color:   $color-ui-grey-medium !default;
 
-$select--focus-border-color: $color-ui-grey-medium;
-$select--focus-color:        $color-ui-black;
+$select--focus-border-color: $color-ui-grey-medium !default;
+$select--focus-color:        $color-ui-black !default;
 // SpaceAfterComma doesn't seem to work in Sass lists
 // scss-lint:disable SpaceAfterComma
 $select-type-map:            (
   null: ($type-base-font-size,    $select-line-height),
   md:   ($type-base-font-size-md, $select-line-height-md),
-);
+) !default;
 // scss-lint:enable SpaceAfterComma
 
 .c-select {

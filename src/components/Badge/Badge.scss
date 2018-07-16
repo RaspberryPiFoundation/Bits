@@ -1,14 +1,14 @@
 @import '../../styles/component-helper';
 
-$badge-background-color:    $color-ui-yellow;
-$badge-border-color:        $color-ui-yellow;
-$badge-border-radius:       $border-radius;
-$badge-border-width:        $border-width-x3;
-$badge-color:               $color-ui-black;
-$badge-font-size:           14px;
-$badge-font-weight:         700;
-$badge-p:                   2px;
-$badge-mh:                  0 $baseline-x2;
+$badge-background-color:    $color-ui-yellow !default;
+$badge-border-color:        $color-ui-yellow !default;
+$badge-border-radius:       $border-radius !default;
+$badge-border-width:        $border-width-x3 !default;
+$badge-color:               $color-ui-black !default;
+$badge-font-size:           14px !default;
+$badge-font-weight:         700 !default;
+$badge-p:                   2px !default;
+$badge-mh:                  0 $baseline-x2 !default;
 
 .c-badge {
   background-color: $badge-background-color;
@@ -29,8 +29,8 @@ $badge-mh:                  0 $baseline-x2;
   vertical-align:   middle;
 }
 
-$badge-secondary-border-color: $color-ui-grey-medium;
-$badge-secondary-color:        $color-ui-grey-medium;
+$badge-secondary-border-color: $color-ui-grey-medium !default;
+$badge-secondary-color:        $color-ui-grey-medium !default;
 
 .c-badge--secondary {
   background-color: transparent;

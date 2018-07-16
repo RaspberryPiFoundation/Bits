@@ -1,13 +1,13 @@
 @import '../../styles/component-helper';
 
-$slice-bgcolor:            $color-ui-white;
-$slice-pv:                 $baseline-x5 0;
-$slice-pv-md:              $baseline-x10 0;
-$slice-white-bgcolor:      $color-white;
-$slice-white-border-color: $color-ui-grey-light;
-$slice-white-border-style: solid;
-$slice-white-border-width: $border-width 0 0;
-$slice-white-box-shadow:   $box-shadow-b;
+$slice-bgcolor:            $color-ui-white !default;
+$slice-pv:                 $baseline-x5 0 !default;
+$slice-pv-md:              $baseline-x10 0 !default;
+$slice-white-bgcolor:      $color-white !default;
+$slice-white-border-color: $color-ui-grey-light !default;
+$slice-white-border-style: solid !default;
+$slice-white-border-width: $border-width 0 0 !default;
+$slice-white-box-shadow:   $box-shadow-b !default;
 
 .c-slice {
   background-attachment: scroll;

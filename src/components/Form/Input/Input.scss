@@ -1,25 +1,25 @@
 @import '../../../styles/component-helper';
 
-$input-background-color:    $color-ui-white;
-$input-border-color:        $color-ui-grey-light;
-$input-border-radius:       $border-radius;
-$input-border-width:        $border-width-x2;
-$input-color:               $color-ui-grey-dark;
-$input-font-family:         $font-family-sans-serif;
-$input-font-weight:         $font-weight-light;
-$input-line-height:         $spacing-x7;
-$input-line-height-md:      $spacing-x8;
-$input-padding:             0 $spacing-x2;
-$input-placeholder-color:   $color-ui-grey-medium;
+$input-background-color:    $color-ui-white !default;
+$input-border-color:        $color-ui-grey-light !default;
+$input-border-radius:       $border-radius !default;
+$input-border-width:        $border-width-x2 !default;
+$input-color:               $color-ui-grey-dark !default;
+$input-font-family:         $font-family-sans-serif !default;
+$input-font-weight:         $font-weight-light !default;
+$input-line-height:         $spacing-x7 !default;
+$input-line-height-md:      $spacing-x8 !default;
+$input-padding:             0 $spacing-x2 !default;
+$input-placeholder-color:   $color-ui-grey-medium !default;
 
-$input--focus-border-color: $color-ui-grey-medium;
-$input--focus-color:        $color-ui-black;
+$input--focus-border-color: $color-ui-grey-medium !default;
+$input--focus-color:        $color-ui-black !default;
 // SpaceAfterComma doesn't seem to work in Sass lists
 // scss-lint:disable SpaceAfterComma
 $input-type-map:            (
   null: ($type-base-font-size,    $input-line-height),
   md:   ($type-base-font-size-md, $input-line-height-md),
-);
+) !default;
 // scss-lint:enable SpaceAfterComma
 
 .c-input {
