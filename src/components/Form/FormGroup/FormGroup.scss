@@ -6,4 +6,8 @@ $form-group-margin-bottom: $baseline-x4 !default;
   display:       block;
   margin-bottom: $form-group-margin-bottom;
   width:         100%;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }

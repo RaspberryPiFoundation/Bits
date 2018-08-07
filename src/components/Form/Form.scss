@@ -1,0 +1,11 @@
+@import '../../styles/component-helper';
+
+$form-margin-bottom: $baseline-x4 !default;
+
+.c-form {
+  margin-bottom: $form-margin-bottom;
+}
+
+.c-form--inline {
+  display: inline;
+}

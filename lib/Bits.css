@@ -5,7 +5,7 @@
 
   Author:      The Raspberry Pi Foundation
   Author URI:  https://raspberrypi.org
-  Version:     1.1.13
+  Version:     1.1.14
 */
 
 
@@ -1274,10 +1274,68 @@ strong {
 
 
 
+.c-form {
+  margin-bottom: 20px; }
+
+.c-form--inline {
+  display: inline; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.c-fieldset {
+  border: none;
+  margin-bottom: 50px; }
+  .c-fieldset:last-child, .c-fieldset:last-of-type {
+    margin-bottom: 0; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.c-form-group {
+  display: block;
+  margin-bottom: 20px;
+  width: 100%; }
+  .c-form-group:last-child {
+    margin-bottom: 0; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .c-input {
   font-size: 1.6rem;
   line-height: 35px;
-  background-color: #f5f6f9;
+  background-color: #fff;
   border-color: #ccc;
   border-radius: 5px;
   border-style: solid;
@@ -1323,6 +1381,13 @@ strong {
   font-weight: 500;
   margin-bottom: 5px; }
 
+.c-label--inline {
+  display: inline;
+  margin-bottom: 0;
+  line-height: 35px; }
+  @media screen and (min-width: 768px) {
+    .c-label--inline {
+      line-height: 40px; } }
 
 
 
@@ -1336,10 +1401,11 @@ strong {
 
 
 
-.c-form-group {
-  display: block;
-  margin-bottom: 20px;
-  width: 100%; }
+
+.c-option-button {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle; }
 
 
 
@@ -1360,7 +1426,7 @@ strong {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-color: #f5f6f9;
+  background-color: #fff;
   background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTVweCIgaGVpZ2h0PSI5cHgiIHZpZXdCb3g9IjAgMCAxNSA5IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogIDxnIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTMzOC4wMDAwMDAsIC0xNy4wMDAwMDApIiBmaWxsPSIjQ0NDQ0NDIj4KICAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzQ2LjAwMDAwMCwgMjAuMDAwMDAwKSByb3RhdGUoLTkwLjAwMDAwMCkgdHJhbnNsYXRlKC0zNDYuMDAwMDAwLCAtMjAuMDAwMDAwKSB0cmFuc2xhdGUoMzM4LjAwMDAwMCwgMTIuMDAwMDAwKSI+CiAgICAgICAgPHBhdGgKICAgICAgICAgIGQ9Ik02Ljg1MjI3NjI1LDEwLjM2NjAwMTcgTDYuODUyMjc2MjUsMy40NjQwNDA5NiBDNi44NTIyNzYyNSwyLjc3MDk3Nzc0IDYuMjkwNDM3NTEsMi4yMDkxMzkgNS41OTczNzQyOSwyLjIwOTEzOSBMNS41OTczNzQyOSwyLjIwOTEzOSBMNS41OTczNzQyOSwyLjIwOTEzOSBDNC45MDQzMTEwOCwyLjIwOTEzOSA0LjM0MjQ3MjMzLDIuNzcwOTc3NzQgNC4zNDI0NzIzMywzLjQ2NDA0MDk2IEw0LjM0MjQ3MjMzLDMuNDY0MDQwOTYgTDQuMzQyNDcyMzMsMTEuNjIwOTAzNyBDNC4zNDI0NzIzMywxMS45Njc0MzUzIDQuNDgyOTMyMDIsMTIuMjgxMTYwOCA0LjcxMDAyNDYxLDEyLjUwODI1MzQgQzQuOTM3MTE3MiwxMi43MzUzNDYgNS4yNTA4NDI2OSwxMi44NzU4MDU3IDUuNTk3Mzc0MjksMTIuODc1ODA1NyBMNS41OTczNzQyOSwxMi44NzU4MDU3IEwxMy43NTQyMzcsMTIuODc1ODA1NyBDMTQuNDQ3MzAwMywxMi44NzU4MDU3IDE1LjAwOTEzOSwxMi4zMTM5NjY5IDE1LjAwOTEzOSwxMS42MjA5MDM3IEMxNS4wMDkxMzksMTAuOTI3ODQwNSAxNC40NDczMDAzLDEwLjM2NjAwMTcgMTMuNzU0MjM3LDEwLjM2NjAwMTcgTDYuODUyMjc2MjUsMTAuMzY2MDAxNyBaIgogICAgICAgICAgaWQ9IkNvbWJpbmVkLVNoYXBlIgogICAgICAgICAgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOS42NzU4MDYsIDcuNTQyNDcyKSByb3RhdGUoLTMxNS4wMDAwMDApIHRyYW5zbGF0ZSgtOS42NzU4MDYsIC03LjU0MjQ3MikgIj48L3BhdGg+CiAgICAgIDwvZz4KICAgIDwvZz4KICA8L2c+Cjwvc3ZnPgo=");
   background-position: right 10px center;
   background-repeat: no-repeat;
@@ -1405,7 +1471,7 @@ strong {
 .c-textarea {
   font-size: 1.6rem;
   line-height: 35px;
-  background-color: #f5f6f9;
+  background-color: #fff;
   border-color: #ccc;
   border-radius: 5px;
   border-style: solid;
