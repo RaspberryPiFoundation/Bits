@@ -5,7 +5,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [v1.1.14](https://github.com/RaspberryPiFoundation/Bits/compare/v1.1.13...v1.1.14) - 2018-08-07
 
-### added
+### Added
 
 - `Fieldset` sass component
 - `Form` sass component
@@ -20,31 +20,31 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [v1.1.13](https://github.com/RaspberryPiFoundation/Bits/compare/v1.1.12...v1.1.13) - 2018-07-16
 
-### added
+### Added
 
 - `!default` overrides for pretty much everything. EVERYTHING.
 
 ## [v1.1.12](https://github.com/RaspberryPiFoundation/Bits/compare/v1.1.11...v1.1.12) - 2018-07-03
 
-### added
+### Added
 
 - Styles & component for badges
 
 ## [v1.1.11](https://github.com/RaspberryPiFoundation/Bits/compare/v1.1.10...v1.1.11) - 2018-06-29
 
-### added
+### Added
 
 - Generate a button of for each color in `$colors`
 
 ## [v1.1.10](https://github.com/RaspberryPiFoundation/Bits/compare/v1.1.9...v1.1.10) - 2018-06-27
 
-### added
+### Added
 
 - `!default` added to variables when set, so they can be set and overridden in consuming applications
 
 ## [v1.1.9](https://github.com/RaspberryPiFoundation/Bits/compare/v1.1.8...v1.1.9) - 2018-05-31
 
-### fixed
+### Fixed
 
 - Print visibility utility classes work in IE11
 
