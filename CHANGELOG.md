@@ -3,6 +3,21 @@
 *The format of this document is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).*
 
+## [v1.1.14](https://github.com/RaspberryPiFoundation/Bits/compare/v1.1.13...v1.1.14) - 2018-08-07
+
+### added
+
+- `Fieldset` sass component
+- `Form` sass component
+- `OptionButton` sass component
+- `c-label--inline` modifier for `Label` component
+
+### Changed
+
+- Bottom margin on `c-form-group` is omitted if it's the last child
+- `input`, `select`, and `textarea` now have pure white background colors
+- Black/white colors, and any brand related color are no longer overridable
+
 ## [v1.1.13](https://github.com/RaspberryPiFoundation/Bits/compare/v1.1.12...v1.1.13) - 2018-07-16
 
 ### added
