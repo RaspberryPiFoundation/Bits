@@ -1,10 +1,22 @@
 @import '../../../styles/component-helper';
 
-$label-font-weight:   $font-weight-medium !default;
-$label-margin-bottom: $baseline !default;
+$label-font-weight:    $font-weight-medium !default;
+$label-margin-bottom:  $baseline !default;
+$label-line-height:    $baseline-x7 !default;
+$label-line-height-md: $baseline-x8 !default;
 
 .c-label {
   display:       block;
   font-weight:   $label-font-weight;
   margin-bottom: $label-margin-bottom;
+}
+
+.c-label--inline {
+  display: inline;
+  margin-bottom: 0;
+  line-height: $label-line-height;
+
+  @include iota-breakpoint('md') {
+    line-height: $label-line-height-md;
+  }
 }
