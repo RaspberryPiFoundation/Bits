@@ -30,7 +30,7 @@
     "start": "rollup -c -w",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "test": "jest --env=jsdom --notify --watch",
-    "circle-test": "jest --env=jsdom --notify"
+    "test-coverage": "jest --env=jsdom --coverage"
   },
   "peerDependencies": {
     "classnames": "^2.2.5",
