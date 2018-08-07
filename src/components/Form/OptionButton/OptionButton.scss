@@ -1,0 +1,9 @@
+@import '../../../styles/component-helper';
+
+$option-button-margin-bottom: $baseline-x2 !default;
+
+.c-option-button {
+  display: inline-block;
+  margin-right: $option-button-margin-bottom;
+  vertical-align: middle;
+}
