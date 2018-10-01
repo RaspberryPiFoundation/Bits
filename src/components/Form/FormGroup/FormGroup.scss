@@ -1,13 +1,21 @@
 @import '../../../styles/component-helper';
 
-$form-group-margin-bottom: $baseline-x4 !default;
+$form-group--margin-bottom: 2rem !default;
 
 .c-form-group {
   display:       block;
-  margin-bottom: $form-group-margin-bottom;
+  margin-bottom: $form-group--margin-bottom;
   width:         100%;
 
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+.c-form-group--grid {
+  @include iota-breakpoint('sm') {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 2fr 4fr;
   }
 }
