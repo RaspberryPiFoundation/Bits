@@ -39,3 +39,22 @@ $form-group--option--margin-bottom: 1rem !default;
   line-height: $form-group--option--line-height;
   margin-bottom: $form-group--option--margin-bottom;
 }
+
+$form-group__list--background-color: $color-white !default;
+$form-group__list--border-color: $color-ui-grey-light !default;
+$form-group__list--border-radius: 1rem !default;
+$form-group__list--border-width: $border-width-x2 !default;
+$form-group__list--font-weight: $font-weight-bold !default;
+$form-group__list--margin-bottom: 1rem !default;
+$form-group__list--padding: 2rem !default;
+
+.c-form-group__list {
+  background-color: $form-group__list--background-color;
+  border-color: $form-group__list--border-color;
+  border-radius: $form-group__list--border-radius;
+  border-style: solid;
+  border-width: $form-group__list--border-width;
+  font-weight: $form-group__list--font-weight;
+  margin-bottom: $form-group__list--margin-bottom;
+  padding: $form-group__list--padding;
+}
