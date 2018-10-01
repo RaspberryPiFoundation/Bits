@@ -19,3 +19,9 @@ $form-group--margin-bottom: 2rem !default;
     grid-template-columns: 2fr 4fr;
   }
 }
+
+.c-form-group--inline {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
