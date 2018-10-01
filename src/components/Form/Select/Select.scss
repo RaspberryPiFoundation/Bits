@@ -11,7 +11,7 @@ $select-font-weight:         $font-weight-light !default;
 $select-height:              $spacing-x9 !default;
 $select-line-height:         $spacing-x7 !default;
 $select-line-height-md:      $spacing-x8 !default;
-$select-padding:             0 $spacing-x2 !default;
+$select-padding:             0 4rem 0 1rem !default;
 $select-placeholder-color:   $color-ui-grey-medium !default;
 
 $select--focus-border-color: $color-ui-grey-medium !default;
@@ -57,5 +57,21 @@ $select-type-map:            (
 
   &::-ms-expand {
     display: none;
+  }
+}
+
+$select--inline--margin: 1rem;
+
+.c-select--inline {
+  display: inline-block;
+  margin: 0 $select--inline--margin;
+  width: auto;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
   }
 }
