@@ -3,6 +3,26 @@
 *The format of this document is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).*
 
+## [v1.1.15](https://github.com/RaspberryPiFoundation/Bits/compare/v1.1.14...v1.1.15) - 2018-10-01
+
+### Added
+
+- `c-select--inline` modifier
+- `c-form-group--grid` modifier
+- `c-form-group--inline` modifier
+- `c-form-group--option` modifier
+- `c-form-group__list` element
+- `c-label--pill` modifier
+
+### Changed
+
+- `Input` var names updated to BEM-ish syntax. Seems to be working as a decent mental model so far
+- Bottom margin on `c-form-group` is NOT omitted if it's the last of type
+
+### Removed
+
+- `OptionButton` is now a modifier on `c-input`
+
 ## [v1.1.14](https://github.com/RaspberryPiFoundation/Bits/compare/v1.1.13...v1.1.14) - 2018-08-07
 
 ### Added
