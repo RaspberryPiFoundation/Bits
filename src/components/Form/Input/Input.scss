@@ -1,50 +1,51 @@
 @import '../../../styles/component-helper';
 
-$input-background-color:    $color-white !default;
-$input-border-color:        $color-ui-grey-light !default;
-$input-border-radius:       $border-radius !default;
-$input-border-width:        $border-width-x2 !default;
-$input-color:               $color-ui-grey-dark !default;
-$input-font-family:         $font-family-sans-serif !default;
-$input-font-weight:         $font-weight-light !default;
-$input-line-height:         $spacing-x7 !default;
-$input-line-height-md:      $spacing-x8 !default;
-$input-padding:             0 $spacing-x2 !default;
-$input-placeholder-color:   $color-ui-grey-medium !default;
+$input--background-color: $color-white !default;
+$input--border-color: $color-ui-grey-light !default;
+$input--border-radius: $border-radius !default;
+$input--border-width: $border-width-x2 !default;
+$input--color: $color-ui-grey-dark !default;
+$input--font-family: $font-family-sans-serif !default;
+$input--font-weight: $font-weight-light !default;
+$input--line-height: $spacing-x7 !default;
+$input--line-height-md: $spacing-x8 !default;
+$input--padding: 0 $spacing-x2 !default;
 
-$input--focus-border-color: $color-ui-grey-medium !default;
-$input--focus-color:        $color-ui-black !default;
-// SpaceAfterComma doesn't seem to work in Sass lists
-// scss-lint:disable SpaceAfterComma
-$input-type-map:            (
-  null: ($type-base-font-size,    $input-line-height),
-  md:   ($type-base-font-size-md, $input-line-height-md),
+$input--placeholder--color: $color-ui-grey-medium !default;
+
+$input--focus--border-color: $color-ui-grey-medium !default;
+$input--focus--color: $color-ui-black !default;
+
+$input--type-map: (
+  null: ($type-base-font-size, $input--line-height),
+  md: ($type-base-font-size-md, $input--line-height-md),
 ) !default;
-// scss-lint:enable SpaceAfterComma
 
 .c-input {
-  @include iota-type($input-type-map);
+  @include iota-type($input--type-map);
 
-  background-color: $input-background-color;
-  border-color:     $input-border-color;
-  border-radius:    $input-border-radius;
-  border-style:     solid;
-  border-width:     $input-border-width;
-  color:            $input-color;
-  display:          block;
-  font-family:      $input-font-family;
-  font-weight:      $input-font-weight;
-  padding:          $input-padding;
-  width:            100%;
+  background-color: $input--background-color;
+  border-color: $input--border-color;
+  border-radius: $input--border-radius;
+  border-style: solid;
+  border-width: $input--border-width;
+  color: $input--color;
+  display: block;
+  font-family: $input--font-family;
+  font-weight: $input--font-weight;
+  padding: $input--padding;
+  width: 100%;
 
   &::placeholder {
-    color: $input-placeholder-color;
+    color: $input--placeholder--color;
   }
 
   &:focus {
-    border-color: $input--focus-border-color;
-    color:        $input--focus-color;
-    outline:      none;
+    border-color: $input--focus--border-color;
+    color: $input--focus--color;
+    outline: none;
+  }
+}
 
 $input--inline--margin: 1rem;
 
