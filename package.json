@@ -10,7 +10,7 @@
     "type": "git",
     "url": "https://github.com/RaspberryPiFoundation/Bits.git"
   },
-  "version": "1.1.14",
+  "version": "1.1.15",
   "main": "lib/index.js",
   "files": [
     "lib",
@@ -27,7 +27,8 @@
     "lint:staged": "lint-staged",
     "prepublishOnly": "npm run build",
     "rollup": "rollup -c",
-    "start": "rollup -c -w",
+    "rollup:watch": "rollup -c -w",
+    "start": "npm-run-all rollup:watch gulp:watch",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "test": "jest --env=jsdom --notify --watch",
     "test-coverage": "jest --env=jsdom --coverage"

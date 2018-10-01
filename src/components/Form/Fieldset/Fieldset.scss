@@ -1,13 +1,12 @@
 @import '../../../styles/component-helper';
 
-$form-fieldset-margin-bottom: $baseline-x10 !default;
+$form-fieldset--margin-bottom: $baseline-x10 !default;
 
 .c-fieldset {
   border:        none;
-  margin-bottom: $form-fieldset-margin-bottom;
+  margin-bottom: $form-fieldset--margin-bottom;
 
-  &:last-child,
-  &:last-of-type {
+  &:last-child {
     margin-bottom: 0;
   }
 }

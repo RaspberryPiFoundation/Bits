@@ -1,13 +1,60 @@
 @import '../../../styles/component-helper';
 
-$form-group-margin-bottom: $baseline-x4 !default;
+$form-group--margin-bottom: 2rem !default;
 
 .c-form-group {
   display:       block;
-  margin-bottom: $form-group-margin-bottom;
+  margin-bottom: $form-group--margin-bottom;
   width:         100%;
 
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+.c-form-group--grid {
+  @include iota-breakpoint('sm') {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+  }
+}
+
+.c-form-group--inline {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+$form-group--option--font-weight: $font-weight-medium !default;
+$form-group--option--line-height: 2.4rem !default;
+$form-group--option--margin-bottom: 1rem !default;
+
+.c-form-group--option {
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-weight: $form-group--option--font-weight;
+  line-height: $form-group--option--line-height;
+  margin-bottom: $form-group--option--margin-bottom;
+}
+
+$form-group__list--background-color: $color-white !default;
+$form-group__list--border-color: $color-ui-grey-light !default;
+$form-group__list--border-radius: 1rem !default;
+$form-group__list--border-width: $border-width-x2 !default;
+$form-group__list--font-weight: $font-weight-bold !default;
+$form-group__list--margin-bottom: 1rem !default;
+$form-group__list--padding: 2rem !default;
+
+.c-form-group__list {
+  background-color: $form-group__list--background-color;
+  border-color: $form-group__list--border-color;
+  border-radius: $form-group__list--border-radius;
+  border-style: solid;
+  border-width: $form-group__list--border-width;
+  font-weight: $form-group__list--font-weight;
+  margin-bottom: $form-group__list--margin-bottom;
+  padding: $form-group__list--padding;
 }

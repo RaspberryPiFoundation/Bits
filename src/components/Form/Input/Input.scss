@@ -1,49 +1,109 @@
 @import '../../../styles/component-helper';
 
-$input-background-color:    $color-white !default;
-$input-border-color:        $color-ui-grey-light !default;
-$input-border-radius:       $border-radius !default;
-$input-border-width:        $border-width-x2 !default;
-$input-color:               $color-ui-grey-dark !default;
-$input-font-family:         $font-family-sans-serif !default;
-$input-font-weight:         $font-weight-light !default;
-$input-line-height:         $spacing-x7 !default;
-$input-line-height-md:      $spacing-x8 !default;
-$input-padding:             0 $spacing-x2 !default;
-$input-placeholder-color:   $color-ui-grey-medium !default;
+$input--background-color: $color-white !default;
+$input--border-color: $color-ui-grey-light !default;
+$input--border-radius: $border-radius !default;
+$input--border-width: $border-width-x2 !default;
+$input--color: $color-ui-grey-dark !default;
+$input--font-family: $font-family-sans-serif !default;
+$input--font-weight: $font-weight-light !default;
+$input--line-height: $spacing-x7 !default;
+$input--line-height-md: $spacing-x8 !default;
+$input--padding: 0 $spacing-x2 !default;
 
-$input--focus-border-color: $color-ui-grey-medium !default;
-$input--focus-color:        $color-ui-black !default;
-// SpaceAfterComma doesn't seem to work in Sass lists
-// scss-lint:disable SpaceAfterComma
-$input-type-map:            (
-  null: ($type-base-font-size,    $input-line-height),
-  md:   ($type-base-font-size-md, $input-line-height-md),
+$input--placeholder--color: $color-ui-grey-medium !default;
+
+$input--focus--border-color: $color-ui-grey-medium !default;
+$input--focus--color: $color-ui-black !default;
+
+$input--type-map: (
+  null: ($type-base-font-size, $input--line-height),
+  md: ($type-base-font-size-md, $input--line-height-md),
 ) !default;
-// scss-lint:enable SpaceAfterComma
 
 .c-input {
-  @include iota-type($input-type-map);
+  @include iota-type($input--type-map);
 
-  background-color: $input-background-color;
-  border-color:     $input-border-color;
-  border-radius:    $input-border-radius;
-  border-style:     solid;
-  border-width:     $input-border-width;
-  color:            $input-color;
-  display:          block;
-  font-family:      $input-font-family;
-  font-weight:      $input-font-weight;
-  padding:          $input-padding;
-  width:            100%;
+  background-color: $input--background-color;
+  border-color: $input--border-color;
+  border-radius: $input--border-radius;
+  border-style: solid;
+  border-width: $input--border-width;
+  color: $input--color;
+  display: block;
+  font-family: $input--font-family;
+  font-weight: $input--font-weight;
+  padding: $input--padding;
+  width: 100%;
 
   &::placeholder {
-    color: $input-placeholder-color;
+    color: $input--placeholder--color;
   }
 
   &:focus {
-    border-color: $input--focus-border-color;
-    color:        $input--focus-color;
-    outline:      none;
+    border-color: $input--focus--border-color;
+    color: $input--focus--color;
+    outline: none;
+  }
+}
+
+$input--inline--margin: 1rem;
+
+.c-input--inline {
+  display: inline-block;
+  margin: 0 $input--inline--margin;
+  width: auto;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+$input--option--background-color: $color-primary-green !default;
+$input--option--border-color: $color-primary-green !default;
+$input--option--border-width: $border-width-x3 !default;
+$input--option--checkbox--border-radius: 0.4rem !default;
+$input--option--radio--border-radius: 50% !default;
+$input--option--box-shadow-color: $color-white !default;
+$input--option--box-shadow-width: $border-width-x2 !default;
+$input--option--height: 2.4rem !default;
+$input--option--margin-right: $spacing-x2 !default;
+$input--option--width: 2.4rem !default;
+
+.c-input--option-button {
+  appearance: none;
+  border-color: $input--option--border-color;
+  border-width: $input--option--border-width;
+  display: inline-block;
+  flex-shrink: 0;
+  height: $input--option--height;
+  margin-right: $input--option--margin-right;
+  padding: 0;
+  width: $input--option--width;
+
+  &:checked {
+    background-color: $input--option--background-color;
+  }
+
+  &[type="checkbox"] {
+    border-radius: $input--option--checkbox--border-radius;
+
+    &:checked {
+      background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxM3B4IiB2aWV3Qm94PSIwIDAgMTYgMTMiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDUxLjMgKDU3NTQ0KSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5JY29ucy9DaGVjay9MaWdodDwvdGl0bGU+CiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxkZWZzPjwvZGVmcz4KICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJGb3JtLWZpZWxkLXN0YXRlcyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIxNi4wMDAwMDAsIC00MjcuMDAwMDAwKSIgZmlsbD0iI0ZGRkZGRiI+CiAgICAgICAgICAgIDxnIGlkPSJJY29ucy9DaGVjay9MaWdodCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjE0LjAwMDAwMCwgNDIzLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTguMTk3NjczOTEsMTYuMjQzMjc5IEM4LjU2NDE0Mzc3LDE2LjIyNDA3MzIgOC45MjMyODY4NCwxNi4wNjUwNjM3IDkuMTg4MjQwMzQsMTUuNzcwODAzMSBMMTcuNjMxNjc3Myw2LjM5MzQxNjI3IEMxOC4xNjE1ODQzLDUuODA0ODk0OTQgMTguMTE0MDY4LDQuODk4MjI5NjUgMTcuNTI1NTQ2Nyw0LjM2ODMyMjY2IEMxNi45MzcwMjUzLDMuODM4NDE1NjcgMTYuMDMwMzYwMSwzLjg4NTkzMTk5IDE1LjUwMDQ1MzEsNC40NzQ0NTMzMiBMOC4wMTY0OTc1NCwxMi43ODYyMjggTDQuMzkzNDE2MjcsOS41MjM5OTA5NiBDMy44MDQ4OTQ5NCw4Ljk5NDA4Mzk3IDIuODk4MjI5NjUsOS4wNDE2MDAyOSAyLjM2ODMyMjY2LDkuNjMwMTIxNjIgQzEuODM4NDE1NjcsMTAuMjE4NjQzIDEuODg1OTMxOTksMTEuMTI1MzA4MiAyLjQ3NDQ1MzMyLDExLjY1NTIxNTIgTDcuMTYzMTQ2NzIsMTUuODc2OTMzNyBDNy40NTc0MDczOSwxNi4xNDE4ODcyIDcuODMxMjA0MDQsMTYuMjYyNDg0OSA4LjE5NzY3MzkxLDE2LjI0MzI3OSBaIiBpZD0iQ29tYmluZWQtU2hhcGUiPjwvcGF0aD4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+');
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &[type="radio"] {
+    border-radius: $input--option--radio--border-radius;
+
+    &:checked {
+      box-shadow: inset 0 0 0 $input--option--box-shadow-width $input--option--box-shadow-color;
+    }
   }
 }

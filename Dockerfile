@@ -1,6 +1,18 @@
-FROM node:8.5-alpine
+FROM node:8.12-alpine
 RUN apk update && \
-    apk add openjdk7-jre-base ruby ruby-irb ruby-rake ruby-dev ruby-io-console ruby-bundler jq bash bash-doc bash-completion python
+    apk add \
+      bash \
+      bash-completion \
+      bash-doc \
+      jq \
+      openjdk7-jre-base \
+      python \
+      ruby \
+      ruby-bundler \
+      ruby-dev \
+      ruby-io-console \
+      ruby-irb \
+      ruby-rake
 
 COPY Gemfile* /tmp/
 WORKDIR /tmp
@@ -11,6 +23,6 @@ RUN mkdir /Bits
 WORKDIR /Bits
 
 COPY package*.json ./
-RUN npm install --dev --loglevel=warn
+RUN npm install --loglevel=warn --only=dev
 
 COPY . /Bits
