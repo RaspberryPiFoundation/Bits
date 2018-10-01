@@ -45,6 +45,23 @@ $input-type-map:            (
     border-color: $input--focus-border-color;
     color:        $input--focus-color;
     outline:      none;
+
+$input--inline--margin: 1rem;
+
+.c-input--inline {
+  display: inline-block;
+  margin: 0 $input--inline--margin;
+  width: auto;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
 $input--option--background-color: $color-primary-green !default;
 $input--option--border-color: $color-primary-green !default;
 $input--option--border-width: $border-width-x3 !default;
