@@ -1,22 +1,47 @@
 @import '../../../styles/component-helper';
 
-$label-font-weight:    $font-weight-medium !default;
-$label-margin-bottom:  $baseline !default;
-$label-line-height:    $baseline-x7 !default;
-$label-line-height-md: $baseline-x8 !default;
+$label--font-weight:    $font-weight-medium !default;
+$label--margin-bottom:  $baseline !default;
+$label--line-height:    $baseline-x7 !default;
+$label--line-height-md: $baseline-x8 !default;
 
 .c-label {
   display:       block;
-  font-weight:   $label-font-weight;
-  margin-bottom: $label-margin-bottom;
+  font-weight:   $label--font-weight;
+  margin-bottom: $label--margin-bottom;
 }
 
 .c-label--inline {
   display: inline;
   margin-bottom: 0;
-  line-height: $label-line-height;
+  line-height: $label--line-height;
 
   @include iota-breakpoint('md') {
-    line-height: $label-line-height-md;
+    line-height: $label--line-height-md;
   }
 }
+
+
+$label--pill--background-color: $color-white !default;
+$label--pill--border-color: $color-primary-green !default;
+$label--pill--border-radius: 3rem !default;
+$label--pill--border-width: $border-width-x2 !default;
+$label--pill--color: $color-primary-green !default;
+$label--pill--font-weight: $font-weight-bold !default;
+$label--pill--padding: 1rem 2rem !default;
+
+.c-label--pill {
+  align-items: center;
+  background-color: $label--pill--background-color;
+  border-color: $label--pill--border-color;
+  border-radius: $label--pill--border-radius;
+  border-style: solid;
+  border-width: $label--pill--border-width;
+  color: $label--pill--color;
+  cursor: pointer;
+  display: flex;
+  font-weight: $label--pill--font-weight;
+  justify-content: flex-start;
+  padding: $label--pill--padding;
+}
+
