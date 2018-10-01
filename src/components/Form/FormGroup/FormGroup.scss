@@ -25,3 +25,17 @@ $form-group--margin-bottom: 2rem !default;
   align-items: center;
   justify-content: flex-start;
 }
+
+$form-group--option--font-weight: $font-weight-medium !default;
+$form-group--option--line-height: 2.4rem !default;
+$form-group--option--margin-bottom: 1rem !default;
+
+.c-form-group--option {
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-weight: $form-group--option--font-weight;
+  line-height: $form-group--option--line-height;
+  margin-bottom: $form-group--option--margin-bottom;
+}
