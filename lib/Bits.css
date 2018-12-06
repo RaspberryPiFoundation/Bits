@@ -5,7 +5,7 @@
 
   Author:      The Raspberry Pi Foundation
   Author URI:  https://raspberrypi.org
-  Version:     1.1.15
+  Version:     1.1.16
 */
 
 
@@ -1377,8 +1377,6 @@ strong {
 
 
 .c-input {
-  font-size: 1.6rem;
-  line-height: 35px;
   background-color: #fff;
   border-color: #ccc;
   border-radius: 5px;
@@ -1387,13 +1385,10 @@ strong {
   color: #444;
   display: block;
   font-family: "Rubik", sans-serif;
+  font-size: 1.6rem;
   font-weight: 300;
-  padding: 0 10px;
+  padding: 5px 10px;
   width: 100%; }
-  @media screen and (min-width: 768px) {
-    .c-input {
-      font-size: 1.8rem;
-      line-height: 40px; } }
   .c-input::-webkit-input-placeholder {
     color: #999; }
   .c-input:-ms-input-placeholder {
@@ -1406,6 +1401,9 @@ strong {
     border-color: #999;
     color: #222;
     outline: none; }
+  @media screen and (min-width: 768px) {
+    .c-input {
+      font-size: 1.8rem; } }
 
 .c-input--inline {
   display: inline-block;

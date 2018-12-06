@@ -3,6 +3,12 @@
 *The format of this document is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).*
 
+## [v1.1.16](https://github.com/RaspberryPiFoundation/Bits/compare/v1.1.15...v1.1.16) - 2018-12-06
+
+### Changed
+
+- Vertical sizing of `c-input` no longer dependent on line-height, which was causing IE to render inputs with vertically clipped text. Using padding instead.
+
 ## [v1.1.15](https://github.com/RaspberryPiFoundation/Bits/compare/v1.1.14...v1.1.15) - 2018-10-01
 
 ### Added
