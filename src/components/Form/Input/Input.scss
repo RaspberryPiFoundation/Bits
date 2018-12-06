@@ -6,24 +6,19 @@ $input--border-radius: $border-radius !default;
 $input--border-width: $border-width-x2 !default;
 $input--color: $color-ui-grey-dark !default;
 $input--font-family: $font-family-sans-serif !default;
+$input--font-size: $type-base-font-size !default;
+$input--font-size--md: $type-base-font-size-md !default;
 $input--font-weight: $font-weight-light !default;
 $input--line-height: $spacing-x7 !default;
 $input--line-height-md: $spacing-x8 !default;
-$input--padding: 0 $spacing-x2 !default;
+$input--padding: $spacing $spacing-x2 !default;
 
 $input--placeholder--color: $color-ui-grey-medium !default;
 
 $input--focus--border-color: $color-ui-grey-medium !default;
 $input--focus--color: $color-ui-black !default;
 
-$input--type-map: (
-  null: ($type-base-font-size, $input--line-height),
-  md: ($type-base-font-size-md, $input--line-height-md),
-) !default;
-
 .c-input {
-  @include iota-type($input--type-map);
-
   background-color: $input--background-color;
   border-color: $input--border-color;
   border-radius: $input--border-radius;
@@ -32,6 +27,7 @@ $input--type-map: (
   color: $input--color;
   display: block;
   font-family: $input--font-family;
+  font-size: $input--font-size;
   font-weight: $input--font-weight;
   padding: $input--padding;
   width: 100%;
@@ -44,6 +40,10 @@ $input--type-map: (
     border-color: $input--focus--border-color;
     color: $input--focus--color;
     outline: none;
+  }
+
+  @include iota-breakpoint('md') {
+    font-size: $input--font-size--md;
   }
 }
 
