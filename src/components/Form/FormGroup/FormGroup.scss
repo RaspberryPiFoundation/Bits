@@ -15,8 +15,11 @@ $form-group--margin-bottom: 2rem !default;
 .c-form-group--grid {
   @include iota-breakpoint('sm') {
     align-items: center;
-    display: grid;
-    grid-template-columns: 2fr 4fr;
+
+    @supports (display: grid) {
+      display: grid;
+      grid-template-columns: 2fr 4fr;
+    }
   }
 }
 
