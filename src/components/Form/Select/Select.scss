@@ -1,48 +1,41 @@
 @import '../../../styles/component-helper';
 
-$select-background-color:    $color-white !default;
-$select-background-position: right $spacing-x2 center !default;
-$select-border-color:        $color-ui-grey-light !default;
-$select-border-radius:       $border-radius !default;
-$select-border-width:        $border-width-x2 !default;
-$select-color:               $color-ui-grey-dark !default;
-$select-font-family:         $font-family-sans-serif !default;
-$select-font-weight:         $font-weight-light !default;
-$select-height:              $spacing-x9 !default;
-$select-line-height:         $spacing-x7 !default;
-$select-line-height-md:      $spacing-x8 !default;
-$select-padding:             0 4rem 0 1rem !default;
-$select-placeholder-color:   $color-ui-grey-medium !default;
+$select--background-color:    $color-white !default;
+$select--background-position: right $spacing-x2 center !default;
+$select--border-color:        $color-ui-grey-light !default;
+$select--border-radius:       $border-radius !default;
+$select--border-width:        $border-width-x2 !default;
+$select--color:               $color-ui-grey-dark !default;
+$select--font-family:         $font-family-sans-serif !default;
+$select--font-size:           $type-base-font-size !default;
+$select--font-size--md:       $type-base-font-size-md !default;
+$select--font-weight:         $font-weight-light !default;
+$select--height:              $spacing-x9 !default;
+$select--line-height:         $spacing-x7 !default;
+$select--line-height-md:      $spacing-x8 !default;
+$select--padding:             0.5rem 4rem 0.5rem 1rem !default;
+$select--placeholder-color:   $color-ui-grey-medium !default;
 
 $select--focus-border-color: $color-ui-grey-medium !default;
 $select--focus-color:        $color-ui-black !default;
-// SpaceAfterComma doesn't seem to work in Sass lists
-// scss-lint:disable SpaceAfterComma
-$select-type-map:            (
-  null: ($type-base-font-size,    $select-line-height),
-  md:   ($type-base-font-size-md, $select-line-height-md),
-) !default;
-// scss-lint:enable SpaceAfterComma
 
 .c-select {
-  @include iota-type($select-type-map);
-
   appearance:          none;
-  background-color:    $select-background-color;
+  background-color:    $select--background-color;
   background-image:    url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTVweCIgaGVpZ2h0PSI5cHgiIHZpZXdCb3g9IjAgMCAxNSA5IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogIDxnIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTMzOC4wMDAwMDAsIC0xNy4wMDAwMDApIiBmaWxsPSIjQ0NDQ0NDIj4KICAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzQ2LjAwMDAwMCwgMjAuMDAwMDAwKSByb3RhdGUoLTkwLjAwMDAwMCkgdHJhbnNsYXRlKC0zNDYuMDAwMDAwLCAtMjAuMDAwMDAwKSB0cmFuc2xhdGUoMzM4LjAwMDAwMCwgMTIuMDAwMDAwKSI+CiAgICAgICAgPHBhdGgKICAgICAgICAgIGQ9Ik02Ljg1MjI3NjI1LDEwLjM2NjAwMTcgTDYuODUyMjc2MjUsMy40NjQwNDA5NiBDNi44NTIyNzYyNSwyLjc3MDk3Nzc0IDYuMjkwNDM3NTEsMi4yMDkxMzkgNS41OTczNzQyOSwyLjIwOTEzOSBMNS41OTczNzQyOSwyLjIwOTEzOSBMNS41OTczNzQyOSwyLjIwOTEzOSBDNC45MDQzMTEwOCwyLjIwOTEzOSA0LjM0MjQ3MjMzLDIuNzcwOTc3NzQgNC4zNDI0NzIzMywzLjQ2NDA0MDk2IEw0LjM0MjQ3MjMzLDMuNDY0MDQwOTYgTDQuMzQyNDcyMzMsMTEuNjIwOTAzNyBDNC4zNDI0NzIzMywxMS45Njc0MzUzIDQuNDgyOTMyMDIsMTIuMjgxMTYwOCA0LjcxMDAyNDYxLDEyLjUwODI1MzQgQzQuOTM3MTE3MiwxMi43MzUzNDYgNS4yNTA4NDI2OSwxMi44NzU4MDU3IDUuNTk3Mzc0MjksMTIuODc1ODA1NyBMNS41OTczNzQyOSwxMi44NzU4MDU3IEwxMy43NTQyMzcsMTIuODc1ODA1NyBDMTQuNDQ3MzAwMywxMi44NzU4MDU3IDE1LjAwOTEzOSwxMi4zMTM5NjY5IDE1LjAwOTEzOSwxMS42MjA5MDM3IEMxNS4wMDkxMzksMTAuOTI3ODQwNSAxNC40NDczMDAzLDEwLjM2NjAwMTcgMTMuNzU0MjM3LDEwLjM2NjAwMTcgTDYuODUyMjc2MjUsMTAuMzY2MDAxNyBaIgogICAgICAgICAgaWQ9IkNvbWJpbmVkLVNoYXBlIgogICAgICAgICAgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOS42NzU4MDYsIDcuNTQyNDcyKSByb3RhdGUoLTMxNS4wMDAwMDApIHRyYW5zbGF0ZSgtOS42NzU4MDYsIC03LjU0MjQ3MikgIj48L3BhdGg+CiAgICAgIDwvZz4KICAgIDwvZz4KICA8L2c+Cjwvc3ZnPgo=');
-  background-position: $select-background-position;
+  background-position: $select--background-position;
   background-repeat:   no-repeat;
-  border-color:        $select-border-color;
-  border-radius:       $select-border-radius;
+  border-color:        $select--border-color;
+  border-radius:       $select--border-radius;
   border-style:        solid;
-  border-width:        $select-border-width;
-  color:               $select-color;
+  border-width:        $select--border-width;
+  color:               $select--color;
   cursor:              pointer;
   display:             block;
-  font-family:         $select-font-family;
-  font-weight:         $select-font-weight;
-  height:              $select-height;
-  padding:             $select-padding;
+  font-family:         $select--font-family;
+  font-size:           $select--font-size;
+  font-weight:         $select--font-weight;
+  padding:             $select--padding;
   width:               100%;
 
   &:focus {
@@ -58,11 +51,15 @@ $select-type-map:            (
   &::-ms-expand {
     display: none;
   }
+
+  @include iota-breakpoint('md') {
+    font-size: $select--font-size--md;
+  }
 }
 
 $select--inline--margin: 1rem;
 
-.c-select--inline {
+.c-select-inline {
   display: inline-block;
   margin: 0 $select--inline--margin;
   width: auto;
