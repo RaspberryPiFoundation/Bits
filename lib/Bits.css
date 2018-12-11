@@ -5,7 +5,7 @@
 
   Author:      The Raspberry Pi Foundation
   Author URI:  https://raspberrypi.org
-  Version:     1.1.16
+  Version:     1.1.17
 */
 
 
@@ -637,6 +637,9 @@ strong {
 .c-button:visited {
   font-size: 1.6rem;
   line-height: 35px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   background-color: #fcf67f;
   border-color: #fcf67f;
   border-radius: 5px;
@@ -1323,9 +1326,11 @@ strong {
   .c-form-group--grid {
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
-    display: grid;
-    grid-template-columns: 2fr 4fr; } }
+    align-items: center; }
+    @supports (display: grid) {
+      .c-form-group--grid {
+        display: grid;
+        grid-template-columns: 2fr 4fr; } } }
 
 .c-form-group--inline {
   display: -webkit-box;
@@ -1377,6 +1382,9 @@ strong {
 
 
 .c-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   background-color: #fff;
   border-color: #ccc;
   border-radius: 5px;
@@ -1387,7 +1395,8 @@ strong {
   font-family: "Rubik", sans-serif;
   font-size: 1.6rem;
   font-weight: 300;
-  padding: 5px 10px;
+  min-height: 4rem;
+  padding: 0 1rem;
   width: 100%; }
   .c-input::-webkit-input-placeholder {
     color: #999; }
@@ -1501,8 +1510,6 @@ strong {
 
 
 .c-select {
-  font-size: 1.6rem;
-  line-height: 35px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -1518,14 +1525,12 @@ strong {
   cursor: pointer;
   display: block;
   font-family: "Rubik", sans-serif;
+  font-size: 1.6rem;
   font-weight: 300;
-  height: 45px;
+  height: 4rem;
+  min-height: 4rem;
   padding: 0 4rem 0 1rem;
   width: 100%; }
-  @media screen and (min-width: 768px) {
-    .c-select {
-      font-size: 1.8rem;
-      line-height: 40px; } }
   .c-select:focus {
     border-color: #999;
     color: #222;
@@ -1534,14 +1539,17 @@ strong {
     background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTVweCIgaGVpZ2h0PSI5cHgiIHZpZXdCb3g9IjAgMCAxNSA5IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogIDxnIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTMzOC4wMDAwMDAsIC0xNy4wMDAwMDApIiBmaWxsPSIjMjIyMjIyIj4KICAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzQ2LjAwMDAwMCwgMjAuMDAwMDAwKSByb3RhdGUoLTkwLjAwMDAwMCkgdHJhbnNsYXRlKC0zNDYuMDAwMDAwLCAtMjAuMDAwMDAwKSB0cmFuc2xhdGUoMzM4LjAwMDAwMCwgMTIuMDAwMDAwKSI+CiAgICAgICAgPHBhdGgKICAgICAgICAgIGQ9Ik02Ljg1MjI3NjI1LDEwLjM2NjAwMTcgTDYuODUyMjc2MjUsMy40NjQwNDA5NiBDNi44NTIyNzYyNSwyLjc3MDk3Nzc0IDYuMjkwNDM3NTEsMi4yMDkxMzkgNS41OTczNzQyOSwyLjIwOTEzOSBMNS41OTczNzQyOSwyLjIwOTEzOSBMNS41OTczNzQyOSwyLjIwOTEzOSBDNC45MDQzMTEwOCwyLjIwOTEzOSA0LjM0MjQ3MjMzLDIuNzcwOTc3NzQgNC4zNDI0NzIzMywzLjQ2NDA0MDk2IEw0LjM0MjQ3MjMzLDMuNDY0MDQwOTYgTDQuMzQyNDcyMzMsMTEuNjIwOTAzNyBDNC4zNDI0NzIzMywxMS45Njc0MzUzIDQuNDgyOTMyMDIsMTIuMjgxMTYwOCA0LjcxMDAyNDYxLDEyLjUwODI1MzQgQzQuOTM3MTE3MiwxMi43MzUzNDYgNS4yNTA4NDI2OSwxMi44NzU4MDU3IDUuNTk3Mzc0MjksMTIuODc1ODA1NyBMNS41OTczNzQyOSwxMi44NzU4MDU3IEwxMy43NTQyMzcsMTIuODc1ODA1NyBDMTQuNDQ3MzAwMywxMi44NzU4MDU3IDE1LjAwOTEzOSwxMi4zMTM5NjY5IDE1LjAwOTEzOSwxMS42MjA5MDM3IEMxNS4wMDkxMzksMTAuOTI3ODQwNSAxNC40NDczMDAzLDEwLjM2NjAwMTcgMTMuNzU0MjM3LDEwLjM2NjAwMTcgTDYuODUyMjc2MjUsMTAuMzY2MDAxNyBaIgogICAgICAgICAgaWQ9IkNvbWJpbmVkLVNoYXBlIgogICAgICAgICAgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOS42NzU4MDYsIDcuNTQyNDcyKSByb3RhdGUoLTMxNS4wMDAwMDApIHRyYW5zbGF0ZSgtOS42NzU4MDYsIC03LjU0MjQ3MikgIj48L3BhdGg+CiAgICAgIDwvZz4KICAgIDwvZz4KICA8L2c+Cjwvc3ZnPgo="); }
   .c-select::-ms-expand {
     display: none; }
+  @media screen and (min-width: 768px) {
+    .c-select {
+      font-size: 1.8rem; } }
 
-.c-select--inline {
+.c-select-inline {
   display: inline-block;
   margin: 0 1rem;
   width: auto; }
-  .c-select--inline:first-child {
+  .c-select-inline:first-child {
     margin-left: 0; }
-  .c-select--inline:last-child {
+  .c-select-inline:last-child {
     margin-right: 0; }
 
 
@@ -1560,6 +1568,9 @@ strong {
 .c-textarea {
   font-size: 1.6rem;
   line-height: 35px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   background-color: #fff;
   border-color: #ccc;
   border-radius: 5px;
