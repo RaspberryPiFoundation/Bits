@@ -27,6 +27,7 @@ $button-hover-color:            $color-white !default;
 .c-button:visited {
   @include iota-type($button-type-map);
 
+  appearance: none;
   background-color:           $button-background-color;
   border-color:               $button-border-color;
   border-radius:              $button-border-radius;

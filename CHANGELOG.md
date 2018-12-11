@@ -3,6 +3,13 @@
 *The format of this document is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).*
 
+## [v1.1.17](https://github.com/RaspberryPiFoundation/Bits/compare/v1.1.16...v1.1.17) - 2018-12-11
+
+### Changed
+
+- `c-input`, `c-textarea`, and `c-button` all have `appearance: none` to remove some unwanted extra styling in iOS Safari.
+- `c-input` and `c-select` have had their heights standardised
+
 ## [v1.1.16](https://github.com/RaspberryPiFoundation/Bits/compare/v1.1.15...v1.1.16) - 2018-12-06
 
 ### Changed
