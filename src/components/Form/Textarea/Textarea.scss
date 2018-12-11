@@ -26,6 +26,7 @@ $textarea-type-map:            (
 .c-textarea {
   @include iota-type($textarea-type-map);
 
+  appearance:       none;
   background-color: $textarea-background-color;
   border-color:     $textarea-border-color;
   border-radius:    $textarea-border-radius;

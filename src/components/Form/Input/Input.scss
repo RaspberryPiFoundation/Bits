@@ -19,6 +19,7 @@ $input--focus--border-color: $color-ui-grey-medium !default;
 $input--focus--color: $color-ui-black !default;
 
 .c-input {
+  appearance: none;
   background-color: $input--background-color;
   border-color: $input--border-color;
   border-radius: $input--border-radius;
