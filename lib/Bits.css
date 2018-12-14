@@ -5,7 +5,7 @@
 
   Author:      The Raspberry Pi Foundation
   Author URI:  https://raspberrypi.org
-  Version:     1.1.17
+  Version:     1.1.18
 */
 
 
@@ -1434,6 +1434,7 @@ strong {
   flex-shrink: 0;
   height: 2.4rem;
   margin-right: 10px;
+  min-height: auto;
   padding: 0;
   width: 2.4rem; }
   .c-input--option-button:checked {
