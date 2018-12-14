@@ -83,6 +83,7 @@ $input--option--width: 2.4rem !default;
   flex-shrink: 0;
   height: $input--option--height;
   margin-right: $input--option--margin-right;
+  min-height: auto;
   padding: 0;
   width: $input--option--width;
 

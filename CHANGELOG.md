@@ -3,6 +3,12 @@
 *The format of this document is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).*
 
+## [v1.1.18](https://github.com/RaspberryPiFoundation/Bits/compare/v1.1.17...v1.1.18) - 2018-12-14
+
+### Fixed
+
+- `c-input--option-button` components were inheriting the `min-height` rule introduced in v1.1.17 - this is now fixed
+
 ## [v1.1.17](https://github.com/RaspberryPiFoundation/Bits/compare/v1.1.16...v1.1.17) - 2018-12-11
 
 ### Changed
