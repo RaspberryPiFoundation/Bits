@@ -31,7 +31,7 @@ Font sizes differ between breakpoints. At md, lg and xl, the larger value will b
 
 ## Colors
 
-These are the standard colours used for our branding, however the list is not exhaustive, and now colours may be introduced where appropriate.
+These are the standard colors used for our branding, however the list is not exhaustive, and new colors may be introduced where appropriate.
 
 | Color Name | HEX Code  |
 |:--|:--|
