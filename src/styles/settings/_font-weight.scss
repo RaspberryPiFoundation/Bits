@@ -3,7 +3,7 @@ $font-weight-medium: 500 !default;
 $font-weight-bold:   700 !default;
 
 $font-weights: (
-  light:  $font-weight-light,
-  medium: $font-weight-medium,
-  bold:   $font-weight-bold,
+  "light":  $font-weight-light,
+  "medium": $font-weight-medium,
+  "bold":   $font-weight-bold,
 );

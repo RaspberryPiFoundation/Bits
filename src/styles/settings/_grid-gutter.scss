@@ -5,9 +5,9 @@ $grid-gutter-lg:   2.5% !default;
 $grid-gutter-xl:   2% !default;
 
 $grid-gutters: (
-  null: $grid-gutter-base,
-  sm:   $grid-gutter-sm,
-  md:   $grid-gutter-md,
-  lg:   $grid-gutter-lg,
-  xl:   $grid-gutter-xl,
+  "null": $grid-gutter-base,
+  "sm":   $grid-gutter-sm,
+  "md":   $grid-gutter-md,
+  "lg":   $grid-gutter-lg,
+  "xl":   $grid-gutter-xl,
 );
