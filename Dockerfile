@@ -1,4 +1,4 @@
-FROM node:8.12-alpine
+FROM node:10-alpine
 RUN apk update && \
     apk add \
       bash \
@@ -23,6 +23,6 @@ RUN mkdir /Bits
 WORKDIR /Bits
 
 COPY package*.json ./
-RUN npm install --loglevel=warn --only=dev
+RUN npm install --loglevel=warn
 
 COPY . /Bits
