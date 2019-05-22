@@ -14,7 +14,7 @@ describe('<Slice />', () => {
     })
 
     it('without crashing', () => {
-      expect(printOnly.find('.u-print-only')).toBePresent()
+      expect(printOnly.find('.u-print-only')).toExist()
     })
 
     it('matches its snapshot', () => {

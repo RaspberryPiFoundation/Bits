@@ -17,7 +17,7 @@ describe('<Link />', () => {
     })
 
     it('without crashing', () => {
-      expect(internalLink.find('.c-link')).toBePresent()
+      expect(internalLink.find('.c-link')).toExist()
     })
 
     it('matches its snapshot', () => {
@@ -25,7 +25,7 @@ describe('<Link />', () => {
     })
 
     it('renders a React Router Link component', () => {
-      expect(internalLink.find(RouterLink)).toBePresent()
+      expect(internalLink.find(RouterLink)).toExist()
     })
 
     describe('external links', () => {

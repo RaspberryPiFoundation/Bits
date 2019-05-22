@@ -27,11 +27,10 @@ export default {
   ],
   plugins: [
     resolve(),
-    commonjs(),
     sass({ insert: true }),
     babel({
       exclude: 'node_modules/**',
-      plugins: ['external-helpers'],
     }),
+    commonjs(),
   ],
 }

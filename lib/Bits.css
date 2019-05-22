@@ -2882,6 +2882,15 @@ strong {
 .u-inline-block {
   display: inline-block !important; }
 
+.u-visually-hidden {
+  clip: rect(1px 1px 1px 1px) !important;
+  
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  position: absolute !important;
+  width: 1px !important; }
+
 @media screen and (min-width: 576px) {
   .u-flex\@sm {
     display: -webkit-box !important;
@@ -2894,7 +2903,15 @@ strong {
   .u-inline\@sm {
     display: inline !important; }
   .u-inline-block\@sm {
-    display: inline-block !important; } }
+    display: inline-block !important; }
+  .u-visually-hidden\@sm {
+    clip: rect(1px 1px 1px 1px) !important;
+    
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    position: absolute !important;
+    width: 1px !important; } }
 
 @media screen and (min-width: 768px) {
   .u-flex\@md {
@@ -2908,7 +2925,15 @@ strong {
   .u-inline\@md {
     display: inline !important; }
   .u-inline-block\@md {
-    display: inline-block !important; } }
+    display: inline-block !important; }
+  .u-visually-hidden\@md {
+    clip: rect(1px 1px 1px 1px) !important;
+    
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    position: absolute !important;
+    width: 1px !important; } }
 
 @media screen and (min-width: 992px) {
   .u-flex\@lg {
@@ -2922,7 +2947,15 @@ strong {
   .u-inline\@lg {
     display: inline !important; }
   .u-inline-block\@lg {
-    display: inline-block !important; } }
+    display: inline-block !important; }
+  .u-visually-hidden\@lg {
+    clip: rect(1px 1px 1px 1px) !important;
+    
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    position: absolute !important;
+    width: 1px !important; } }
 
 @media screen and (min-width: 1200px) {
   .u-flex\@xl {
@@ -2936,7 +2969,15 @@ strong {
   .u-inline\@xl {
     display: inline !important; }
   .u-inline-block\@xl {
-    display: inline-block !important; } }
+    display: inline-block !important; }
+  .u-visually-hidden\@xl {
+    clip: rect(1px 1px 1px 1px) !important;
+    
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    position: absolute !important;
+    width: 1px !important; } }
 
 
 

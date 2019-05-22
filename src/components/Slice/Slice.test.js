@@ -13,7 +13,7 @@ describe('<Slice />', () => {
     })
 
     it('without crashing', () => {
-      expect(slice.find('.c-slice')).toBePresent()
+      expect(slice.find('.c-slice')).toExist()
     })
 
     it('matches its snapshot', () => {
