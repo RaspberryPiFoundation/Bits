@@ -14,7 +14,7 @@ describe('<Slice />', () => {
     })
 
     it('without crashing', () => {
-      expect(noPrint.find('.u-no-print')).toBePresent()
+      expect(noPrint.find('.u-no-print')).toExist()
     })
 
     it('matches its snapshot', () => {
