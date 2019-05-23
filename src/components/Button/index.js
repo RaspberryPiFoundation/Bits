@@ -6,6 +6,9 @@ import React from 'react'
 import './Button.scss'
 import Link from '../Link'
 
+/**
+ * A styled button that can also be used as a link
+ */
 const Button = ({
   children,
   className,
@@ -36,10 +39,15 @@ const Button = ({
 }
 
 Button.propTypes = {
+  /** Any additional classes you wish to add to the button */
   className: PropTypes.string,
+  /** The contents of the button */
   children: PropTypes.node.isRequired,
+  /** Changes the hover styles to better suit dark backgrounds */
   lightOnDark: PropTypes.bool,
+  /** Applies secondary button styling */
   secondary: PropTypes.bool,
+  /** Causes the button to be treated as a link to the URL specified */
   to: PropTypes.string,
 }
 

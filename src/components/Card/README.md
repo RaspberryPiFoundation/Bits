@@ -4,9 +4,20 @@ Cards are used a lot, and are fairly flexible. The contents of a card should nev
 
 ## With Image
 
+```jsx
+<Card
+  imageSrc="http://via.placeholder.com/300x200"
+  imageAlt="Placeholder image">
+    <p class="o-type-base u-mb-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <span class="o-type-caption">2 days ago</span>
+</Card>
 ```
-<div class="c-card" href="#">
-  <img src="http://via.placeholder.com/300x200" alt="" class="c-card__image">
+
+#### In HTML/CSS
+
+```html static
+<div class="c-card">
+  <img src="http://via.placeholder.com/300x200" alt="Placeholder image" class="c-card__image" />
   <div class="c-card__content">
     <p class="o-type-base u-mb-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
     <span class="o-type-caption">2 days ago</span>
@@ -16,7 +27,16 @@ Cards are used a lot, and are fairly flexible. The contents of a card should nev
 
 ## Without Image
 
+```jsx
+<Card>
+  <p class="o-type-base u-mb-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+  <span class="o-type-caption">2 days ago</span>
+</Card>
 ```
+
+#### In HTML/CSS
+
+```html static
 <div class="c-card" href="#">
   <div class="c-card__content">
     <p class="o-type-base u-mb-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -27,9 +47,24 @@ Cards are used a lot, and are fairly flexible. The contents of a card should nev
 
 ## As Link
 
+```jsx
+import { MemoryRouter } from 'react-router-dom';
+<MemoryRouter>
+  <Card
+    imageSrc="http://via.placeholder.com/300x200"
+    imageAlt="Placeholder image"
+    to="https://www.raspberrypi.org">
+      <p class="o-type-base u-mb-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      <span class="o-type-caption">2 days ago</span>
+  </Card>
+</MemoryRouter>
 ```
+
+#### In HTML/CSS
+
+```html static
 <a class="c-card c-card--link" href="#">
-  <img src="http://via.placeholder.com/300x200" alt="" class="c-card__image">
+  <img src="http://via.placeholder.com/300x200" alt="" class="c-card__image" />
   <div class="c-card__content">
     <p class="o-type-base u-mb-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
     <span class="o-type-caption">2 days ago</span>

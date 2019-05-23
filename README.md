@@ -29,6 +29,11 @@ You can use gulp to watch the scss files & rebuild as necessary:
 npm run gulp:watch
 ```
 
+When writing documentation, use:
+```
+npm run docs
+```
+
 Before creating a PR, make sure you run:
 ```
 npm run build
