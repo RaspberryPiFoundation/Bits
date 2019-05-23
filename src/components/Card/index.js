@@ -6,6 +6,9 @@ import React from 'react'
 import './Card.scss'
 import Link from '../Link'
 
+/**
+ * Cards are used a lot, and are fairly flexible. The contents of a card should never be too complicated. An optional image can be added, and the whole card can be a link if necessary (or you can add a regular link to the card's content too if you prefer). They will always stretch to 100% the width of their parent, and are intended for use within the iota grid system.
+ */
 const Card = ({
   children,
   className,
