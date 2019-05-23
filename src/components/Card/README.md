@@ -4,8 +4,8 @@
 <Card
   imageSrc="http://via.placeholder.com/300x200"
   imageAlt="Placeholder image">
-    <p class="o-type-base u-mb-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    <span class="o-type-caption">2 days ago</span>
+    <p className="o-type-base u-mb-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <span className="o-type-caption">2 days ago</span>
 </Card>
 ```
 
@@ -25,8 +25,8 @@
 
 ```jsx
 <Card>
-  <p class="o-type-base u-mb-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-  <span class="o-type-caption">2 days ago</span>
+  <p className="o-type-base u-mb-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+  <span className="o-type-caption">2 days ago</span>
 </Card>
 ```
 
@@ -50,8 +50,8 @@ import { MemoryRouter } from 'react-router-dom';
     imageSrc="http://via.placeholder.com/300x200"
     imageAlt="Placeholder image"
     to="https://www.raspberrypi.org">
-      <p class="o-type-base u-mb-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-      <span class="o-type-caption">2 days ago</span>
+      <p className="o-type-base u-mb-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      <span className="o-type-caption">2 days ago</span>
   </Card>
 </MemoryRouter>
 ```
