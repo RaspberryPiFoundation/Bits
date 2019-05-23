@@ -31,6 +31,10 @@ module.exports = {
       name: 'Components',
       components: 'src/components/**/*.js',
     },
+    {
+      name: 'Changelog',
+      content: 'CHANGELOG.md',
+    },
   ],
   template: {
     head: {
