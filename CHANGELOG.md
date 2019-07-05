@@ -3,6 +3,18 @@
 *The format of this document is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).*
 
+## [v1.1.20](https://github.com/RaspberryPiFoundation/Bits/compare/v1.1.19...v1.1.20) - 2019-05-23
+
+### Changed
+
+- Add left margin to ul and ol to align with other text in wysiwyg
+
+## [v1.1.19](https://github.com/RaspberryPiFoundation/Bits/compare/v1.1.18...v1.1.19) - 2019-05-22
+
+### Changed
+
+- Updates to many dependencies, including babel, rollup, jest, and node-sass
+
 ## [v1.1.18](https://github.com/RaspberryPiFoundation/Bits/compare/v1.1.17...v1.1.18) - 2018-12-14
 
 ### Fixed

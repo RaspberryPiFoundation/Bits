@@ -22,7 +22,7 @@ describe('<Card />', () => {
     })
 
     it('renders without crashing', () => {
-      expect(wrapper.find('.c-card')).toBePresent()
+      expect(wrapper.find('.c-card')).toExist()
     })
 
     it('renders an image with the correct src', () => {
@@ -49,7 +49,7 @@ describe('<Card />', () => {
     })
 
     it('renders the technologies element', () => {
-      expect(wrapper.find('span')).toBePresent()
+      expect(wrapper.find('span')).toExist()
     })
   })
 
