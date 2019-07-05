@@ -29,6 +29,11 @@ You can use gulp to watch the scss files & rebuild as necessary:
 npm run gulp:watch
 ```
 
+When writing documentation, use:
+```
+npm run docs
+```
+
 Before creating a PR, make sure you run:
 ```
 npm run build
@@ -38,6 +43,18 @@ to build all the css & javascript files.
 ## Local Development in another app
 
 **Taken from the README of https://github.com/transitive-bullshit/react-modern-library-boilerplate**
+
+## Documentation
+
+Documentation for Bits is written using [React Styleguidist](https://react-styleguidist.js.org). To run a local docs server, run:
+```
+npm run docs
+```
+
+To build the documentation as a static site, run:
+```
+npm run docs:build
+```
 
 ### Setup this repo for local linking
 

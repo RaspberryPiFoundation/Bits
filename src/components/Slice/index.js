@@ -5,6 +5,11 @@ import React from 'react'
 
 import './Slice.scss'
 
+/**
+ * Not *that* kind of Slice.
+ *
+ * A Slice is a horizontal section of the website. The will almost always contain a `.o-container` element to constrain the width of the content.
+ */
 export const Slice = ({ children, className, white, ...props }) => {
   const classNames = classnames(
     'c-slice',
