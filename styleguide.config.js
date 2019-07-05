@@ -15,15 +15,15 @@ module.exports = {
       sections: [
         {
           name: 'Responsive Breakpoints',
-          content: 'docs/styles/breakpoints.md',
+          content: 'doc/styles/breakpoints.md',
         },
         {
           name: 'Fonts',
-          content: 'docs/styles/fonts.md',
+          content: 'doc/styles/fonts.md',
         },
         {
           name: 'Colours',
-          content: 'docs/styles/colours.md',
+          content: 'doc/styles/colours.md',
         },
       ],
     },
