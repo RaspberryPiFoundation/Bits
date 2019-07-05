@@ -25,14 +25,14 @@ On paper, Docz seems like the perfect solution, however in my experimenting with
 
 Docusaurus is more mature and is also Markdown based, but lacks the MDX support of Docz. This is, however, coming in Docusaurus 2. As it stands, we would have to manually write our own documentation for props, and settle for code examples. One nice feature Docusaurus has is the ability to provide code examples for different languages and have them as tabs, useful for showing the equivalent HTML/CSS for a React component. The project is maintained by Facebook, and used by many large projects, such as Babel, Gulp, Prettier and a number of React projects.
 
+### [React Styleguidist](https://react-styleguidist.js.org)
+
+This offers a lot of auto-generation of documetation based off code comments and `PropTypes`. It was by far the easiest to bring up, and handles much of the documentation automatically from the code. You can embed JSX code that will render out the given component, and provide a live editor to play around with the component. It also allows for custom markdown files to be added to the page. For items not covered by components, like responsive breakpoints, colours, and fonts.
+
 ### [Storybook](https://storybook.js.org/)
 
 Storybooks takes a different approach, using code to document the components. It seems needlessly complicated to write documentation, and furthermore provides a very technical output that doesn't really give much guidance on how to use the components. I'm also unsure how we'd document things like our colour pallete with it.
 
-### [React Styleguidist](https://react-styleguidist.js.org)
-
-This looks promising, offering a lot of auto-generation of documetation based off code comments and `PropTypes`, however I was unable to get it to work. 
-
 ## Decision
 
-My recommendation is to use Docusaurus. It was the only option used that worked consistently. It has the backing of Facebook and other large projects, so should be better maintained. When Docusaurus 2 lands, we'll be able to embed React components like with the other options, and will likely have a better ecosystem of third party components.
+My recommendation is to use React Styleguidist. I've created [a PR](https://github.com/RaspberryPiFoundation/Bits/pull/115) using React Styleguidist, and have continually referred to the deploy preview in my working with Bits since. It works, and seems to be the easiest way to get documentation out of our components.
