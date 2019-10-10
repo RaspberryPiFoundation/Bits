@@ -5,7 +5,7 @@
 
   Author:      The Raspberry Pi Foundation
   Author URI:  https://raspberrypi.org
-  Version:     1.2.0
+  Version:     1.2.1
 */
 
 
@@ -943,8 +943,8 @@ strong {
 
 .c-figure__image {
   display: block;
-  max-width: 100%;
-  width: 100%; }
+  margin: 0 auto;
+  max-width: 100%; }
 
 
 

@@ -1,25 +1,25 @@
-@import '../../styles/component-helper';
+@import "../../styles/component-helper";
 
-$figure-caption-color:            $color-ui-white !default;
+$figure-caption-color: $color-ui-white !default;
 $figure-caption-background-color: $color-ui-grey-dark !default;
-$figure-margin-bottom:            map-get($type-margins, '-base') !default;
-$figure-type-map:                 $type-caption !default;
+$figure-margin-bottom: map-get($type-margins, "-base") !default;
+$figure-type-map: $type-caption !default;
 
 .c-figure {
   margin-bottom: $figure-margin-bottom;
-  text-align:    center;
+  text-align: center;
 }
 
 .c-figure__caption {
   @include iota-type($figure-type-map);
 
   background-color: $figure-caption-background-color;
-  color:            $figure-caption-color;
-  display:          block;
+  color: $figure-caption-color;
+  display: block;
 }
 
 .c-figure__image {
-  display:   block;
+  display: block;
+  margin: 0 auto;
   max-width: 100%;
-  width:     100%;
 }

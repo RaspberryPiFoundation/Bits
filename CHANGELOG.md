@@ -1,4 +1,10 @@
-*The format of this document is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).*
+_The format of this document is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html)._
+
+## [v1.2.1](https://github.com/RaspberryPiFoundation/Bits/compare/v1.2.0...v1.2.1) - 2019-10-09
+
+### Changed
+
+- Figure no longer stretches images beyond their intrinsic width
 
 ## [v1.2.0](https://github.com/RaspberryPiFoundation/Bits/compare/v1.1.20...v1.2.0) - 2019-07-05
 
