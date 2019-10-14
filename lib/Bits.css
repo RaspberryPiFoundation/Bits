@@ -5,7 +5,7 @@
 
   Author:      The Raspberry Pi Foundation
   Author URI:  https://raspberrypi.org
-  Version:     1.2.1
+  Version:     1.2.2
 */
 
 
@@ -685,6 +685,17 @@ strong {
 .c-button--block {
   display: block;
   width: 100%; }
+
+.c-button--disabled,
+.c-button--disabled:visited,
+.c-button[disabled=''],
+.c-button[disabled='']:visited,
+.c-button[disabled='disabled'],
+.c-button[disabled='disabled']:visited {
+  background-color: #eee;
+  border-color: #eee;
+  color: #999;
+  pointer-events: none; }
 
 .c-button--black,
 .c-button--black:visited {
