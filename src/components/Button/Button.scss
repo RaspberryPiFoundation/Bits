@@ -80,11 +80,23 @@ $button-lod-hover-color:            $color-ui-grey-dark !default;
   width:   100%;
 }
 
+.c-button--disabled,
+.c-button--disabled:visited,
+.c-button[disabled=''],
+.c-button[disabled='']:visited,
+.c-button[disabled='disabled'],
+.c-button[disabled='disabled']:visited {
+  background-color: $color-ui-grey-lightest;
+  border-color:     $color-ui-grey-lightest;
+  color:            $color-ui-grey-medium;
+  pointer-events:   none;
+}
+
 @each $color-name, $color-value in $colors {
   .#{'c-button--' + $color-name},
   .#{'c-button--' + $color-name + ':visited'} {
     background-color: #{$color-value};
     border-color:          #{$color-value};
-    color:                      set-color($color-value);
+    color:                 set-color($color-value);
   }
 }

@@ -8,6 +8,11 @@
 <Button secondary>Button Secondary</Button>
 ```
 
+### Button Disabled
+```jsx
+<Button disabled>Button Disabled</Button>
+```
+
 ### Button as Link
 ```jsx
 <Button to="https://www.raspberrypi.org/">Raspberry Pi Homepage</Button>

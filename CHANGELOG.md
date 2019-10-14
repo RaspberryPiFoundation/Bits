@@ -1,5 +1,11 @@
 _The format of this document is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html)._
 
+## [v1.2.2](https://github.com/RaspberryPiFoundation/Bits/compare/v1.2.1...v1.2.2) - 2019-10-14
+
+### Changed
+
+- Added `disabled` styles for buttons as per Sketch doc
+
 ## [v1.2.1](https://github.com/RaspberryPiFoundation/Bits/compare/v1.2.0...v1.2.1) - 2019-10-09
 
 ### Changed
