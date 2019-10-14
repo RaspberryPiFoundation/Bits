@@ -50,7 +50,7 @@ Button.propTypes = {
   className: PropTypes.string,
   /** The contents of the button */
   children: PropTypes.node.isRequired,
-  /** Determines is button should render in a disabled state */
+  /** Determines if button should render in a disabled state */
   disabled: PropTypes.bool,
   /** Changes the hover styles to better suit dark backgrounds */
   lightOnDark: PropTypes.bool,
