@@ -1,7 +1,9 @@
-# Type / Caption
-
-Captions are smaller bits of text like meta information or citations.
-
+```jsx
+<TypeCaption>Caption or smaller text goes here</TypeCaption>
 ```
+
+#### In HTML/CSS
+
+```html static
 <span class="c-type-caption">Caption or smaller text goes here</span>
 ```

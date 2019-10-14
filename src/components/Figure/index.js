@@ -5,7 +5,11 @@ import React from 'react'
 
 import './Figure.scss'
 
+/**
+ * Helps maintain the width of your images, while also providing a standardised option for captioning images. Can be used with or without the caption.
+ */
 export const Figure = ({
+  caption,
   className,
   imageAlt,
   imageSrc,
@@ -16,7 +20,7 @@ export const Figure = ({
   const hasCaption = typeof caption === 'string'
   const figCaption = () => {
     if (hasCaption) {
-      return <figcaption classNames="c-figure__caption">{caption}</figcaption>
+      return <figcaption className="c-figure__caption">{caption}</figcaption>
     }
     return null
   }
