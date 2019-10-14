@@ -1,10 +1,10 @@
+import './Button.scss'
+
 import { Base } from 'react-iotacss'
-import classnames from 'classnames'
+import Link from '../Link'
 import PropTypes from 'prop-types'
 import React from 'react'
-
-import './Button.scss'
-import Link from '../Link'
+import classnames from 'classnames'
 
 /**
  * A styled button that can also be used as a link
@@ -12,6 +12,7 @@ import Link from '../Link'
 const Button = ({
   children,
   className,
+  disabled,
   lightOnDark,
   secondary,
   to,
@@ -20,6 +21,7 @@ const Button = ({
   const classNames = classnames('c-button', className, {
     'c-button--light-on-dark': lightOnDark,
     'c-button--secondary': secondary,
+    'c-button--disabled': disabled,
   })
   const isLink = () => typeof to === 'string'
 
@@ -32,7 +34,12 @@ const Button = ({
   }
 
   return (
-    <Base {...props} className={classNames} tagName="button">
+    <Base
+      {...props}
+      className={classNames}
+      disabled={disabled}
+      tagName="button"
+    >
       {children}
     </Base>
   )
@@ -43,6 +50,8 @@ Button.propTypes = {
   className: PropTypes.string,
   /** The contents of the button */
   children: PropTypes.node.isRequired,
+  /** Determines is button should render in a disabled state */
+  disabled: PropTypes.bool,
   /** Changes the hover styles to better suit dark backgrounds */
   lightOnDark: PropTypes.bool,
   /** Applies secondary button styling */
