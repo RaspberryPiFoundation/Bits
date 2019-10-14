@@ -5,6 +5,9 @@ import React from 'react'
 
 import './LightOnDark.scss'
 
+/**
+ * Changes text colour in children to a light grey for use on dark backgrounds
+ */
 export const LightOnDark = ({ children, className, ...props }) => {
   const classNames = classnames('c-light-on-dark', className)
 

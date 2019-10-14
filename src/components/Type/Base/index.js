@@ -5,6 +5,9 @@ import React from 'react'
 import './Base.scss'
 import Type from '../'
 
+/**
+ * The default type size. If you want something to have the appearance of a `<p>` outside a Wysiwyg component, this is what you need.
+ */
 export const TypeBase = ({ children, className, element, ...props }) => {
   const classNames = classnames('c-type-base', className)
 

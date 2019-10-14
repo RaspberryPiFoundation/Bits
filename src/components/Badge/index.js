@@ -5,6 +5,9 @@ import React from 'react'
 
 import './Badge.scss'
 
+/**
+ * Badges can be represented with the `<div>` element. There are primary and secondary styles, and a modifier for each available colour.
+ */
 export const Badge = ({ children, variant = 'primary', ...props }) => {
   const classNames = classnames('c-badge', `c-badge--${variant}`)
 

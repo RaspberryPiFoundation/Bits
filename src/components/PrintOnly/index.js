@@ -3,6 +3,9 @@ import classnames from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
 
+/**
+ * Ensures contents are hidden from display, but included in print
+ */
 export const PrintOnly = ({ children, className, ...props }) => {
   const classNames = classnames(className, 'u-print-only')
 
