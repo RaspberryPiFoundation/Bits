@@ -7,7 +7,7 @@ let printOnly
 const children = 'Whatever'
 const className = 'some-extra-class-name'
 
-describe('<Slice />', () => {
+describe('<PrintOnly />', () => {
   describe('Renders...', () => {
     beforeEach(() => {
       printOnly = shallow(<PrintOnly>{children}</PrintOnly>)
@@ -25,7 +25,7 @@ describe('<Slice />', () => {
   describe('With classNames', () => {
     it('adds the correct className', () => {
       printOnly = shallow(
-        <PrintOnly className={className}>{children}</PrintOnly>,
+        <PrintOnly className={className}>{children}</PrintOnly>
       )
       expect(printOnly.find('.u-print-only')).toHaveClassName(className)
     })
