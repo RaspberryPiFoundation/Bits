@@ -1,20 +1,18 @@
-$link-color:                       $color-primary-navy !default;
-$link-font-weight:                 $font-weight-medium !default;
-$link-hover-color:                 $color-ui-black !default;
-$link-visited-color:               $color-primary-violet !default;
-$link-transition-duration:         $transition-duration-short !default;
-$link-transition-timing:           $transition-timing-eased !default;
+$link-color: $color-primary-navy !default;
+$link-font-weight: $font-weight-medium !default;
+$link-hover-color: $color-ui-black !default;
+$link-visited-color: $color-primary-violet !default;
+$link-transition-duration: $transition-duration-short !default;
+$link-transition-timing: $transition-timing-eased !default;
 
 @mixin link {
-  color:                      $link-color;
-  cursor:                     pointer;
-  font-weight:                $link-font-weight;
-  text-decoration:            underline;
-  // Disable text-decoration-skip check as it's still in draft
-  // https://drafts.csswg.org/css-text-decor-3/#text-decoration-skip-property
-  text-decoration-skip:       ink;                      // scss-lint:disable PropertySpelling
-  transition-duration:        $link-transition-duration;
-  transition-property:        color;
+  color: $link-color;
+  cursor: pointer;
+  font-weight: $link-font-weight;
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+  transition-duration: $link-transition-duration;
+  transition-property: color;
   transition-timing-function: $link-transition-timing;
 
   &:hover,
@@ -27,8 +25,8 @@ $link-transition-timing:           $transition-timing-eased !default;
   }
 }
 
-$link-light-on-dark-color:         $color-ui-grey-lightest !default;
-$link-light-on-dark-hover-color:   $color-white !default;
+$link-light-on-dark-color: $color-ui-grey-lightest !default;
+$link-light-on-dark-hover-color: $color-white !default;
 $link-light-on-dark-visited-color: $color-ui-grey-lightest !default;
 
 @mixin link--light-on-dark {
@@ -44,15 +42,15 @@ $link-light-on-dark-visited-color: $color-ui-grey-lightest !default;
   }
 }
 
-$link-rpi-color:       $color-brand-rpi-red !default;
+$link-rpi-color: $color-brand-rpi-red !default;
 $link-rpi-font-weight: $font-weight-light !default;
 
 @mixin link--rpi {
-  color:       $color-brand-rpi-red;
+  color: $color-brand-rpi-red;
   font-weight: $link-rpi-font-weight;
 
   &:visited {
-    color:       $color-brand-rpi-red;
+    color: $color-brand-rpi-red;
     font-weight: $link-rpi-font-weight;
   }
 }
