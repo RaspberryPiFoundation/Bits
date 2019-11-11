@@ -55,12 +55,6 @@ _The format of this document is based on [Keep a Changelog](http://keepachangelo
 
 - Updates to many dependencies, including babel, rollup, jest, and node-sass
 
-## [v1.1.19](https://github.com/RaspberryPiFoundation/Bits/compare/v1.1.18...v1.1.19) - 2019-05-01
-
-### Fixed
-
-- Squashed some warnings relating to string interpolation in selector strings
-
 ## [v1.1.18](https://github.com/RaspberryPiFoundation/Bits/compare/v1.1.17...v1.1.18) - 2018-12-14
 
 ### Fixed
