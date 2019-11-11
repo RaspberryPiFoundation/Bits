@@ -20,25 +20,17 @@ Deploys to: https://static.raspberrypi.org/styles/Bits/<version> via:
 
 (where <version> is taken from package.json & ENV vars are in .env which needs to be created from .env.example)
 
-eg: https://static.raspberrypi.org/styles/Bits/1.0.0/Bits.min.css
+e.g. https://static.raspberrypi.org/styles/Bits/<version>/Bits.min.css
 
 ## Local Development
 
-You can use gulp to watch the scss files & rebuild as necessary:
+To bring up everything you need for development, run the `start` command:
+
 ```
-npm run gulp:watch
+npm run start
 ```
 
-When writing documentation, use:
-```
-npm run docs
-```
-
-Before creating a PR, make sure you run:
-```
-npm run build
-```
-to build all the css & javascript files.
+This will automatically compile JavaScript and Sass during development.
 
 ## Local Development in another app
 

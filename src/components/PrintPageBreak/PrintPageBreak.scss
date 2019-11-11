@@ -1,0 +1,11 @@
+@media screen {
+  .c-print-page-break {
+    display: none !important;
+  }
+}
+
+@media print {
+  .c-print-page-break {
+    page-break-before: always;
+  }
+}

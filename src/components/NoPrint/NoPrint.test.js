@@ -7,7 +7,7 @@ let noPrint
 const children = 'Whatever'
 const className = 'some-extra-class-name'
 
-describe('<Slice />', () => {
+describe('<NoPrint />', () => {
   describe('Renders...', () => {
     beforeEach(() => {
       noPrint = shallow(<NoPrint>{children}</NoPrint>)
