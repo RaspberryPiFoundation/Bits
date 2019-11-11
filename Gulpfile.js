@@ -3,14 +3,21 @@
 const gulp = require('gulp')
 const pkg = require('./package.json')
 
-const autoprefixer = require('gulp-autoprefixer')
+const autoprefixer = require('autoprefixer')
 const cssnano = require('gulp-cssnano')
 const header = require('gulp-header')
 const notify = require('gulp-notify')
+const postcss = require('gulp-postcss')
 const rename = require('gulp-rename')
-const sass = require('gulp-sass')
+const sass = require('gulp-dart-sass')
 const sourcemaps = require('gulp-sourcemaps')
 const stripComments = require('gulp-strip-css-comments')
+
+const cssDestDir = './lib'
+const cssDestFile = 'Bits.css'
+const cssDestFileMin = 'Bits.min.css'
+const sassEntryFile = './src/styles/main.scss'
+const sassSourceDir = './src/styles'
 
 // Set banner template
 const banner = [
@@ -27,58 +34,41 @@ const banner = [
   '',
 ].join('\n')
 
-// Get configuration files
-const assetsConfig = {
-  stylesheets: {
-    main: './src/styles/main.scss',
-    destDir: './lib',
-    buildFile: 'Bits.css',
-    buildFileMin: 'Bits.min.css',
-  },
-}
-
-gulp.task('compile_all', ['compile_stylesheets'])
-
-gulp.task('compile_stylesheets', () => {
-  let config = assetsConfig.stylesheets
-
+const compileScss = () => {
   return gulp
-    .src([config.main])
-    .pipe(
-      sass().on('error', err => {
-        return notify().write(err)
-      }),
-    )
-    .pipe(stripComments())
-    .pipe(
-      autoprefixer({
-        cascade: false,
-      }),
-    )
+    .src(sassEntryFile)
+    .pipe(sass().on('error', sass.logError))
     .pipe(
       header(banner, {
-        buildFile: config.buildFile,
         pkg: pkg,
-      }),
+      })
     )
-    .pipe(rename(config.buildFile))
-    .pipe(gulp.dest(config.destDir))
+    .pipe(rename(cssDestFile))
+    .pipe(gulp.dest(cssDestDir))
+    .pipe(stripComments())
     .pipe(sourcemaps.init())
     .pipe(cssnano())
     .pipe(
-      header(banner, {
-        buildFile: config.buildFile,
-        pkg: pkg,
-      }),
+      postcss([
+        autoprefixer({
+          flexbox: true,
+          grid: true,
+        }),
+      ])
     )
-    .pipe(rename(config.buildFileMin))
+    .pipe(
+      header(banner, {
+        pkg: pkg,
+      })
+    )
+    .pipe(rename(cssDestFileMin))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest(config.destDir))
-    .pipe(notify(`${pkg.name} Gulp: stylesheets completed`))
-})
+    .pipe(gulp.dest(cssDestDir))
+    .pipe(notify('Sass compiled! ヽ(゜∇゜)ノ'))
+}
 
-gulp.task('watch', () => {
-  gulp.watch('./src/**/*.scss', ['compile_stylesheets'])
-})
+const watch = () => gulp.watch(sassSourceDir + '/**/*', compileScss)
 
-gulp.task('default', ['compile_all', 'watch'])
+gulp.task('build', gulp.series(compileScss))
+gulp.task('start', gulp.series(watch))
+gulp.task('watch', gulp.series(watch))
