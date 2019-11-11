@@ -4,7 +4,7 @@ _The format of this document is based on [Keep a Changelog](http://keepachangelo
 
 ### Fixed
 
-- Squashed warnings regarding string interpolation of color vars
+- Fixed warnings relating to interpolation of color vars in Sass selectors
 - Fixed warning relating to `text-decoration-skip`
 
 ### Changed
