@@ -3,19 +3,21 @@
 const gulp = require('gulp')
 const pkg = require('./package.json')
 
-const autoprefixer = require('gulp-autoprefixer')
-const browserslist = require('browserslist')
+const autoprefixer = require('autoprefixer')
 const cssnano = require('gulp-cssnano')
 const header = require('gulp-header')
 const notify = require('gulp-notify')
 const postcss = require('gulp-postcss')
 const rename = require('gulp-rename')
-const sass = require('gulp-sass')
+const sass = require('gulp-dart-sass')
 const sourcemaps = require('gulp-sourcemaps')
 const stripComments = require('gulp-strip-css-comments')
 
-const cssDest = './web/app/themes/mind-control/css/'
-const sassSource = './assets/scss/application.scss'
+const cssDestDir = './lib'
+const cssDestFile = 'Bits.css'
+const cssDestFileMin = 'Bits.min.css'
+const sassEntryFile = './src/styles/main.scss'
+const sassSourceDir = './src/styles'
 
 // Set banner template
 const banner = [
@@ -34,39 +36,39 @@ const banner = [
 
 const compileScss = () => {
   return gulp
-    .src(sassSource)
+    .src(sassEntryFile)
     .pipe(sass().on('error', sass.logError))
     .pipe(
       header(banner, {
         pkg: pkg,
-      }),
+      })
     )
-    .pipe(rename({ extname: '.css' }))
-    .pipe(gulp.dest(cssDest))
+    .pipe(rename(cssDestFile))
+    .pipe(gulp.dest(cssDestDir))
     .pipe(stripComments())
     .pipe(sourcemaps.init())
     .pipe(cssnano())
     .pipe(
       postcss([
         autoprefixer({
-          browsers: browserslist(),
           flexbox: true,
           grid: true,
         }),
-      ]),
+      ])
     )
     .pipe(
       header(banner, {
         pkg: pkg,
-      }),
+      })
     )
-    .pipe(rename({ extname: '.min.css' }))
+    .pipe(rename(cssDestFileMin))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest(cssDest))
+    .pipe(gulp.dest(cssDestDir))
     .pipe(notify('Sass compiled! ヽ(゜∇゜)ノ'))
 }
 
-const watch = () => gulp.watch(sassSource + '/**/*', compileScss)
+const watch = () => gulp.watch(sassSourceDir + '/**/*', compileScss)
 
+gulp.task('build', gulp.series(compileScss))
 gulp.task('start', gulp.series(watch))
 gulp.task('watch', gulp.series(watch))
