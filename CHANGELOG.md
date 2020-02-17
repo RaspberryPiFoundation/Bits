@@ -1,5 +1,11 @@
 _The format of this document is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html)._
 
+## [v1.3.2](https://github.com/RaspberryPiFoundation/Bits/compare/v1.3.1...v1.3.2) - 2020-02-17
+
+### Changed
+
+- Added `<blockquote>` support for `.c-wysiwyg`
+
 ## [v1.3.1](https://github.com/RaspberryPiFoundation/Bits/compare/v1.3.0...v1.3.1) - 2019-11-11
 
 ### Fixed
