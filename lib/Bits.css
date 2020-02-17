@@ -5,7 +5,7 @@
 
   Author:      The Raspberry Pi Foundation
   Author URI:  https://raspberrypi.org
-  Version:     1.3.1
+  Version:     1.3.2
 */
 
 /*                 tl             tr             br             bl           */
@@ -2395,6 +2395,23 @@ strong {
 }
 @media screen and (min-width: 768px) {
   .c-wysiwyg ol {
+    font-size: 1.8rem;
+    line-height: 1.5;
+  }
+}
+.c-wysiwyg blockquote {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-weight: 300;
+  margin-bottom: 1em;
+  border-left-color: #ccc;
+  border-style: solid;
+  border-width: 0 0 0 2px;
+  margin-bottom: 2rem;
+  padding: 2rem 2rem 2rem 3rem;
+}
+@media screen and (min-width: 768px) {
+  .c-wysiwyg blockquote {
     font-size: 1.8rem;
     line-height: 1.5;
   }

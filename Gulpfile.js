@@ -6,7 +6,6 @@ const pkg = require('./package.json')
 const autoprefixer = require('autoprefixer')
 const cssnano = require('gulp-cssnano')
 const header = require('gulp-header')
-const notify = require('gulp-notify')
 const postcss = require('gulp-postcss')
 const rename = require('gulp-rename')
 const sass = require('gulp-dart-sass')
@@ -64,7 +63,6 @@ const compileScss = () => {
     .pipe(rename(cssDestFileMin))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(cssDestDir))
-    .pipe(notify('Sass compiled! ヽ(゜∇゜)ノ'))
 }
 
 const watch = () => gulp.watch(sassSourceDir + '/**/*', compileScss)
