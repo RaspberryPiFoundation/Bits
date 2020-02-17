@@ -7,6 +7,9 @@
     <li>List item 2</li>
     <li>List item 3</li>
   </ul>
+  <blockquote>
+    A person said this thing
+  </blockquote>
 </Wysiwyg>
 ```
 
@@ -21,5 +24,8 @@
     <li>List item 2</li>
     <li>List item 3</li>
   </ul>
+  <blockquote>
+    A person said this thing
+  </blockquote>
 </div>
 ```
