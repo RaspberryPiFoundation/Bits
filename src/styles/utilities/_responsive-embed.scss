@@ -1,8 +1,12 @@
-// the `video` modifier assumes an aspect ratio of 16:9 (height 9 / width 16 = 0.5625)
-.responsive-embed__container--video {
+.responsive_embed {
   position: relative;
   overflow: hidden;
-  padding-top: 56.25%;
+  padding-top: 100%;
+
+  // the `video` modifier assumes an aspect ratio of 16:9 (height 9 / width 16 = 0.5625)
+  &--video {
+    padding-top: 56.25%;
+  }
 }
 
 .responsive-embed__iframe {
