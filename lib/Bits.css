@@ -11768,12 +11768,12 @@ strong {
     margin-left: 0 !important;
   }
 }
-.responsive_embed {
+.responsive-embed {
   position: relative;
   overflow: hidden;
   padding-top: 100%;
 }
-.responsive_embed--video {
+.responsive-embed--video {
   padding-top: 56.25%;
 }
 

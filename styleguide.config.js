@@ -18,6 +18,10 @@ module.exports = {
           content: 'doc/styles/breakpoints.md',
         },
         {
+          name: 'Responsive Embeds',
+          content: 'doc/styles/embeds.md',
+        },
+        {
           name: 'Fonts',
           content: 'doc/styles/fonts.md',
         },

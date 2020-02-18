@@ -4,7 +4,7 @@ _The format of this document is based on [Keep a Changelog](http://keepachangelo
 
 ### Changed
 
-- Added support for responsive iframe / video embeds via `.responsive-embed__container--video` and `.responsive-embed__iframe`
+- Added support for responsive iframe / video embeds via `.responsive-embed`, `.responsive-embed--video` and `.responsive-embed__iframe`
 
 ## [v1.3.2](https://github.com/RaspberryPiFoundation/Bits/compare/v1.3.1...v1.3.2) - 2020-02-17
 
