@@ -5,7 +5,7 @@
 
   Author:      The Raspberry Pi Foundation
   Author URI:  https://raspberrypi.org
-  Version:     1.3.2
+  Version:     1.3.3
 */
 
 /*                 tl             tr             br             bl           */
@@ -11768,6 +11768,24 @@ strong {
     margin-left: 0 !important;
   }
 }
+.responsive_embed {
+  position: relative;
+  overflow: hidden;
+  padding-top: 100%;
+}
+.responsive_embed--video {
+  padding-top: 56.25%;
+}
+
+.responsive-embed__iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 /**
  * Size utility delimiter. Default to \/. Ex: .u-1/3.
  *
