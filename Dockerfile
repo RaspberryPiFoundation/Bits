@@ -13,7 +13,7 @@ RUN apk update && \
       ruby-io-console \
       ruby-irb \
       ruby-rake
-
+RUN gem install bundler
 COPY Gemfile* /tmp/
 WORKDIR /tmp
 RUN bundle install
