@@ -1,5 +1,11 @@
 _The format of this document is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html)._
 
+## [v1.4.0](https://github.com/RaspberryPiFoundation/Bits/compare/v1.3.3...v1.4.0) - 2021-12-21
+
+### Changed
+
+- Updated brand colours
+
 ## [v1.3.3](https://github.com/RaspberryPiFoundation/Bits/compare/v1.3.2...v1.3.3) - 2020-02-18
 
 ### Changed
